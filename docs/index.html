@@ -5,132 +5,505 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>紫葱酱的大逃杀联赛</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: #0a0e27;
-    color: #e0e0e0;
-    min-height: 100vh;
-  }
-  .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+/* =====================================================
+   日式热血漫画 · 大逃杀联赛样式
+   配色：主色 #F62440 / 米白纸纹 #FFFAF3 / #FFF2DB / #FFE5BF
+   核心手法：粗边框 4px、块阴影 8px、速度线纹理、红色强调
+   ===================================================== */
+
+/* ── TOKENS ─────────── */
+:root {
+  --red: #F62440;
+  --red-dark: #c41e34;
+  --red-light: #ff4d66;
+  --bg: #FFFAF3;
+  --bg-card: #FFF2DB;
+  --bg-alt: #FFE5BF;
+  --fg: #1a1a1a;
+  --fg-muted: #666;
+  --fg-light: #999;
+  --border: #1a1a1a;
+  --border-w: 4px;
+  --shadow: 8px 8px 0 #1a1a1a;
+  --shadow-sm: 4px 4px 0 #1a1a1a;
+  --radius: 2px;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', system-ui, sans-serif;
+  --font-mono: 'Cascadia Code', 'JetBrains Mono', ui-monospace, Consolas, monospace;
+}
+
+/* ── GLOBAL ─────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+/* 全页速度线纹理 — 漫画灵魂 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 14px,
+      rgba(26,26,26,0.04) 14px,
+      rgba(26,26,26,0.04) 15px
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 16px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ═══════════ HEADER ═══════════ */
+header {
+  background: var(--fg);
+  border: var(--border-w) solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 28px 24px 24px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 底部红色速度线 */
+header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--red) 0px,
+    var(--red) 10px,
+    transparent 10px,
+    transparent 18px
+  );
+}
+
+header h1 {
+  font-size: clamp(24px, 5vw, 32px);
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+header .subtitle {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+header #roundInfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.round-badge {
+  display: inline-block;
+  background: var(--red);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 4px 16px;
+  letter-spacing: 0.08em;
+  border: 2px solid var(--border);
+  box-shadow: 3px 3px 0 var(--border);
+}
+
+header .desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  font-weight: 500;
+  flex: 1;
+  min-width: 200px;
+}
+
+/* ═══════════ ROUND TABS ═══════════ */
+.round-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.round-tabs button {
+  background: var(--bg-card);
+  border: 3px solid var(--border);
+  color: var(--fg-muted);
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: var(--font);
+  letter-spacing: 0.06em;
+  transition: all 0.1s ease;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 0 var(--border);
+}
+
+.round-tabs button.active {
+  background: var(--fg);
+  color: #fff;
+  border-color: var(--red);
+}
+
+.round-tabs button:not(.active):hover {
+  background: var(--bg-alt);
+  color: var(--fg);
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--border);
+}
+
+.round-tabs button:not(.active):active {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 var(--border);
+}
+
+/* ═══════════ SECTION ═══════════ */
+.section {
+  margin-bottom: 28px;
+}
+
+.section h2 {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--fg);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding: 6px 14px;
+  background: var(--bg-alt);
+  border-left: 4px solid var(--red);
+  display: inline-block;
+}
+
+/* ═══════════ TABLE ═══════════ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: var(--border-w) solid var(--border);
+  box-shadow: var(--shadow);
+  font-size: 14px;
+}
+
+thead th {
+  background: var(--fg);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 3px solid var(--red);
+  white-space: nowrap;
+}
+
+tbody tr {
+  transition: background 0.1s;
+}
+
+/* 行交替 — 漫画纸纹感 */
+tbody tr:nth-child(odd) {
+  background: var(--bg);
+}
+
+tbody tr:nth-child(even) {
+  background: var(--bg-card);
+}
+
+tbody tr:hover {
+  background: var(--bg-alt);
+}
+
+tbody td {
+  padding: 9px 14px;
+  border-bottom: 1px solid rgba(26,26,26,0.08);
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.rank {
+  font-weight: 900;
+  color: var(--fg);
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 15px;
+  min-width: 32px;
+}
+
+/* 前三名排名红色 */
+tbody tr:not(.eliminated):nth-child(-n+3) .rank {
+  color: var(--red);
+}
+
+.metric {
+  font-weight: 800;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--fg);
+  font-size: 15px;
+}
+
+/* ── Eliminated ─────────── */
+tr.eliminated {
+  background: rgba(246, 36, 64, 0.07) !important;
+}
+
+tr.eliminated td {
+  color: var(--red);
+  opacity: 0.7;
+}
+
+tr.eliminated .rank {
+  color: var(--red);
+}
+
+.eliminated-tag {
+  display: inline-block;
+  background: var(--red);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 10px;
+  letter-spacing: 0.06em;
+  border: 1px solid var(--border);
+}
+
+/* ── Cut line ─────────── */
+.cut-line td {
+  border-bottom: 3px solid var(--red) !important;
+  padding: 0 !important;
+  height: 0;
+  position: relative;
+}
+
+.cut-line td::after {
+  content: 'ELIMINATION LINE';
+  position: absolute;
+  right: 14px;
+  top: -8px;
+  background: var(--red);
+  color: #fff;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  padding: 1px 8px;
+  line-height: 1.6;
+}
+
+/* ═══════════ INTRO ═══════════ */
+.intro {
+  background: var(--bg-card);
+  border: var(--border-w) solid var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: 28px;
+  line-height: 1.9;
+  color: var(--fg);
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 28px;
+}
+
+/* 左上红色角标 */
+.intro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 24px 24px 0 0;
+  border-color: var(--red) transparent transparent transparent;
+}
+
+.intro h2 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 16px;
+  color: var(--fg);
+  letter-spacing: 0.03em;
+  border: none;
+  padding: 0;
+  background: none;
+  display: block;
+}
+
+.intro p {
+  margin-bottom: 12px;
+}
+
+.intro strong {
+  color: var(--red);
+  font-weight: 800;
+}
+
+/* ═══════════ FOOTER ═══════════ */
+footer {
+  text-align: center;
+  padding: 30px 0 10px;
+  margin-top: 28px;
+  border-top: 3px solid var(--border);
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--red) 0px,
+    var(--red) 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+
+footer .social-label { font-size: 12px; color: #666; margin-bottom: 12px; }
+
+footer .social-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+
+footer .social-links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #999;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+footer .social-links a:hover { color: #fff; }
+
+footer .social-links img { width: 20px; height: 20px; opacity: 0.7; }
+
+footer .social-links a:hover img { opacity: 1; }
+
+/* ═══════════ STATES ═══════════ */
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--fg-muted);
+  letter-spacing: 0.08em;
+  border: 3px dashed var(--border);
+  background: var(--bg-card);
+}
+
+.error {
+  text-align: center;
+  padding: 60px;
+  color: var(--red);
+  font-weight: 700;
+}
+
+.empty {
+  text-align: center;
+  padding: 60px;
+  color: var(--fg-muted);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+/* ═══════════ RESPONSIVE ═══════════ */
+@media (max-width: 768px) {
+  .container { padding: 12px 10px 24px; }
 
   header {
-    text-align: center;
-    padding: 40px 0 30px;
-    border-bottom: 2px solid rgba(255,255,255,0.08);
-    margin-bottom: 30px;
-  }
-  header h1 {
-    font-size: 28px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 6px;
-  }
-  header .subtitle { font-size: 14px; color: #777; }
-  header .round-badge {
-    display: inline-block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: #fff;
-    padding: 6px 18px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 600;
-    margin-top: 12px;
-  }
-  header .desc { margin-top: 8px; font-size: 14px; color: #999; }
-
-  .section { margin-bottom: 30px; }
-  .section h2 {
-    font-size: 16px;
-    color: #aaa;
-    letter-spacing: 1px;
-    margin-bottom: 12px;
-    padding-left: 12px;
-    border-left: 3px solid #667eea;
+    padding: 20px 16px 18px;
+    box-shadow: var(--shadow-sm);
   }
 
-  table { width: 100%; border-collapse: collapse; }
-  th, td { padding: 10px 14px; text-align: left; }
-  th {
+  header h1 { font-size: 20px; }
+  header .subtitle { font-size: 12px; }
+
+  .round-badge { font-size: 12px; padding: 3px 12px; }
+  header .desc { font-size: 12px; min-width: 0; }
+
+  .round-tabs { gap: 4px; }
+  .round-tabs button {
+    padding: 6px 14px;
     font-size: 12px;
-    color: #888;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-  }
-  td { border-bottom: 1px solid rgba(255,255,255,0.03); font-size: 14px; }
-  tr.eliminated { background: rgba(255, 71, 87, 0.07); }
-  tr.eliminated td { color: #ff4757; }
-  .rank { font-weight: 700; color: #ffd700; min-width: 32px; }
-  .metric { font-weight: 600; color: #7bed9f; }
-  .eliminated-tag {
-    display: inline-block;
-    background: #ff4757;
-    color: #fff;
-    font-size: 11px;
-    padding: 2px 8px;
-    border-radius: 10px;
-    font-weight: 600;
+    box-shadow: 2px 2px 0 var(--border);
   }
 
-  .intro {
-    background: linear-gradient(135deg, rgba(102,126,234,0.06) 0%, rgba(118,75,162,0.06) 100%);
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 12px;
-    padding: 30px;
-    line-height: 1.9;
-    color: #bbb;
-    font-size: 14px;
-  }
-  .intro h2 {
-    margin-bottom: 16px;
-    border: none;
-    padding: 0;
-    color: #ddd;
-    font-size: 18px;
-  }
-  .intro h3 {
-    color: #ddd;
-    margin: 20px 0 10px;
-    font-size: 15px;
-  }
-  .intro p { margin-bottom: 12px; }
-  .intro strong { color: #e0e0e0; }
-  .intro em { color: #ccc; }
+  .section h2 { font-size: 13px; padding: 5px 12px; }
 
-  footer {
-    text-align: center;
-    padding: 30px 0;
-    border-top: 1px solid rgba(255,255,255,0.06);
-    margin-top: 20px;
-  }
-  footer .social-label { font-size: 12px; color: #666; margin-bottom: 12px; }
-  footer .social-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+  table { font-size: 12px; }
+
+  thead th { font-size: 10px; padding: 8px 10px; }
+  tbody td { padding: 7px 10px; }
+
+  .rank { font-size: 13px; }
+  .metric { font-size: 13px; }
+
+  .intro { padding: 20px 16px; font-size: 13px; }
+  .intro h2 { font-size: 16px; }
+
+  footer .social-links { gap: 8px; }
   footer .social-links a {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: #999;
-    text-decoration: none;
-    font-size: 13px;
-    transition: color 0.2s;
+    font-size: 12px;
+    padding: 4px 10px;
   }
-  footer .social-links a:hover { color: #fff; }
-  footer .social-links img { width: 20px; height: 20px; opacity: 0.7; }
-  footer .social-links a:hover img { opacity: 1; }
 
-  .loading { text-align: center; padding: 60px; color: #666; }
-  .error { text-align: center; padding: 60px; color: #ff4757; }
-  .empty { text-align: center; padding: 60px; color: #666; }
-
-  @media (max-width: 600px) {
-    .container { padding: 12px; }
-    header h1 { font-size: 22px; }
-    th, td { padding: 8px 10px; font-size: 13px; }
-    .intro { padding: 20px; }
+  .cut-line td::after {
+    right: 8px;
+    font-size: 7px;
+    padding: 0 6px;
   }
+}
+
+@media (max-width: 480px) {
+  header { padding: 16px 12px 16px; }
+  header h1 { font-size: 17px; }
+
+  table { font-size: 11px; }
+  thead th { font-size: 9px; padding: 6px 8px; }
+  tbody td { padding: 5px 8px; }
+  .rank { font-size: 12px; min-width: 24px; }
+  .metric { font-size: 12px; }
+
+  .round-badge { font-size: 11px; }
+}
+
+@media print {
+  body::before { display: none; }
+  table { box-shadow: none; border-color: #aaa; }
+  header { box-shadow: none; }
+  .intro { box-shadow: none; }
+  .intro::before { border-width: 16px 16px 0 0; }
+}
 </style>
 </head>
 <body>
@@ -146,7 +519,7 @@
   <footer>
     <div class="social-label">关注紫葱酱</div>
     <div class="social-links">
-      <a href="" target="_blank"><img src="img/bilibili.webp" alt="">紫葱酱</a>
+      <a href="https://space.bilibili.com/3150672"><img src="img/bilibili.webp" alt="">紫葱酱</a>
       <a href="" target="_blank"><img src="img/dqd.webp" alt="">紫葱酱</a>
       <a href="" target="_blank"><img src="img/wechat-logo.webp" alt="">紫葱酱</a>
       <a href="" target="_blank"><img src="img/xhs.webp" alt="">紫葱酱</a>
@@ -162,22 +535,21 @@
       fetch('data/huanyue.json')
     ]);
 
-    if (!resResult.ok) throw new Error(`HTTP ${resResult.status} loading result.json`);
-    if (!resPlayers.ok) throw new Error(`HTTP ${resPlayers.status} loading huanyue.json`);
+    if (!resResult.ok) throw new Error('HTTP ' + resResult.status);
+    if (!resPlayers.ok) throw new Error('HTTP ' + resPlayers.status);
 
     const allResults = await resResult.json();
     const huanyue = await resPlayers.json();
 
     const roundIds = Object.keys(allResults).sort((a, b) => Number(b) - Number(a));
     if (roundIds.length === 0) {
-      document.getElementById('content').innerHTML = '<div class="empty">暂无数据</div>';
+      document.getElementById('content').innerHTML = '<p class="empty">暂无数据</p>';
       return;
     }
 
     const currentRoundId = roundIds[0];
     const result = allResults[currentRoundId];
 
-    // Build eliminated set from ALL rounds (for row highlighting)
     const eliminatedSet = new Set();
     for (const rid of roundIds) {
       for (const e of (allResults[rid].eliminated || [])) {
@@ -185,77 +557,72 @@
       }
     }
 
-    // Build player name lookup
     const nameMap = {};
     for (const p of huanyue) {
       nameMap[p.userId] = p.userName;
     }
 
-    // Round header
-    document.getElementById('roundInfo').innerHTML = `
-      <br><span class="round-badge">Round ${currentRoundId}</span>
-      <div class="desc">${result.description || result.title || ''}</div>
-    `;
+    function metricLabel(result) {
+      const r = result.ranking[0] || {};
+      if ('totalST' in r) return '射正 (ST)';
+      if ('points' in r) return '得分';
+      return '数据';
+    }
 
-    // Leaderboard table
+    document.getElementById('roundInfo').innerHTML =
+      '<br><span class="round-badge">Round ' + currentRoundId + '</span>' +
+      '<div class="desc">' + (result.description || result.title || '') + '</div>';
+
     const ranking = result.ranking || [];
-    const survivors = ranking.filter(r => !eliminatedSet.has(r.userId));
-    const dead = ranking.filter(r => eliminatedSet.has(r.userId));
+    const survivors = ranking.filter(function(r) { return !eliminatedSet.has(r.userId); });
+    const dead = ranking.filter(function(r) { return eliminatedSet.has(r.userId); });
 
-    let html = '';
-    html += `<div class="section"><h2>积分榜</h2><table><thead><tr>`;
-    html += '<th>#</th><th>玩家</th><th>数据</th><th></th>';
+    var label = metricLabel(result);
+    var html = '<div class="section"><h2>积分榜</h2><table><thead><tr>';
+    html += '<th>#</th><th>玩家</th><th>' + label + '</th><th></th>';
     html += '</tr></thead><tbody>';
 
-    let rankNum = 0;
-    for (const r of survivors) {
+    var rankNum = 0;
+    survivors.forEach(function(r) {
       rankNum++;
-      const metricKey = Object.keys(r).find(k => !['userId', 'userName'].includes(k)) || 'points';
+      var metricKey = Object.keys(r).find(function(k) { return k !== 'userId' && k !== 'userName'; }) || 'points';
       html += '<tr>';
-      html += `<td class="rank">${rankNum}</td>`;
-      html += `<td>${r.userName || nameMap[r.userId] || r.userId}</td>`;
-      html += `<td class="metric">${r[metricKey] != null ? r[metricKey] : '-'}</td>`;
+      html += '<td class="rank">' + rankNum + '</td>';
+      html += '<td>' + (r.userName || nameMap[r.userId] || r.userId) + '</td>';
+      html += '<td class="metric">' + (r[metricKey] != null ? r[metricKey] : '-') + '</td>';
       html += '<td></td>';
       html += '</tr>';
-    }
-    for (const r of dead) {
+    });
+
+    dead.forEach(function(r) {
       rankNum++;
-      const metricKey = Object.keys(r).find(k => !['userId', 'userName'].includes(k)) || 'points';
+      var metricKey = Object.keys(r).find(function(k) { return k !== 'userId' && k !== 'userName'; }) || 'points';
       html += '<tr class="eliminated">';
-      html += `<td class="rank">${rankNum}</td>`;
-      html += `<td>${r.userName || nameMap[r.userId] || r.userId}</td>`;
-      html += `<td class="metric">${r[metricKey] != null ? r[metricKey] : '-'}</td>`;
-      html += `<td><span class="eliminated-tag">淘汰</span></td>`;
+      html += '<td class="rank">' + rankNum + '</td>';
+      html += '<td>' + (r.userName || nameMap[r.userId] || r.userId) + '</td>';
+      html += '<td class="metric">' + (r[metricKey] != null ? r[metricKey] : '-') + '</td>';
+      html += '<td><span class="eliminated-tag">淘汰</span></td>';
       html += '</tr>';
-    }
+    });
+
     html += '</tbody></table></div>';
 
-    // League intro
-    html += `<div class="intro">
-<h2>什么是紫葱酱的大逃杀联赛？</h2>
-
-<p>还在算总分？还在拼排名？还在研究这一轮到底该赢几分？</p>
-
-<p>不好意思，这里不是传统范特西。</p>
-
-<p>在大逃杀联赛里，每一轮都会公布一条全新的规则。今天可能比射正，明天可能比扑救，后天可能比助攻，下一轮说不定又变成后卫进球大战。没有人知道下一轮会发生什么，唯一确定的是——总有人会被淘汰。</p>
-
-<p>这里没有一成不变的最优解，也没有永远正确的模板阵容。你不仅要会选人，更要学会适应规则、拥抱变化，在每一轮未知的挑战中努力活下去。</p>
-
-<p>当然，我们也有自己的联赛宗旨：</p>
-
-<p><strong>不追求赢，不追求输，不追求快乐，更不追求哭。</strong></p>
-
-<p><strong>无论碰到什么规则，上去就是"砰砰两拳"。</strong></p>
-
-<p>欢迎来到紫葱酱的大逃杀联赛。这里没有标准答案，只有意想不到的乐趣。</p>
-</div>`;
+    html += '<div class="intro">' +
+      '<h2>什么是紫葱酱的大逃杀联赛？</h2>' +
+      '<p>还在算总分？还在拼排名？还在研究这一轮到底该赢几分？</p>' +
+      '<p>不好意思，这里不是传统范特西。</p>' +
+      '<p>在大逃杀联赛里，每一轮都会公布一条全新的规则。今天可能比射正，明天可能比扑救，后天可能比助攻，下一轮说不定又变成后卫进球大战。没有人知道下一轮会发生什么，唯一确定的是——总有人会被淘汰。</p>' +
+      '<p>这里没有一成不变的最优解，也没有永远正确的模板阵容。你不仅要会选人，更要学会适应规则、拥抱变化，在每一轮未知的挑战中努力活下去。</p>' +
+      '<p>当然，我们也有自己的联赛宗旨：</p>' +
+      '<p><strong>不追求赢，不追求输，不追求快乐，更不追求哭。</strong></p>' +
+      '<p><strong>无论碰到什么规则，上去就是"砰砰两拳"。</strong></p>' +
+      '<p>欢迎来到紫葱酱的大逃杀联赛。这里没有标准答案，只有意想不到的乐趣。</p>' +
+      '</div>';
 
     document.getElementById('content').innerHTML = html;
 
   } catch (err) {
-    document.getElementById('content').innerHTML =
-      `<div class="error">加载失败: ${err.message}</div>`;
+    document.getElementById('content').innerHTML = '<p class="error">加载失败: ' + err.message + '</p>';
   }
 })();
 </script>

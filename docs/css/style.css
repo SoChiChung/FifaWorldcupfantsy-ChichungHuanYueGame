@@ -1,0 +1,171 @@
+
+.container { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+/* ── Header ─────────────────────── */
+
+header {
+  text-align: center;
+  padding: 40px 0 30px;
+  border-bottom: 2px solid rgba(255,255,255,0.08);
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 28px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 6px;
+}
+
+header .subtitle { font-size: 14px; color: #777; }
+
+header .round-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+header .desc { margin-top: 8px; font-size: 14px; color: #999; }
+
+/* ── Round Tabs ────────────────── */
+
+.round-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+
+.round-tabs button {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #999;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.round-tabs button.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: transparent;
+  color: #fff;
+}
+
+.round-tabs button:hover:not(.active) { color: #ccc; border-color: rgba(255,255,255,0.25); }
+
+/* ── Section ────────────────────── */
+
+.section { margin-bottom: 30px; }
+
+.section h2 {
+  font-size: 16px;
+  color: #aaa;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  padding-left: 12px;
+  border-left: 3px solid #667eea;
+}
+
+/* ── Table ──────────────────────── */
+
+table { width: 100%; border-collapse: collapse; }
+
+th, td { padding: 10px 14px; text-align: left; }
+
+th {
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+td { border-bottom: 1px solid rgba(255,255,255,0.03); font-size: 14px; }
+
+tr.eliminated { background: rgba(255, 71, 87, 0.07); }
+
+tr.eliminated td { color: #ff4757; }
+
+.rank { font-weight: 700; color: #ffd700; min-width: 32px; }
+
+.metric { font-weight: 600; color: #7bed9f; }
+
+.eliminated-tag {
+  display: inline-block;
+  background: #ff4757;
+  color: #fff;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.cut-line td { border-bottom: 2px solid #ff4757; }
+
+/* ── Intro Block ────────────────── */
+
+.intro {
+  background: linear-gradient(135deg, rgba(102,126,234,0.06) 0%, rgba(118,75,162,0.06) 100%);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  padding: 30px;
+  line-height: 1.9;
+  color: #bbb;
+  font-size: 14px;
+}
+
+.intro h2 { margin-bottom: 16px; border: none; padding: 0; color: #ddd; font-size: 18px; }
+
+.intro p { margin-bottom: 12px; }
+
+.intro strong { color: #e0e0e0; }
+
+/* ── Footer ─────────────────────── */
+
+footer {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  margin-top: 20px;
+}
+
+footer .social-label { font-size: 12px; color: #666; margin-bottom: 12px; }
+
+footer .social-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+
+footer .social-links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #999;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+footer .social-links a:hover { color: #fff; }
+
+footer .social-links img { width: 20px; height: 20px; opacity: 0.7; }
+
+footer .social-links a:hover img { opacity: 1; }
+
+/* ── States ───────────────────────
+
+.loading { text-align: center; padding: 60px; color: #666; }
+
+.error { text-align: center; padding: 60px; color: #ff4757; }
+
+.empty { text-align: center; padding: 60px; color: #666; }
+
+/* ── Mobile ─────────────────────── */
+
+/* @media (max-width: 600px) {
+  .container { padding: 12px; }
+  header h1 { font-size: 22px; }
+  th, td { padding: 8px 10px; font-size: 13px; }
+  .intro { padding: 20px; }
+} */ */
