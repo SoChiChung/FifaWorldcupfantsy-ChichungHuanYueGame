@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIFA Fantasy — 大逃杀联赛</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0a0e27;
+    color: #e0e0e0;
+    min-height: 100vh;
+  }
+  .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+  header {
+    text-align: center;
+    padding: 40px 0 30px;
+    border-bottom: 2px solid rgba(255,255,255,0.08);
+    margin-bottom: 30px;
+  }
+  header h1 { font-size: 24px; color: #fff; margin-bottom: 8px; }
+  header .round-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  header .desc { margin-top: 10px; font-size: 15px; color: #999; }
+
+  .section { margin-bottom: 30px; }
+  .section h2 {
+    font-size: 16px;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    padding-left: 12px;
+    border-left: 3px solid #667eea;
+  }
+
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 10px 14px; text-align: left; }
+  th {
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  td { border-bottom: 1px solid rgba(255,255,255,0.03); font-size: 14px; }
+  tr.eliminated { background: rgba(255, 71, 87, 0.08); }
+  tr.eliminated td { color: #ff4757; }
+  .rank { font-weight: 700; color: #ffd700; min-width: 32px; }
+  .metric { font-weight: 600; color: #7bed9f; }
+  .eliminated-tag {
+    display: inline-block;
+    background: #ff4757;
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+
+  .eliminated-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .eliminated-card {
+    background: rgba(255, 71, 87, 0.1);
+    border: 1px solid rgba(255, 71, 87, 0.25);
+    border-radius: 8px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .eliminated-card .rank-num {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ff4757;
+  }
+  .eliminated-card .name { font-weight: 600; }
+  .eliminated-card .stat { font-size: 12px; color: #999; }
+
+  .loading { text-align: center; padding: 60px; color: #666; }
+  .error { text-align: center; padding: 60px; color: #ff4757; }
+  .empty { text-align: center; padding: 60px; color: #666; }
+
+  @media (max-width: 600px) {
+    .container { padding: 12px; }
+    header h1 { font-size: 20px; }
+    th, td { padding: 8px 10px; font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>FIFA Fantasy 大逃杀联赛</h1>
+    <div id="roundInfo">加载中...</div>
+  </header>
+
+  <div id="content" class="loading">正在加载数据...</div>
+</div>
+
+<script>
+(async function() {
+  try {
+    const [resResult, resPlayers] = await Promise.all([
+      fetch('data/result.json'),
+      fetch('data/huanyue.json')
+    ]);
+
+    if (!resResult.ok) throw new Error(`HTTP ${resResult.status} loading result.json`);
+    if (!resPlayers.ok) throw new Error(`HTTP ${resPlayers.status} loading huanyue.json`);
+
+    const allResults = await resResult.json();
+    const huanyue = await resPlayers.json();
+
+    const roundIds = Object.keys(allResults).sort((a, b) => Number(b) - Number(a));
+    if (roundIds.length === 0) {
+      document.getElementById('content').innerHTML = '<div class="empty">暂无数据</div>';
+      return;
+    }
+
+    const currentRoundId = roundIds[0];
+    const result = allResults[currentRoundId];
+    const eliminatedSet = new Set();
+    const allEliminated = [];
+
+    // Collect all eliminated players across previous rounds
+    for (const rid of roundIds) {
+      const r = allResults[rid];
+      for (const e of (r.eliminated || [])) {
+        if (!eliminatedSet.has(e.userId)) {
+          eliminatedSet.add(e.userId);
+          allEliminated.push({ ...e, eliminatedRound: rid });
+        }
+      }
+    }
+
+    // Build player name lookup
+    const nameMap = {};
+    for (const p of huanyue) {
+      nameMap[p.userId] = p.userName;
+    }
+
+    // Render round info
+    document.getElementById('roundInfo').innerHTML = `
+      <span class="round-badge">Round ${currentRoundId}</span>
+      <div class="desc">${result.description || result.title || ''}</div>
+    `;
+
+    // Build content
+    let html = '';
+
+    // Rankings
+    html += '<div class="section"><h2>排名</h2><table><thead><tr>';
+    html += '<th>#</th><th>玩家</th><th>数据</th><th></th>';
+    html += '</tr></thead><tbody>';
+
+    const ranking = result.ranking || [];
+    for (let i = 0; i < ranking.length; i++) {
+      const r = ranking[i];
+      const isEliminated = eliminatedSet.has(r.userId);
+      const metricKey = Object.keys(r).find(k => !['userId', 'userName'].includes(k)) || 'points';
+      const metricVal = r[metricKey];
+
+      html += `<tr class="${isEliminated ? 'eliminated' : ''}">`;
+      html += `<td class="rank">${i + 1}</td>`;
+      html += `<td>${r.userName || nameMap[r.userId] || r.userId}</td>`;
+      html += `<td class="metric">${metricVal != null ? metricVal : '-'}</td>`;
+      html += `<td>${isEliminated ? '<span class="eliminated-tag">淘汰</span>' : ''}</td>`;
+      html += '</tr>';
+    }
+    html += '</tbody></table></div>';
+
+    // Current round eliminated
+    const currentEliminated = result.eliminated || [];
+    if (currentEliminated.length > 0) {
+      html += '<div class="section"><h2>本轮淘汰</h2><div class="eliminated-list">';
+      for (const e of currentEliminated) {
+        const metricKey = Object.keys(e).find(k => !['userId', 'userName'].includes(k)) || 'points';
+        html += `<div class="eliminated-card">
+          <span class="rank-num">✕</span>
+          <div>
+            <div class="name">${e.userName || nameMap[e.userId] || e.userId}</div>
+            <div class="stat">${metricKey}: ${e[metricKey] != null ? e[metricKey] : '-'}</div>
+          </div>
+        </div>`;
+      }
+      html += '</div></div>';
+    }
+
+    // All eliminated history
+    if (allEliminated.length > 0) {
+      html += '<div class="section"><h2>全部淘汰名单</h2><table><thead><tr>';
+      html += '<th>玩家</th><th>淘汰轮次</th>';
+      html += '</tr></thead><tbody>';
+      for (const e of allEliminated) {
+        html += `<tr class="eliminated">`;
+        html += `<td>${e.userName || nameMap[e.userId] || e.userId}</td>`;
+        html += `<td>Round ${e.eliminatedRound}</td>`;
+        html += '</tr>';
+      }
+      html += '</tbody></table></div>';
+    }
+
+    document.getElementById('content').innerHTML = html;
+
+  } catch (err) {
+    document.getElementById('content').innerHTML =
+      `<div class="error">加载失败: ${err.message}</div>`;
+  }
+})();
+</script>
+</body>
+</html>

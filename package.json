@@ -1,0 +1,9 @@
+{
+  "name": "fifa-fantasy-battle-royale",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "update": "node scripts/update.js"
+  }
+}

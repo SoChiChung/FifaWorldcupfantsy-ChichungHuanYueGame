@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /d/code/fifahuanyue/scripts/lib /d/code/fifahuanyue/rules /d/code/fifahuanyue/docs/data /d/code/fifahuanyue/.github/workflows)",
+      "Bash(node /d/code/fifahuanyue/scripts/dev.js)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/data/result.json)",
+      "Bash(kill %1)",
+      "Bash(git init *)"
+    ]
+  }
+}
