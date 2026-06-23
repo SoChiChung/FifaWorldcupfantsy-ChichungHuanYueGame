@@ -1,136 +1,386 @@
 
-.container { max-width: 800px; margin: 0 auto; padding: 20px; }
+/* =====================================================
+   日式热血漫画 · 大逃杀联赛样式
+   配色：主色 #F62440 / 米白纸纹 #FFFAF3 / #FFF2DB / #FFE5BF
+   核心手法：粗边框 4px、块阴影 8px、速度线纹理、红色强调
+   ===================================================== */
 
-/* ── Header ─────────────────────── */
+/* ── TOKENS ─────────── */
+:root {
+  --red: #F62440;
+  --red-dark: #c41e34;
+  --red-light: #ff4d66;
+  --bg: #FFFAF3;
+  --bg-card: #FFF2DB;
+  --bg-alt: #FFE5BF;
+  --fg: #1a1a1a;
+  --fg-muted: #666;
+  --fg-light: #999;
+  --border: #1a1a1a;
+  --border-w: 4px;
+  --shadow: 8px 8px 0 #1a1a1a;
+  --shadow-sm: 4px 4px 0 #1a1a1a;
+  --radius: 2px;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', system-ui, sans-serif;
+  --font-mono: 'Cascadia Code', 'JetBrains Mono', ui-monospace, Consolas, monospace;
+}
 
+/* ── GLOBAL ─────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+/* 全页速度线纹理 — 漫画灵魂 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 14px,
+      rgba(26,26,26,0.04) 14px,
+      rgba(26,26,26,0.04) 15px
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 16px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ═══════════ HEADER ═══════════ */
 header {
-  text-align: center;
-  padding: 40px 0 30px;
-  border-bottom: 2px solid rgba(255,255,255,0.08);
-  margin-bottom: 30px;
+  background: var(--fg);
+  border: var(--border-w) solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 28px 24px 24px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 底部红色速度线 */
+header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--red) 0px,
+    var(--red) 10px,
+    transparent 10px,
+    transparent 18px
+  );
 }
 
 header h1 {
-  font-size: 28px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: clamp(24px, 5vw, 32px);
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
   margin-bottom: 6px;
 }
 
-header .subtitle { font-size: 14px; color: #777; }
-
-header .round-badge {
-  display: inline-block;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #fff;
-  padding: 6px 18px;
-  border-radius: 20px;
+header .subtitle {
   font-size: 13px;
-  font-weight: 600;
-  margin-top: 12px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
 }
 
-header .desc { margin-top: 8px; font-size: 14px; color: #999; }
+header #roundInfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
 
-/* ── Round Tabs ────────────────── */
+.round-badge {
+  display: inline-block;
+  background: var(--red);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 4px 16px;
+  letter-spacing: 0.08em;
+  border: 2px solid var(--border);
+  box-shadow: 3px 3px 0 var(--border);
+}
 
-.round-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+header .desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  font-weight: 500;
+  flex: 1;
+  min-width: 200px;
+}
+
+/* ═══════════ ROUND TABS ═══════════ */
+.round-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
 
 .round-tabs button {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.12);
-  color: #999;
+  background: var(--bg-card);
+  border: 3px solid var(--border);
+  color: var(--fg-muted);
   padding: 8px 20px;
-  border-radius: 20px;
   cursor: pointer;
   font-size: 13px;
-  transition: all 0.2s;
+  font-weight: 700;
+  font-family: var(--font);
+  letter-spacing: 0.06em;
+  transition: all 0.1s ease;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 0 var(--border);
 }
 
 .round-tabs button.active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-color: transparent;
+  background: var(--fg);
   color: #fff;
+  border-color: var(--red);
 }
 
-.round-tabs button:hover:not(.active) { color: #ccc; border-color: rgba(255,255,255,0.25); }
+.round-tabs button:not(.active):hover {
+  background: var(--bg-alt);
+  color: var(--fg);
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--border);
+}
 
-/* ── Section ────────────────────── */
+.round-tabs button:not(.active):active {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 var(--border);
+}
 
-.section { margin-bottom: 30px; }
+/* ═══════════ SECTION ═══════════ */
+.section {
+  margin-bottom: 28px;
+}
 
 .section h2 {
-  font-size: 16px;
-  color: #aaa;
-  letter-spacing: 1px;
-  margin-bottom: 12px;
-  padding-left: 12px;
-  border-left: 3px solid #667eea;
-}
-
-/* ── Table ──────────────────────── */
-
-table { width: 100%; border-collapse: collapse; }
-
-th, td { padding: 10px 14px; text-align: left; }
-
-th {
-  font-size: 12px;
-  color: #888;
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--fg);
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-td { border-bottom: 1px solid rgba(255,255,255,0.03); font-size: 14px; }
-
-tr.eliminated { background: rgba(255, 71, 87, 0.07); }
-
-tr.eliminated td { color: #ff4757; }
-
-.rank { font-weight: 700; color: #ffd700; min-width: 32px; }
-
-.metric { font-weight: 600; color: #7bed9f; }
-
-.eliminated-tag {
+  margin-bottom: 10px;
+  padding: 6px 14px;
+  background: var(--bg-alt);
+  border-left: 4px solid var(--red);
   display: inline-block;
-  background: #ff4757;
-  color: #fff;
-  font-size: 11px;
-  padding: 2px 8px;
-  border-radius: 10px;
-  font-weight: 600;
 }
 
-.cut-line td { border-bottom: 2px solid #ff4757; }
-
-/* ── Intro Block ────────────────── */
-
-.intro {
-  background: linear-gradient(135deg, rgba(102,126,234,0.06) 0%, rgba(118,75,162,0.06) 100%);
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 12px;
-  padding: 30px;
-  line-height: 1.9;
-  color: #bbb;
+/* ═══════════ TABLE ═══════════ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: var(--border-w) solid var(--border);
+  box-shadow: var(--shadow);
   font-size: 14px;
 }
 
-.intro h2 { margin-bottom: 16px; border: none; padding: 0; color: #ddd; font-size: 18px; }
+thead th {
+  background: var(--fg);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 3px solid var(--red);
+  white-space: nowrap;
+}
 
-.intro p { margin-bottom: 12px; }
+tbody tr {
+  transition: background 0.1s;
+}
 
-.intro strong { color: #e0e0e0; }
+/* 行交替 — 漫画纸纹感 */
+tbody tr:nth-child(odd) {
+  background: var(--bg);
+}
 
-/* ── Footer ─────────────────────── */
+tbody tr:nth-child(even) {
+  background: var(--bg-card);
+}
 
+tbody tr:hover {
+  background: var(--bg-alt);
+}
+
+tbody td {
+  padding: 9px 14px;
+  border-bottom: 1px solid rgba(26,26,26,0.08);
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.rank {
+  font-weight: 900;
+  color: var(--fg);
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 15px;
+  min-width: 32px;
+}
+
+/* 前三名排名红色 */
+tbody tr:not(.eliminated):nth-child(-n+3) .rank {
+  color: var(--red);
+}
+
+.metric {
+  font-weight: 800;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--fg);
+  font-size: 15px;
+}
+
+/* ── Eliminated ─────────── */
+tr.eliminated {
+  background: rgba(246, 36, 64, 0.07) !important;
+}
+
+tr.eliminated td {
+  color: var(--red);
+  opacity: 0.7;
+}
+
+tr.eliminated .rank {
+  color: var(--red);
+}
+
+.eliminated-tag {
+  display: inline-block;
+  background: var(--red);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 10px;
+  letter-spacing: 0.06em;
+  border: 1px solid var(--border);
+}
+
+/* ── Cut line ─────────── */
+.cut-line td {
+  border-bottom: 3px solid var(--red) !important;
+  padding: 0 !important;
+  height: 0;
+  position: relative;
+}
+
+.cut-line td::after {
+  content: 'ELIMINATION LINE';
+  position: absolute;
+  right: 14px;
+  top: -8px;
+  background: var(--red);
+  color: #fff;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  padding: 1px 8px;
+  line-height: 1.6;
+}
+
+/* ═══════════ INTRO ═══════════ */
+.intro {
+  background: var(--bg-card);
+  border: var(--border-w) solid var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: 28px;
+  line-height: 1.9;
+  color: var(--fg);
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 28px;
+}
+
+/* 左上红色角标 */
+.intro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 24px 24px 0 0;
+  border-color: var(--red) transparent transparent transparent;
+}
+
+.intro h2 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 16px;
+  color: var(--fg);
+  letter-spacing: 0.03em;
+  border: none;
+  padding: 0;
+  background: none;
+  display: block;
+}
+
+.intro p {
+  margin-bottom: 12px;
+}
+
+.intro strong {
+  color: var(--red);
+  font-weight: 800;
+}
+
+/* ═══════════ FOOTER ═══════════ */
 footer {
   text-align: center;
-  padding: 30px 0;
-  border-top: 1px solid rgba(255,255,255,0.06);
-  margin-top: 20px;
+  padding: 30px 0 10px;
+  margin-top: 28px;
+  border-top: 3px solid var(--border);
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--red) 0px,
+    var(--red) 6px,
+    transparent 6px,
+    transparent 12px
+  );
 }
 
 footer .social-label { font-size: 12px; color: #666; margin-bottom: 12px; }
@@ -153,19 +403,98 @@ footer .social-links img { width: 20px; height: 20px; opacity: 0.7; }
 
 footer .social-links a:hover img { opacity: 1; }
 
-/* ── States ───────────────────────
+/* ═══════════ STATES ═══════════ */
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--fg-muted);
+  letter-spacing: 0.08em;
+  border: 3px dashed var(--border);
+  background: var(--bg-card);
+}
 
-.loading { text-align: center; padding: 60px; color: #666; }
+.error {
+  text-align: center;
+  padding: 60px;
+  color: var(--red);
+  font-weight: 700;
+}
 
-.error { text-align: center; padding: 60px; color: #ff4757; }
+.empty {
+  text-align: center;
+  padding: 60px;
+  color: var(--fg-muted);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
 
-.empty { text-align: center; padding: 60px; color: #666; }
+/* ═══════════ RESPONSIVE ═══════════ */
+@media (max-width: 768px) {
+  .container { padding: 12px 10px 24px; }
 
-/* ── Mobile ─────────────────────── */
+  header {
+    padding: 20px 16px 18px;
+    box-shadow: var(--shadow-sm);
+  }
 
-/* @media (max-width: 600px) {
-  .container { padding: 12px; }
-  header h1 { font-size: 22px; }
-  th, td { padding: 8px 10px; font-size: 13px; }
-  .intro { padding: 20px; }
-} */ */
+  header h1 { font-size: 20px; }
+  header .subtitle { font-size: 12px; }
+
+  .round-badge { font-size: 12px; padding: 3px 12px; }
+  header .desc { font-size: 12px; min-width: 0; }
+
+  .round-tabs { gap: 4px; }
+  .round-tabs button {
+    padding: 6px 14px;
+    font-size: 12px;
+    box-shadow: 2px 2px 0 var(--border);
+  }
+
+  .section h2 { font-size: 13px; padding: 5px 12px; }
+
+  table { font-size: 12px; }
+
+  thead th { font-size: 10px; padding: 8px 10px; }
+  tbody td { padding: 7px 10px; }
+
+  .rank { font-size: 13px; }
+  .metric { font-size: 13px; }
+
+  .intro { padding: 20px 16px; font-size: 13px; }
+  .intro h2 { font-size: 16px; }
+
+  footer .social-links { gap: 8px; }
+  footer .social-links a {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  .cut-line td::after {
+    right: 8px;
+    font-size: 7px;
+    padding: 0 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  header { padding: 16px 12px 16px; }
+  header h1 { font-size: 17px; }
+
+  table { font-size: 11px; }
+  thead th { font-size: 9px; padding: 6px 8px; }
+  tbody td { padding: 5px 8px; }
+  .rank { font-size: 12px; min-width: 24px; }
+  .metric { font-size: 12px; }
+
+  .round-badge { font-size: 11px; }
+}
+
+@media print {
+  body::before { display: none; }
+  table { box-shadow: none; border-color: #aaa; }
+  header { box-shadow: none; }
+  .intro { box-shadow: none; }
+  .intro::before { border-width: 16px 16px 0 0; }
+}
