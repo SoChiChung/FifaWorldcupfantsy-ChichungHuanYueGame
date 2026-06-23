@@ -498,3 +498,33 @@ footer .social-links a:hover img { opacity: 1; }
   .intro { box-shadow: none; }
   .intro::before { border-width: 16px 16px 0 0; }
 }
+.deco-bat {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 260px;
+  height: auto;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
+  transform: rotate(-15deg) scaleX(-1);
+}
+
+.deco-siu {
+  position: absolute;
+  top: 300px;
+  left: -300px;
+  height: auto;
+  opacity: 0.20;
+  pointer-events: none;
+  z-index: 100;
+  transform: rotate(8deg);
+}
+.ranking-stage {
+  position: relative;
+  isolation: isolate;
+}
+.ranking-stage table {
+  position: relative;
+  z-index: 1;
+}

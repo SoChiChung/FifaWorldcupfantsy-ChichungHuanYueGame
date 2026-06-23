@@ -49,7 +49,7 @@ module.exports = function round2({ players, getStat, roundId }) {
 
   return {
     title: `Round ${roundId}: Lowest Shots on Target`,
-    description: '淘汰首发 11 人射正总数最少的 5 位范特西玩家。（射正一样进球多者胜出，两者一样总时间短者胜出）',
+    description: '相信罗哥：淘汰首发（不含替补）射正总数最少的 5 位玩家。（射正一样进球多者胜出，两者一样总时间短者胜出）',
     ranking,
     eliminated,
     extra: {

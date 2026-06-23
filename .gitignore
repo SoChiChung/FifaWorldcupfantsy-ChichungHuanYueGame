@@ -4,3 +4,7 @@ Thumbs.db
 *.log
 .env
 .env.local
+
+docs/mock/
+docs/mock.html
+docs/response.html
