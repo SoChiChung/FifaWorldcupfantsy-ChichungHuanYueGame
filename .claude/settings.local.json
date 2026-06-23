@@ -13,7 +13,8 @@
       "Bash(node -e \"require\\('./scripts/runRules'\\)\")",
       "Bash(node -e \"const { pool } = require\\('./scripts/lib/pool'\\); console.log\\('pool.js OK'\\); pool\\([], {concurrency:2}\\).then\\(r => console.log\\('empty ok:', r.length\\)\\)\")",
       "Bash(node -e \"require\\('./scripts/fetchPlayers'\\)\")",
-      "Bash(node -e \"require\\('./scripts/fetchFootballers'\\)\")"
+      "Bash(node -e \"require\\('./scripts/fetchFootballers'\\)\")",
+      "mcp__Claude_Preview__preview_start"
     ]
   }
 }

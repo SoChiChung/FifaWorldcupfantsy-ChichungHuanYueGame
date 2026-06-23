@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FIFA Fantasy — 大逃杀联赛</title>
+<title>紫葱酱的大逃杀联赛</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -20,23 +20,31 @@
     border-bottom: 2px solid rgba(255,255,255,0.08);
     margin-bottom: 30px;
   }
-  header h1 { font-size: 24px; color: #fff; margin-bottom: 8px; }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 6px;
+  }
+  header .subtitle { font-size: 14px; color: #777; }
   header .round-badge {
     display: inline-block;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #fff;
     padding: 6px 18px;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
+    margin-top: 12px;
   }
-  header .desc { margin-top: 10px; font-size: 15px; color: #999; }
+  header .desc { margin-top: 8px; font-size: 14px; color: #999; }
 
   .section { margin-bottom: 30px; }
   .section h2 {
     font-size: 16px;
     color: #aaa;
-    text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 12px;
     padding-left: 12px;
@@ -53,7 +61,7 @@
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
   td { border-bottom: 1px solid rgba(255,255,255,0.03); font-size: 14px; }
-  tr.eliminated { background: rgba(255, 71, 87, 0.08); }
+  tr.eliminated { background: rgba(255, 71, 87, 0.07); }
   tr.eliminated td { color: #ff4757; }
   .rank { font-weight: 700; color: #ffd700; min-width: 32px; }
   .metric { font-weight: 600; color: #7bed9f; }
@@ -67,27 +75,51 @@
     font-weight: 600;
   }
 
-  .eliminated-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+  .intro {
+    background: linear-gradient(135deg, rgba(102,126,234,0.06) 0%, rgba(118,75,162,0.06) 100%);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 30px;
+    line-height: 1.9;
+    color: #bbb;
+    font-size: 14px;
   }
-  .eliminated-card {
-    background: rgba(255, 71, 87, 0.1);
-    border: 1px solid rgba(255, 71, 87, 0.25);
-    border-radius: 8px;
-    padding: 10px 16px;
+  .intro h2 {
+    margin-bottom: 16px;
+    border: none;
+    padding: 0;
+    color: #ddd;
+    font-size: 18px;
+  }
+  .intro h3 {
+    color: #ddd;
+    margin: 20px 0 10px;
+    font-size: 15px;
+  }
+  .intro p { margin-bottom: 12px; }
+  .intro strong { color: #e0e0e0; }
+  .intro em { color: #ccc; }
+
+  footer {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    margin-top: 20px;
+  }
+  footer .social-label { font-size: 12px; color: #666; margin-bottom: 12px; }
+  footer .social-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+  footer .social-links a {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 6px;
+    color: #999;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s;
   }
-  .eliminated-card .rank-num {
-    font-size: 20px;
-    font-weight: 700;
-    color: #ff4757;
-  }
-  .eliminated-card .name { font-weight: 600; }
-  .eliminated-card .stat { font-size: 12px; color: #999; }
+  footer .social-links a:hover { color: #fff; }
+  footer .social-links img { width: 20px; height: 20px; opacity: 0.7; }
+  footer .social-links a:hover img { opacity: 1; }
 
   .loading { text-align: center; padding: 60px; color: #666; }
   .error { text-align: center; padding: 60px; color: #ff4757; }
@@ -95,19 +127,31 @@
 
   @media (max-width: 600px) {
     .container { padding: 12px; }
-    header h1 { font-size: 20px; }
+    header h1 { font-size: 22px; }
     th, td { padding: 8px 10px; font-size: 13px; }
+    .intro { padding: 20px; }
   }
 </style>
 </head>
 <body>
 <div class="container">
   <header>
-    <h1>FIFA Fantasy 大逃杀联赛</h1>
+    <h1>紫葱酱的大逃杀联赛</h1>
+    <div class="subtitle">FIFA World Cup Fantasy · Battle Royale</div>
     <div id="roundInfo">加载中...</div>
   </header>
 
   <div id="content" class="loading">正在加载数据...</div>
+
+  <footer>
+    <div class="social-label">关注紫葱酱</div>
+    <div class="social-links">
+      <a href="" target="_blank"><img src="img/bilibili.webp" alt="">紫葱酱</a>
+      <a href="" target="_blank"><img src="img/dqd.webp" alt="">紫葱酱</a>
+      <a href="" target="_blank"><img src="img/wechat-logo.webp" alt="">紫葱酱</a>
+      <a href="" target="_blank"><img src="img/xhs.webp" alt="">紫葱酱</a>
+    </div>
+  </footer>
 </div>
 
 <script>
@@ -132,17 +176,12 @@
 
     const currentRoundId = roundIds[0];
     const result = allResults[currentRoundId];
-    const eliminatedSet = new Set();
-    const allEliminated = [];
 
-    // Collect all eliminated players across previous rounds
+    // Build eliminated set from ALL rounds (for row highlighting)
+    const eliminatedSet = new Set();
     for (const rid of roundIds) {
-      const r = allResults[rid];
-      for (const e of (r.eliminated || [])) {
-        if (!eliminatedSet.has(e.userId)) {
-          eliminatedSet.add(e.userId);
-          allEliminated.push({ ...e, eliminatedRound: rid });
-        }
+      for (const e of (allResults[rid].eliminated || [])) {
+        eliminatedSet.add(e.userId);
       }
     }
 
@@ -152,66 +191,65 @@
       nameMap[p.userId] = p.userName;
     }
 
-    // Render round info
+    // Round header
     document.getElementById('roundInfo').innerHTML = `
-      <span class="round-badge">Round ${currentRoundId}</span>
+      <br><span class="round-badge">Round ${currentRoundId}</span>
       <div class="desc">${result.description || result.title || ''}</div>
     `;
 
-    // Build content
-    let html = '';
+    // Leaderboard table
+    const ranking = result.ranking || [];
+    const survivors = ranking.filter(r => !eliminatedSet.has(r.userId));
+    const dead = ranking.filter(r => eliminatedSet.has(r.userId));
 
-    // Rankings
-    html += '<div class="section"><h2>排名</h2><table><thead><tr>';
+    let html = '';
+    html += `<div class="section"><h2>积分榜</h2><table><thead><tr>`;
     html += '<th>#</th><th>玩家</th><th>数据</th><th></th>';
     html += '</tr></thead><tbody>';
 
-    const ranking = result.ranking || [];
-    for (let i = 0; i < ranking.length; i++) {
-      const r = ranking[i];
-      const isEliminated = eliminatedSet.has(r.userId);
+    let rankNum = 0;
+    for (const r of survivors) {
+      rankNum++;
       const metricKey = Object.keys(r).find(k => !['userId', 'userName'].includes(k)) || 'points';
-      const metricVal = r[metricKey];
-
-      html += `<tr class="${isEliminated ? 'eliminated' : ''}">`;
-      html += `<td class="rank">${i + 1}</td>`;
+      html += '<tr>';
+      html += `<td class="rank">${rankNum}</td>`;
       html += `<td>${r.userName || nameMap[r.userId] || r.userId}</td>`;
-      html += `<td class="metric">${metricVal != null ? metricVal : '-'}</td>`;
-      html += `<td>${isEliminated ? '<span class="eliminated-tag">淘汰</span>' : ''}</td>`;
+      html += `<td class="metric">${r[metricKey] != null ? r[metricKey] : '-'}</td>`;
+      html += '<td></td>';
+      html += '</tr>';
+    }
+    for (const r of dead) {
+      rankNum++;
+      const metricKey = Object.keys(r).find(k => !['userId', 'userName'].includes(k)) || 'points';
+      html += '<tr class="eliminated">';
+      html += `<td class="rank">${rankNum}</td>`;
+      html += `<td>${r.userName || nameMap[r.userId] || r.userId}</td>`;
+      html += `<td class="metric">${r[metricKey] != null ? r[metricKey] : '-'}</td>`;
+      html += `<td><span class="eliminated-tag">淘汰</span></td>`;
       html += '</tr>';
     }
     html += '</tbody></table></div>';
 
-    // Current round eliminated
-    const currentEliminated = result.eliminated || [];
-    if (currentEliminated.length > 0) {
-      html += '<div class="section"><h2>本轮淘汰</h2><div class="eliminated-list">';
-      for (const e of currentEliminated) {
-        const metricKey = Object.keys(e).find(k => !['userId', 'userName'].includes(k)) || 'points';
-        html += `<div class="eliminated-card">
-          <span class="rank-num">✕</span>
-          <div>
-            <div class="name">${e.userName || nameMap[e.userId] || e.userId}</div>
-            <div class="stat">${metricKey}: ${e[metricKey] != null ? e[metricKey] : '-'}</div>
-          </div>
-        </div>`;
-      }
-      html += '</div></div>';
-    }
+    // League intro
+    html += `<div class="intro">
+<h2>什么是紫葱酱的大逃杀联赛？</h2>
 
-    // All eliminated history
-    if (allEliminated.length > 0) {
-      html += '<div class="section"><h2>全部淘汰名单</h2><table><thead><tr>';
-      html += '<th>玩家</th><th>淘汰轮次</th>';
-      html += '</tr></thead><tbody>';
-      for (const e of allEliminated) {
-        html += `<tr class="eliminated">`;
-        html += `<td>${e.userName || nameMap[e.userId] || e.userId}</td>`;
-        html += `<td>Round ${e.eliminatedRound}</td>`;
-        html += '</tr>';
-      }
-      html += '</tbody></table></div>';
-    }
+<p>还在算总分？还在拼排名？还在研究这一轮到底该赢几分？</p>
+
+<p>不好意思，这里不是传统范特西。</p>
+
+<p>在大逃杀联赛里，每一轮都会公布一条全新的规则。今天可能比射正，明天可能比扑救，后天可能比助攻，下一轮说不定又变成后卫进球大战。没有人知道下一轮会发生什么，唯一确定的是——总有人会被淘汰。</p>
+
+<p>这里没有一成不变的最优解，也没有永远正确的模板阵容。你不仅要会选人，更要学会适应规则、拥抱变化，在每一轮未知的挑战中努力活下去。</p>
+
+<p>当然，我们也有自己的联赛宗旨：</p>
+
+<p><strong>不追求赢，不追求输，不追求快乐，更不追求哭。</strong></p>
+
+<p><strong>无论碰到什么规则，上去就是"砰砰两拳"。</strong></p>
+
+<p>欢迎来到紫葱酱的大逃杀联赛。这里没有标准答案，只有意想不到的乐趣。</p>
+</div>`;
 
     document.getElementById('content').innerHTML = html;
 
