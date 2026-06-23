@@ -6,7 +6,14 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/data/result.json)",
       "Bash(kill %1)",
-      "Bash(git init *)"
+      "Bash(git init *)",
+      "Bash(node -e \"require\\('./scripts/lib/data'\\)\")",
+      "Bash(node -e \"require\\('./rules/round1'\\)\")",
+      "Bash(node -e \"require\\('./rules/round2'\\)\")",
+      "Bash(node -e \"require\\('./scripts/runRules'\\)\")",
+      "Bash(node -e \"const { pool } = require\\('./scripts/lib/pool'\\); console.log\\('pool.js OK'\\); pool\\([], {concurrency:2}\\).then\\(r => console.log\\('empty ok:', r.length\\)\\)\")",
+      "Bash(node -e \"require\\('./scripts/fetchPlayers'\\)\")",
+      "Bash(node -e \"require\\('./scripts/fetchFootballers'\\)\")"
     ]
   }
 }

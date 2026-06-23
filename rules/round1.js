@@ -1,20 +1,12 @@
 /**
- * Round 1 Rule: Eliminate the player with the lowest total points.
- *
- * Input:
- *   players  — array of player team data from players.json
- *   getStat  — function(playerId, roundId, statName) => number
- *   roundId  — current round number
- *
- * Output:
- *   { title, description, ranking, eliminated, extra }
+ * Round 1: Eliminate the player with the lowest roundPoints.
  */
 module.exports = function round1({ players, getStat, roundId }) {
   const ranking = players
     .map(p => ({
       userId: p.userId,
       userName: p.userName,
-      points: p.points || 0
+      points: p.roundPoints
     }))
     .sort((a, b) => b.points - a.points);
 

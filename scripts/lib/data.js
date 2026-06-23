@@ -5,8 +5,7 @@ const ROOT = path.join(__dirname, '..', '..');
 const DATA = path.join(ROOT, 'data');
 
 function readJSON(filePath) {
-  const raw = fs.readFileSync(filePath, 'utf-8');
-  return JSON.parse(raw);
+  return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 }
 
 function loadConfig() {
@@ -41,10 +40,8 @@ function createGetStat(footballers) {
     if (!player) return 0;
     const round = player[String(roundId)];
     if (!round) return 0;
-    if (statName === 'points') return round.points || 0;
-    const stats = round.stats;
-    if (!stats) return 0;
-    return stats[statName] || 0;
+    if (statName === 'points') return round.points;
+    return round.stats[statName] || 0;
   };
 }
 
