@@ -1,796 +1,1112 @@
 {
   "2": {
     "title": "Round 2: Lowest Shots on Target",
-    "description": "淘汰首发 11 人射正（ST）总数最少的 5 位范特西玩家。",
+    "description": "淘汰首发 11 人射正总数最少的 5 位范特西玩家。（射正一样进球多者胜出，两者一样总时间短者胜出）",
     "ranking": [
       {
         "userId": 2540931,
         "userName": "LA LAD",
-        "totalST": 20
-      },
-      {
-        "userId": 2459137,
-        "userName": "Shindo Hikaru",
-        "totalST": 17
+        "totalST": 20,
+        "totalGS": 5,
+        "totalMP": 813
       },
       {
         "userId": 2466498,
         "userName": "EriCherry",
-        "totalST": 17
+        "totalST": 17,
+        "totalGS": 8,
+        "totalMP": 703
+      },
+      {
+        "userId": 2459137,
+        "userName": "Shindo Hikaru",
+        "totalST": 17,
+        "totalGS": 6,
+        "totalMP": 913
       },
       {
         "userId": 3423111,
         "userName": "Chelsea Mata",
-        "totalST": 17
+        "totalST": 17,
+        "totalGS": 5,
+        "totalMP": 854
       },
       {
         "userId": 3457560,
         "userName": "Amber Tail",
-        "totalST": 17
-      },
-      {
-        "userId": 353380,
-        "userName": "samuellinshan",
-        "totalST": 16
+        "totalST": 17,
+        "totalGS": 5,
+        "totalMP": 880
       },
       {
         "userId": 775227,
         "userName": "BadK",
-        "totalST": 16
-      },
-      {
-        "userId": 780635,
-        "userName": "fitzzzzzz",
-        "totalST": 16
+        "totalST": 16,
+        "totalGS": 5,
+        "totalMP": 823
       },
       {
         "userId": 2468309,
         "userName": "GoodBen",
-        "totalST": 16
-      },
-      {
-        "userId": 2576638,
-        "userName": "Mademoiselle Meow",
-        "totalST": 16
+        "totalST": 16,
+        "totalGS": 5,
+        "totalMP": 836
       },
       {
         "userId": 3467156,
         "userName": "Golden Sheva",
-        "totalST": 16
+        "totalST": 16,
+        "totalGS": 5,
+        "totalMP": 907
       },
       {
-        "userId": 42271,
-        "userName": "NotBadWu",
-        "totalST": 15
+        "userId": 353380,
+        "userName": "samuellinshan",
+        "totalST": 16,
+        "totalGS": 5,
+        "totalMP": 913
       },
       {
-        "userId": 65913,
-        "userName": "DannytheDestroyer",
-        "totalST": 15
+        "userId": 780635,
+        "userName": "fitzzzzzz",
+        "totalST": 16,
+        "totalGS": 5,
+        "totalMP": 913
+      },
+      {
+        "userId": 2576638,
+        "userName": "Mademoiselle Meow",
+        "totalST": 16,
+        "totalGS": 5,
+        "totalMP": 913
       },
       {
         "userId": 1844522,
         "userName": "FIFAntasis",
-        "totalST": 15
-      },
-      {
-        "userId": 1998354,
-        "userName": "Rainbow Desert",
-        "totalST": 15
-      },
-      {
-        "userId": 2462478,
-        "userName": "xiaoxinJerry",
-        "totalST": 15
+        "totalST": 15,
+        "totalGS": 8,
+        "totalMP": 835
       },
       {
         "userId": 3069640,
         "userName": "RyanFish2026",
-        "totalST": 15
+        "totalST": 15,
+        "totalGS": 6,
+        "totalMP": 743
       },
       {
-        "userId": 42581,
-        "userName": "RemInory",
-        "totalST": 14
+        "userId": 42271,
+        "userName": "NotBadWu",
+        "totalST": 15,
+        "totalGS": 5,
+        "totalMP": 733
       },
       {
-        "userId": 194750,
-        "userName": "kusuri",
-        "totalST": 14
+        "userId": 2462478,
+        "userName": "xiaoxinJerry",
+        "totalST": 15,
+        "totalGS": 5,
+        "totalMP": 822
       },
       {
-        "userId": 197821,
-        "userName": "conan coys",
-        "totalST": 14
+        "userId": 65913,
+        "userName": "DannytheDestroyer",
+        "totalST": 15,
+        "totalGS": 5,
+        "totalMP": 913
       },
       {
-        "userId": 2453891,
-        "userName": "Fynn1987",
-        "totalST": 14
-      },
-      {
-        "userId": 2484254,
-        "userName": "Pluto D",
-        "totalST": 14
-      },
-      {
-        "userId": 2794666,
-        "userName": "superkod",
-        "totalST": 14
-      },
-      {
-        "userId": 3065908,
-        "userName": "Zhangshuai831",
-        "totalST": 14
+        "userId": 1998354,
+        "userName": "Rainbow Desert",
+        "totalST": 15,
+        "totalGS": 4,
+        "totalMP": 772
       },
       {
         "userId": 3071074,
         "userName": "Stephen Teng",
-        "totalST": 14
+        "totalST": 14,
+        "totalGS": 7,
+        "totalMP": 851
       },
       {
         "userId": 3288030,
         "userName": "Wxx",
-        "totalST": 14
+        "totalST": 14,
+        "totalGS": 7,
+        "totalMP": 933
       },
       {
-        "userId": 161663,
-        "userName": "AVERAGE",
-        "totalST": 13
+        "userId": 2453891,
+        "userName": "Fynn1987",
+        "totalST": 14,
+        "totalGS": 6,
+        "totalMP": 720
       },
       {
-        "userId": 1171431,
-        "userName": "Sonic G",
-        "totalST": 13
+        "userId": 2794666,
+        "userName": "superkod",
+        "totalST": 14,
+        "totalGS": 5,
+        "totalMP": 689
       },
       {
-        "userId": 2458905,
-        "userName": "xxrrdbigb",
-        "totalST": 13
+        "userId": 194750,
+        "userName": "kusuri",
+        "totalST": 14,
+        "totalGS": 5,
+        "totalMP": 733
       },
       {
-        "userId": 2482632,
-        "userName": "mumuren",
-        "totalST": 13
+        "userId": 3065908,
+        "userName": "Zhangshuai831",
+        "totalST": 14,
+        "totalGS": 5,
+        "totalMP": 804
       },
       {
-        "userId": 2488334,
-        "userName": "Leo Xie",
-        "totalST": 13
+        "userId": 42581,
+        "userName": "RemInory",
+        "totalST": 14,
+        "totalGS": 5,
+        "totalMP": 863
       },
       {
-        "userId": 3030443,
-        "userName": "Blueball Bay",
-        "totalST": 13
+        "userId": 197821,
+        "userName": "conan coys",
+        "totalST": 14,
+        "totalGS": 5,
+        "totalMP": 942
       },
       {
-        "userId": 3034759,
-        "userName": "Noodle FC",
-        "totalST": 13
-      },
-      {
-        "userId": 3086214,
-        "userName": "xingx",
-        "totalST": 13
-      },
-      {
-        "userId": 3086439,
-        "userName": "rizhang d",
-        "totalST": 13
-      },
-      {
-        "userId": 3140499,
-        "userName": "OrangeKevin",
-        "totalST": 13
+        "userId": 2484254,
+        "userName": "Pluto D",
+        "totalST": 14,
+        "totalGS": 4,
+        "totalMP": 909
       },
       {
         "userId": 3224529,
         "userName": "AnonTokyo",
-        "totalST": 13
+        "totalST": 13,
+        "totalGS": 8,
+        "totalMP": 853
+      },
+      {
+        "userId": 3030443,
+        "userName": "Blueball Bay",
+        "totalST": 13,
+        "totalGS": 8,
+        "totalMP": 896
+      },
+      {
+        "userId": 3140499,
+        "userName": "OrangeKevin",
+        "totalST": 13,
+        "totalGS": 7,
+        "totalMP": 749
       },
       {
         "userId": 3245239,
         "userName": " Dinosaurio S",
-        "totalST": 13
+        "totalST": 13,
+        "totalGS": 7,
+        "totalMP": 792
+      },
+      {
+        "userId": 2482632,
+        "userName": "mumuren",
+        "totalST": 13,
+        "totalGS": 7,
+        "totalMP": 843
+      },
+      {
+        "userId": 3034759,
+        "userName": "Noodle FC",
+        "totalST": 13,
+        "totalGS": 6,
+        "totalMP": 667
+      },
+      {
+        "userId": 2458905,
+        "userName": "xxrrdbigb",
+        "totalST": 13,
+        "totalGS": 6,
+        "totalMP": 714
+      },
+      {
+        "userId": 161663,
+        "userName": "AVERAGE",
+        "totalST": 13,
+        "totalGS": 6,
+        "totalMP": 873
+      },
+      {
+        "userId": 1171431,
+        "userName": "Sonic G",
+        "totalST": 13,
+        "totalGS": 6,
+        "totalMP": 886
       },
       {
         "userId": 4449643,
         "userName": "tinytofusoup",
-        "totalST": 13
+        "totalST": 13,
+        "totalGS": 6,
+        "totalMP": 891
       },
       {
-        "userId": 54442,
-        "userName": "YERY DISCO",
-        "totalST": 12
+        "userId": 3086214,
+        "userName": "xingx",
+        "totalST": 13,
+        "totalGS": 6,
+        "totalMP": 980
       },
       {
-        "userId": 65109,
-        "userName": "Heaven Burns Red",
-        "totalST": 12
+        "userId": 3086439,
+        "userName": "rizhang d",
+        "totalST": 13,
+        "totalGS": 4,
+        "totalMP": 716
       },
       {
-        "userId": 993386,
-        "userName": "HoChuencheong",
-        "totalST": 12
-      },
-      {
-        "userId": 2466335,
-        "userName": "XY Team",
-        "totalST": 12
-      },
-      {
-        "userId": 2484443,
-        "userName": "Champion Leeds",
-        "totalST": 12
-      },
-      {
-        "userId": 2502352,
-        "userName": "Xi9Li",
-        "totalST": 12
-      },
-      {
-        "userId": 2584583,
-        "userName": "Round round green arrow",
-        "totalST": 12
-      },
-      {
-        "userId": 3031014,
-        "userName": "dowman",
-        "totalST": 12
+        "userId": 2488334,
+        "userName": "Leo Xie",
+        "totalST": 13,
+        "totalGS": 4,
+        "totalMP": 873
       },
       {
         "userId": 3037463,
         "userName": "World Cup all-lose team",
-        "totalST": 12
+        "totalST": 12,
+        "totalGS": 7,
+        "totalMP": 731
       },
       {
-        "userId": 3053780,
-        "userName": "wthegoat",
-        "totalST": 12
+        "userId": 3031014,
+        "userName": "dowman",
+        "totalST": 12,
+        "totalGS": 7,
+        "totalMP": 765
       },
       {
-        "userId": 3156342,
-        "userName": "Dylan Yao",
-        "totalST": 12
+        "userId": 54442,
+        "userName": "YERY DISCO",
+        "totalST": 12,
+        "totalGS": 7,
+        "totalMP": 841
       },
       {
         "userId": 3224844,
         "userName": "TSiu",
-        "totalST": 12
+        "totalST": 12,
+        "totalGS": 6,
+        "totalMP": 718
       },
       {
-        "userId": 42070,
-        "userName": "PYJ",
-        "totalST": 11
+        "userId": 65109,
+        "userName": "Heaven Burns Red",
+        "totalST": 12,
+        "totalGS": 6,
+        "totalMP": 785
+      },
+      {
+        "userId": 2484443,
+        "userName": "Champion Leeds",
+        "totalST": 12,
+        "totalGS": 6,
+        "totalMP": 794
+      },
+      {
+        "userId": 993386,
+        "userName": "HoChuencheong",
+        "totalST": 12,
+        "totalGS": 6,
+        "totalMP": 798
+      },
+      {
+        "userId": 3156342,
+        "userName": "Dylan Yao",
+        "totalST": 12,
+        "totalGS": 6,
+        "totalMP": 805
+      },
+      {
+        "userId": 2584583,
+        "userName": "Round round green arrow",
+        "totalST": 12,
+        "totalGS": 6,
+        "totalMP": 832
+      },
+      {
+        "userId": 3053780,
+        "userName": "wthegoat",
+        "totalST": 12,
+        "totalGS": 6,
+        "totalMP": 922
+      },
+      {
+        "userId": 2502352,
+        "userName": "Xi9Li",
+        "totalST": 12,
+        "totalGS": 5,
+        "totalMP": 750
+      },
+      {
+        "userId": 2466335,
+        "userName": "XY Team",
+        "totalST": 12,
+        "totalGS": 4,
+        "totalMP": 880
       },
       {
         "userId": 68835,
         "userName": "Chichung",
-        "totalST": 11
-      },
-      {
-        "userId": 100804,
-        "userName": "EricWu39",
-        "totalST": 11
-      },
-      {
-        "userId": 193029,
-        "userName": "YZF",
-        "totalST": 11
-      },
-      {
-        "userId": 354155,
-        "userName": "Kimi X",
-        "totalST": 11
-      },
-      {
-        "userId": 416422,
-        "userName": "HuoluMountainForest",
-        "totalST": 11
-      },
-      {
-        "userId": 1178721,
-        "userName": "JY Lee",
-        "totalST": 11
-      },
-      {
-        "userId": 2461158,
-        "userName": "Mongolia Doctor",
-        "totalST": 11
-      },
-      {
-        "userId": 2468434,
-        "userName": "Arsenal gunner",
-        "totalST": 11
-      },
-      {
-        "userId": 2472296,
-        "userName": "message username ",
-        "totalST": 11
-      },
-      {
-        "userId": 2493322,
-        "userName": "Hyber Sun",
-        "totalST": 11
-      },
-      {
-        "userId": 2524264,
-        "userName": "Fan Jiaorui",
-        "totalST": 11
-      },
-      {
-        "userId": 2561309,
-        "userName": "xhuu Penguin",
-        "totalST": 11
-      },
-      {
-        "userId": 3030481,
-        "userName": "DelayNoMore67",
-        "totalST": 11
-      },
-      {
-        "userId": 3053294,
-        "userName": "Milan in UCL",
-        "totalST": 11
-      },
-      {
-        "userId": 3067023,
-        "userName": "Law Chen",
-        "totalST": 11
-      },
-      {
-        "userId": 3160016,
-        "userName": "ShuoGuOwO",
-        "totalST": 11
+        "totalST": 11,
+        "totalGS": 7,
+        "totalMP": 668
       },
       {
         "userId": 3543285,
         "userName": "AFEI",
-        "totalST": 11
+        "totalST": 11,
+        "totalGS": 7,
+        "totalMP": 678
       },
       {
-        "userId": 3635883,
-        "userName": "michaelbao ",
-        "totalST": 11
-      },
-      {
-        "userId": 3648617,
-        "userName": "China aim at 2050",
-        "totalST": 11
-      },
-      {
-        "userId": 3834982,
-        "userName": "Santiago984717229",
-        "totalST": 11
+        "userId": 2472296,
+        "userName": "message username ",
+        "totalST": 11,
+        "totalGS": 7,
+        "totalMP": 861
       },
       {
         "userId": 3835859,
         "userName": "Zack Zhang",
-        "totalST": 11
+        "totalST": 11,
+        "totalGS": 6,
+        "totalMP": 651
       },
       {
-        "userId": 65850,
-        "userName": "mystery-13",
-        "totalST": 10
+        "userId": 2461158,
+        "userName": "Mongolia Doctor",
+        "totalST": 11,
+        "totalGS": 6,
+        "totalMP": 702
       },
       {
-        "userId": 67094,
-        "userName": "wc1018",
-        "totalST": 10
+        "userId": 3648617,
+        "userName": "China aim at 2050",
+        "totalST": 11,
+        "totalGS": 6,
+        "totalMP": 712
       },
       {
-        "userId": 67109,
-        "userName": "TFjunkai",
-        "totalST": 10
+        "userId": 2468434,
+        "userName": "Arsenal gunner",
+        "totalST": 11,
+        "totalGS": 6,
+        "totalMP": 742
       },
       {
-        "userId": 67507,
-        "userName": "Loki777",
-        "totalST": 10
+        "userId": 193029,
+        "userName": "YZF",
+        "totalST": 11,
+        "totalGS": 6,
+        "totalMP": 816
       },
       {
-        "userId": 68709,
-        "userName": "amychenhaoyu",
-        "totalST": 10
+        "userId": 2493322,
+        "userName": "Hyber Sun",
+        "totalST": 11,
+        "totalGS": 6,
+        "totalMP": 822
       },
       {
-        "userId": 69233,
-        "userName": "Sam Gong",
-        "totalST": 10
+        "userId": 354155,
+        "userName": "Kimi X",
+        "totalST": 11,
+        "totalGS": 6,
+        "totalMP": 885
       },
       {
-        "userId": 74777,
-        "userName": "andy andy",
-        "totalST": 10
+        "userId": 42070,
+        "userName": "PYJ",
+        "totalST": 11,
+        "totalGS": 5,
+        "totalMP": 733
       },
       {
-        "userId": 99256,
-        "userName": "baoyingsalah",
-        "totalST": 10
+        "userId": 3030481,
+        "userName": "DelayNoMore67",
+        "totalST": 11,
+        "totalGS": 5,
+        "totalMP": 751
       },
       {
-        "userId": 147305,
-        "userName": "anderhipple",
-        "totalST": 10
+        "userId": 416422,
+        "userName": "HuoluMountainForest",
+        "totalST": 11,
+        "totalGS": 5,
+        "totalMP": 772
       },
       {
-        "userId": 194153,
-        "userName": "China Numba 1",
-        "totalST": 10
+        "userId": 1178721,
+        "userName": "JY Lee",
+        "totalST": 11,
+        "totalGS": 5,
+        "totalMP": 809
       },
       {
-        "userId": 204548,
-        "userName": "Arsenal HangZhou",
-        "totalST": 10
+        "userId": 3834982,
+        "userName": "Santiago984717229",
+        "totalST": 11,
+        "totalGS": 5,
+        "totalMP": 847
       },
       {
-        "userId": 232281,
-        "userName": "Yemon1130",
-        "totalST": 10
+        "userId": 3067023,
+        "userName": "Law Chen",
+        "totalST": 11,
+        "totalGS": 5,
+        "totalMP": 861
       },
       {
-        "userId": 234512,
-        "userName": "dongma",
-        "totalST": 10
+        "userId": 2561309,
+        "userName": "xhuu Penguin",
+        "totalST": 11,
+        "totalGS": 5,
+        "totalMP": 906
       },
       {
-        "userId": 1904011,
-        "userName": "fishenal",
-        "totalST": 10
+        "userId": 2524264,
+        "userName": "Fan Jiaorui",
+        "totalST": 11,
+        "totalGS": 5,
+        "totalMP": 918
       },
       {
-        "userId": 2405706,
-        "userName": "Vamos Espana19",
-        "totalST": 10
+        "userId": 3635883,
+        "userName": "michaelbao ",
+        "totalST": 11,
+        "totalGS": 4,
+        "totalMP": 781
       },
       {
-        "userId": 2463734,
-        "userName": "HindMics",
-        "totalST": 10
+        "userId": 100804,
+        "userName": "EricWu39",
+        "totalST": 11,
+        "totalGS": 3,
+        "totalMP": 694
       },
       {
-        "userId": 2470863,
-        "userName": "ree3",
-        "totalST": 10
-      },
-      {
-        "userId": 2589765,
-        "userName": "Cloudzzy",
-        "totalST": 10
-      },
-      {
-        "userId": 2794671,
-        "userName": "Verbruggen gogogo",
-        "totalST": 10
-      },
-      {
-        "userId": 3030018,
-        "userName": "KW1023",
-        "totalST": 10
-      },
-      {
-        "userId": 3030911,
-        "userName": "Nagimenz",
-        "totalST": 10
-      },
-      {
-        "userId": 3031654,
-        "userName": "Xiaoyaoxiaoyao",
-        "totalST": 10
-      },
-      {
-        "userId": 3035663,
-        "userName": "Batigoal",
-        "totalST": 10
+        "userId": 3160016,
+        "userName": "ShuoGuOwO",
+        "totalST": 11,
+        "totalGS": 3,
+        "totalMP": 818
       },
       {
         "userId": 3046698,
         "userName": "ShuoOwO",
-        "totalST": 10
+        "totalST": 10,
+        "totalGS": 6,
+        "totalMP": 752
+      },
+      {
+        "userId": 3031654,
+        "userName": "Xiaoyaoxiaoyao",
+        "totalST": 10,
+        "totalGS": 6,
+        "totalMP": 816
+      },
+      {
+        "userId": 74777,
+        "userName": "andy andy",
+        "totalST": 10,
+        "totalGS": 6,
+        "totalMP": 822
+      },
+      {
+        "userId": 3030911,
+        "userName": "Nagimenz",
+        "totalST": 10,
+        "totalGS": 6,
+        "totalMP": 838
       },
       {
         "userId": 3136052,
         "userName": "cybrger",
-        "totalST": 10
+        "totalST": 10,
+        "totalGS": 6,
+        "totalMP": 884
+      },
+      {
+        "userId": 67507,
+        "userName": "Loki777",
+        "totalST": 10,
+        "totalGS": 5,
+        "totalMP": 584
+      },
+      {
+        "userId": 3035663,
+        "userName": "Batigoal",
+        "totalST": 10,
+        "totalGS": 5,
+        "totalMP": 646
+      },
+      {
+        "userId": 67109,
+        "userName": "TFjunkai",
+        "totalST": 10,
+        "totalGS": 5,
+        "totalMP": 677
+      },
+      {
+        "userId": 3053294,
+        "userName": "Milan in UCL",
+        "totalST": 10,
+        "totalGS": 5,
+        "totalMP": 701
+      },
+      {
+        "userId": 194153,
+        "userName": "China Numba 1",
+        "totalST": 10,
+        "totalGS": 5,
+        "totalMP": 724
       },
       {
         "userId": 3381228,
         "userName": "Xinhu",
-        "totalST": 10
-      },
-      {
-        "userId": 3634300,
-        "userName": "TJ Gunners",
-        "totalST": 10
-      },
-      {
-        "userId": 3762171,
-        "userName": "Corner Taken Quicklyyyyy",
-        "totalST": 10
+        "totalST": 10,
+        "totalGS": 5,
+        "totalMP": 732
       },
       {
         "userId": 4426096,
         "userName": "lamar zheng",
-        "totalST": 10
+        "totalST": 10,
+        "totalGS": 5,
+        "totalMP": 733
       },
       {
-        "userId": 43055,
-        "userName": "Old Man Push Car",
-        "totalST": 9
+        "userId": 67094,
+        "userName": "wc1018",
+        "totalST": 10,
+        "totalGS": 5,
+        "totalMP": 811
       },
       {
-        "userId": 68892,
-        "userName": "clocat",
-        "totalST": 9
+        "userId": 2470863,
+        "userName": "ree3",
+        "totalST": 10,
+        "totalGS": 5,
+        "totalMP": 844
       },
       {
-        "userId": 2487793,
-        "userName": "360swj",
-        "totalST": 9
+        "userId": 3030018,
+        "userName": "KW1023",
+        "totalST": 10,
+        "totalGS": 5,
+        "totalMP": 844
       },
       {
-        "userId": 2528977,
-        "userName": "MUGGJY68",
-        "totalST": 9
+        "userId": 147305,
+        "userName": "anderhipple",
+        "totalST": 10,
+        "totalGS": 5,
+        "totalMP": 856
+      },
+      {
+        "userId": 68709,
+        "userName": "amychenhaoyu",
+        "totalST": 10,
+        "totalGS": 5,
+        "totalMP": 864
+      },
+      {
+        "userId": 69233,
+        "userName": "Sam Gong",
+        "totalST": 10,
+        "totalGS": 5,
+        "totalMP": 879
+      },
+      {
+        "userId": 99256,
+        "userName": "baoyingsalah",
+        "totalST": 10,
+        "totalGS": 5,
+        "totalMP": 880
+      },
+      {
+        "userId": 3634300,
+        "userName": "TJ Gunners",
+        "totalST": 10,
+        "totalGS": 5,
+        "totalMP": 922
+      },
+      {
+        "userId": 2463734,
+        "userName": "HindMics",
+        "totalST": 10,
+        "totalGS": 4,
+        "totalMP": 724
+      },
+      {
+        "userId": 1904011,
+        "userName": "fishenal",
+        "totalST": 10,
+        "totalGS": 4,
+        "totalMP": 758
+      },
+      {
+        "userId": 65850,
+        "userName": "mystery-13",
+        "totalST": 10,
+        "totalGS": 4,
+        "totalMP": 817
+      },
+      {
+        "userId": 234512,
+        "userName": "dongma",
+        "totalST": 10,
+        "totalGS": 4,
+        "totalMP": 817
+      },
+      {
+        "userId": 3762171,
+        "userName": "Corner Taken Quicklyyyyy",
+        "totalST": 10,
+        "totalGS": 4,
+        "totalMP": 820
+      },
+      {
+        "userId": 232281,
+        "userName": "Yemon1130",
+        "totalST": 10,
+        "totalGS": 4,
+        "totalMP": 821
+      },
+      {
+        "userId": 2589765,
+        "userName": "Cloudzzy",
+        "totalST": 10,
+        "totalGS": 4,
+        "totalMP": 841
+      },
+      {
+        "userId": 2794671,
+        "userName": "Verbruggen gogogo",
+        "totalST": 10,
+        "totalGS": 4,
+        "totalMP": 877
+      },
+      {
+        "userId": 204548,
+        "userName": "Arsenal HangZhou",
+        "totalST": 10,
+        "totalGS": 3,
+        "totalMP": 651
       },
       {
         "userId": 2560198,
         "userName": "JOHNNYOCEAN",
-        "totalST": 9
+        "totalST": 9,
+        "totalGS": 6,
+        "totalMP": 838
       },
       {
-        "userId": 3030084,
-        "userName": "yyj",
-        "totalST": 9
-      },
-      {
-        "userId": 3398330,
-        "userName": "You don't call him Jeff",
-        "totalST": 9
-      },
-      {
-        "userId": 3641354,
-        "userName": "Carl Chen",
-        "totalST": 9
+        "userId": 2405706,
+        "userName": "Vamos Espana19",
+        "totalST": 9,
+        "totalGS": 6,
+        "totalMP": 841
       },
       {
         "userId": 3646736,
         "userName": "kop1109",
-        "totalST": 9
+        "totalST": 9,
+        "totalGS": 5,
+        "totalMP": 703
       },
       {
-        "userId": 3742203,
-        "userName": "Sicca",
-        "totalST": 9
+        "userId": 2487793,
+        "userName": "360swj",
+        "totalST": 9,
+        "totalGS": 5,
+        "totalMP": 721
+      },
+      {
+        "userId": 3030084,
+        "userName": "yyj",
+        "totalST": 9,
+        "totalGS": 5,
+        "totalMP": 758
+      },
+      {
+        "userId": 68892,
+        "userName": "clocat",
+        "totalST": 9,
+        "totalGS": 5,
+        "totalMP": 897
+      },
+      {
+        "userId": 3398330,
+        "userName": "You don't call him Jeff",
+        "totalST": 9,
+        "totalGS": 4,
+        "totalMP": 682
+      },
+      {
+        "userId": 43055,
+        "userName": "Old Man Push Car",
+        "totalST": 9,
+        "totalGS": 4,
+        "totalMP": 727
       },
       {
         "userId": 4933111,
         "userName": "Ethan1025",
-        "totalST": 9
+        "totalST": 9,
+        "totalGS": 4,
+        "totalMP": 812
       },
       {
-        "userId": 42320,
-        "userName": "Dear Madridista",
-        "totalST": 8
+        "userId": 3742203,
+        "userName": "Sicca",
+        "totalST": 9,
+        "totalGS": 4,
+        "totalMP": 832
       },
       {
-        "userId": 2484648,
-        "userName": "Kane-do Attitude ",
-        "totalST": 8
+        "userId": 2528977,
+        "userName": "MUGGJY68",
+        "totalST": 9,
+        "totalGS": 4,
+        "totalMP": 897
       },
       {
-        "userId": 2487762,
-        "userName": "liccool",
-        "totalST": 8
-      },
-      {
-        "userId": 2489215,
-        "userName": "DNMCCB",
-        "totalST": 8
-      },
-      {
-        "userId": 3034120,
-        "userName": "Gumption",
-        "totalST": 8
-      },
-      {
-        "userId": 3043614,
-        "userName": "Sirius666",
-        "totalST": 8
-      },
-      {
-        "userId": 3063581,
-        "userName": "zhustar",
-        "totalST": 8
-      },
-      {
-        "userId": 3135574,
-        "userName": "Lei lou mei",
-        "totalST": 8
+        "userId": 3641354,
+        "userName": "Carl Chen",
+        "totalST": 9,
+        "totalGS": 3,
+        "totalMP": 848
       },
       {
         "userId": 3295638,
         "userName": "BatiGooal",
-        "totalST": 8
+        "totalST": 8,
+        "totalGS": 5,
+        "totalMP": 672
       },
       {
-        "userId": 3338915,
-        "userName": "Baros15",
-        "totalST": 8
+        "userId": 42320,
+        "userName": "Dear Madridista",
+        "totalST": 8,
+        "totalGS": 5,
+        "totalMP": 822
+      },
+      {
+        "userId": 2487762,
+        "userName": "liccool",
+        "totalST": 8,
+        "totalGS": 4,
+        "totalMP": 585
+      },
+      {
+        "userId": 3034120,
+        "userName": "Gumption",
+        "totalST": 8,
+        "totalGS": 4,
+        "totalMP": 734
+      },
+      {
+        "userId": 3043614,
+        "userName": "Sirius666",
+        "totalST": 8,
+        "totalGS": 4,
+        "totalMP": 737
+      },
+      {
+        "userId": 3063581,
+        "userName": "zhustar",
+        "totalST": 8,
+        "totalGS": 4,
+        "totalMP": 759
+      },
+      {
+        "userId": 2489215,
+        "userName": "DNMCCB",
+        "totalST": 8,
+        "totalGS": 4,
+        "totalMP": 763
+      },
+      {
+        "userId": 2484648,
+        "userName": "Kane-do Attitude ",
+        "totalST": 8,
+        "totalGS": 4,
+        "totalMP": 827
+      },
+      {
+        "userId": 3135574,
+        "userName": "Lei lou mei",
+        "totalST": 8,
+        "totalGS": 4,
+        "totalMP": 853
       },
       {
         "userId": 3840482,
         "userName": "ChangshouRoad Wonton noodles",
-        "totalST": 8
-      },
-      {
-        "userId": 42443,
-        "userName": "21savage",
-        "totalST": 7
-      },
-      {
-        "userId": 161274,
-        "userName": "Zhongvid Silva",
-        "totalST": 7
-      },
-      {
-        "userId": 1500375,
-        "userName": "CHNNNStMrDO",
-        "totalST": 7
-      },
-      {
-        "userId": 2465916,
-        "userName": "SSU-FAIAA",
-        "totalST": 7
-      },
-      {
-        "userId": 2466367,
-        "userName": "ZhallWin",
-        "totalST": 7
-      },
-      {
-        "userId": 2530176,
-        "userName": "victorpan516",
-        "totalST": 7
-      },
-      {
-        "userId": 2593334,
-        "userName": "CLyu-FBPride",
-        "totalST": 7
+        "totalST": 8,
+        "totalGS": 4,
+        "totalMP": 928
       },
       {
         "userId": 2948378,
         "userName": "Kano99",
-        "totalST": 7
+        "totalST": 7,
+        "totalGS": 5,
+        "totalMP": 810
       },
       {
-        "userId": 3028520,
-        "userName": "jingluo",
-        "totalST": 7
+        "userId": 1500375,
+        "userName": "CHNNNStMrDO",
+        "totalST": 7,
+        "totalGS": 4,
+        "totalMP": 808
+      },
+      {
+        "userId": 2466367,
+        "userName": "ZhallWin",
+        "totalST": 7,
+        "totalGS": 4,
+        "totalMP": 817
+      },
+      {
+        "userId": 42443,
+        "userName": "21savage",
+        "totalST": 7,
+        "totalGS": 4,
+        "totalMP": 901
       },
       {
         "userId": 3030132,
         "userName": "lorwyn",
-        "totalST": 7
+        "totalST": 7,
+        "totalGS": 3,
+        "totalMP": 724
       },
       {
-        "userId": 3104260,
-        "userName": "ReverFan",
-        "totalST": 7
+        "userId": 2530176,
+        "userName": "victorpan516",
+        "totalST": 7,
+        "totalGS": 3,
+        "totalMP": 744
       },
       {
         "userId": 3213180,
         "userName": "Henry Tian",
-        "totalST": 7
-      },
-      {
-        "userId": 4273355,
-        "userName": "ikun",
-        "totalST": 7
+        "totalST": 7,
+        "totalGS": 3,
+        "totalMP": 778
       },
       {
         "userId": 4602532,
         "userName": "takahashiAki",
-        "totalST": 7
+        "totalST": 7,
+        "totalGS": 3,
+        "totalMP": 806
       },
       {
         "userId": 5388217,
         "userName": "szewan Lau",
-        "totalST": 7
+        "totalST": 7,
+        "totalGS": 3,
+        "totalMP": 808
       },
       {
-        "userId": 2471323,
-        "userName": "Worldwide Silence YHC111",
-        "totalST": 6
+        "userId": 161274,
+        "userName": "Zhongvid Silva",
+        "totalST": 7,
+        "totalGS": 3,
+        "totalMP": 819
       },
       {
-        "userId": 3068488,
-        "userName": "QQAAQQ",
-        "totalST": 6
+        "userId": 2593334,
+        "userName": "CLyu-FBPride",
+        "totalST": 7,
+        "totalGS": 3,
+        "totalMP": 825
+      },
+      {
+        "userId": 3028520,
+        "userName": "jingluo",
+        "totalST": 7,
+        "totalGS": 3,
+        "totalMP": 850
+      },
+      {
+        "userId": 4273355,
+        "userName": "ikun",
+        "totalST": 7,
+        "totalGS": 2,
+        "totalMP": 733
+      },
+      {
+        "userId": 3104260,
+        "userName": "ReverFan",
+        "totalST": 7,
+        "totalGS": 2,
+        "totalMP": 848
+      },
+      {
+        "userId": 2465916,
+        "userName": "SSU-FAIAA",
+        "totalST": 6,
+        "totalGS": 4,
+        "totalMP": 737
       },
       {
         "userId": 3088347,
         "userName": "Echoteam",
-        "totalST": 6
+        "totalST": 6,
+        "totalGS": 4,
+        "totalMP": 815
+      },
+      {
+        "userId": 2471323,
+        "userName": "Worldwide Silence YHC111",
+        "totalST": 6,
+        "totalGS": 3,
+        "totalMP": 800
+      },
+      {
+        "userId": 3068488,
+        "userName": "QQAAQQ",
+        "totalST": 6,
+        "totalGS": 3,
+        "totalMP": 861
       },
       {
         "userId": 4050078,
         "userName": "rycbarm",
-        "totalST": 6
+        "totalST": 6,
+        "totalGS": 2,
+        "totalMP": 763
       },
       {
-        "userId": 2458696,
-        "userName": "Rememberrrrrrr",
-        "totalST": 5
+        "userId": 3338915,
+        "userName": "Baros15",
+        "totalST": 6,
+        "totalGS": 2,
+        "totalMP": 779
       },
       {
-        "userId": 2571201,
-        "userName": "ARS-sky",
-        "totalST": 5
+        "userId": 3031691,
+        "userName": "Aemeath",
+        "totalST": 5,
+        "totalGS": 3,
+        "totalMP": 565
+      },
+      {
+        "userId": 3473373,
+        "userName": "Fuermozhu",
+        "totalST": 5,
+        "totalGS": 3,
+        "totalMP": 603
       },
       {
         "userId": 3029885,
         "userName": "JW3huajian",
-        "totalST": 5
+        "totalST": 5,
+        "totalGS": 3,
+        "totalMP": 736
+      },
+      {
+        "userId": 2458696,
+        "userName": "Rememberrrrrrr",
+        "totalST": 5,
+        "totalGS": 3,
+        "totalMP": 828
+      },
+      {
+        "userId": 2571201,
+        "userName": "ARS-sky",
+        "totalST": 5,
+        "totalGS": 2,
+        "totalMP": 718
       },
       {
         "userId": 3031284,
         "userName": "watermelon2018",
-        "totalST": 5
-      },
-      {
-        "userId": 3031691,
-        "userName": "Aemeath",
-        "totalST": 5
-      },
-      {
-        "userId": 3473373,
-        "userName": "Fuermozhu",
-        "totalST": 5
+        "totalST": 5,
+        "totalGS": 2,
+        "totalMP": 797
       },
       {
         "userId": 3633894,
         "userName": "siyuanl1u",
-        "totalST": 5
+        "totalST": 5,
+        "totalGS": 1,
+        "totalMP": 729
       },
       {
         "userId": 3948568,
         "userName": "Elliott2323",
-        "totalST": 4
+        "totalST": 4,
+        "totalGS": 2,
+        "totalMP": 811
       },
       {
         "userId": 3470439,
         "userName": "Amono1ogue",
-        "totalST": 3
+        "totalST": 3,
+        "totalGS": 1,
+        "totalMP": 748
       }
     ],
     "eliminated": [
       {
-        "userId": 3031691,
-        "userName": "Aemeath",
-        "totalST": 5
+        "userId": 2571201,
+        "userName": "ARS-sky",
+        "totalST": 5,
+        "totalGS": 2,
+        "totalMP": 718
       },
       {
-        "userId": 3473373,
-        "userName": "Fuermozhu",
-        "totalST": 5
+        "userId": 3031284,
+        "userName": "watermelon2018",
+        "totalST": 5,
+        "totalGS": 2,
+        "totalMP": 797
       },
       {
         "userId": 3633894,
         "userName": "siyuanl1u",
-        "totalST": 5
+        "totalST": 5,
+        "totalGS": 1,
+        "totalMP": 729
       },
       {
         "userId": 3948568,
         "userName": "Elliott2323",
-        "totalST": 4
+        "totalST": 4,
+        "totalGS": 2,
+        "totalMP": 811
       },
       {
         "userId": 3470439,
         "userName": "Amono1ogue",
-        "totalST": 3
+        "totalST": 3,
+        "totalGS": 1,
+        "totalMP": 748
       }
     ],
-    "extra": {}
+    "extra": {
+      "tieDetected": false
+    }
   }
 }

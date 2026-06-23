@@ -14,7 +14,7 @@ module.exports = function round1({ players, getStat, roundId }) {
 
   return {
     title: `Round ${roundId}: Lowest Total Points`,
-    description: '淘汰总分最低的 1 位范特西玩家。',
+    description: '淘汰总分最低的 5 位范特西玩家。',
     ranking,
     eliminated,
     extra: {}
