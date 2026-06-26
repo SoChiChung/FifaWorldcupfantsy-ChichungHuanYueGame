@@ -74,37 +74,21 @@
       '<div class="desc">' + (result.description || result.title || '') + '</div>';
 
     const ranking = result.ranking || [];
-    const survivors = ranking.filter(function(r) { return !eliminatedSet.has(r.userId); });
-    const dead = ranking.filter(function(r) { return eliminatedSet.has(r.userId); });
 
     var label = metricLabel(result);
     let html = '';
     html += '<div class="section"><h2>积分榜</h2><table><thead><tr>';
-      /* --- C 罗头放入排行榜区域 --- */
-    html += '<img class="deco-siu" src="img/siu.png" alt="" loading="lazy">';
     html += '<th>#</th><th>玩家</th><th>' + label + '</th><th></th>';
     html += '</tr></thead><tbody>';
 
-    var rankNum = 0;
-    survivors.forEach(function(r) {
-      rankNum++;
+    ranking.forEach(function(r, i) {
+      var isDead = eliminatedSet.has(r.userId);
       var metricKey = Object.keys(r).find(function(k) { return k !== 'userId' && k !== 'userName'; }) || 'points';
-      html += '<tr>';
-      html += '<td class="rank">' + rankNum + '</td>';
+      html += '<tr class="' + (isDead ? 'eliminated' : '') + '">';
+      html += '<td class="rank">' + (i + 1) + '</td>';
       html += '<td>' + (r.userName || nameMap[r.userId] || r.userId) + '</td>';
       html += '<td class="metric">' + (r[metricKey] != null ? r[metricKey] : '-') + '</td>';
-      html += '<td></td>';
-      html += '</tr>';
-    });
-
-    dead.forEach(function(r) {
-      rankNum++;
-      var metricKey = Object.keys(r).find(function(k) { return k !== 'userId' && k !== 'userName'; }) || 'points';
-      html += '<tr class="eliminated">';
-      html += '<td class="rank">' + rankNum + '</td>';
-      html += '<td>' + (r.userName || nameMap[r.userId] || r.userId) + '</td>';
-      html += '<td class="metric">' + (r[metricKey] != null ? r[metricKey] : '-') + '</td>';
-      html += '<td><span class="eliminated-tag">淘汰</span></td>';
+      html += '<td>' + (isDead ? '<span class="eliminated-tag">淘汰</span>' : '') + '</td>';
       html += '</tr>';
     });
 
