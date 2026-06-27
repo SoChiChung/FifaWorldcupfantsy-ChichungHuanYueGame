@@ -9,7 +9,7 @@
         338
       ],
       "DEF": [
-        2031,
+        330,
         2014,
         168,
         1142
@@ -30,7 +30,7 @@
         387
       ],
       "DEF": [
-        330
+        2031
       ],
       "MID": [
         256
@@ -45,8 +45,8 @@
   {
     "userId": 3213180,
     "userName": "Henry Tian",
-    "roundPoints": 73,
-    "overallPoints": 296,
+    "roundPoints": 74,
+    "overallPoints": 297,
     "lineup": {
       "GK": [
         910
@@ -87,8 +87,8 @@
   {
     "userId": 65850,
     "userName": "mystery-13",
-    "roundPoints": 95,
-    "overallPoints": 320,
+    "roundPoints": 96,
+    "overallPoints": 321,
     "lineup": {
       "GK": [
         317
@@ -130,8 +130,8 @@
   {
     "userId": 3135574,
     "userName": "Lei lou mei",
-    "roundPoints": 80,
-    "overallPoints": 276,
+    "roundPoints": 77,
+    "overallPoints": 273,
     "lineup": {
       "GK": [
         317
@@ -166,7 +166,7 @@
         468
       ]
     },
-    "captain": 1696,
+    "captain": 1597,
     "viceCaptain": 173
   },
   {
@@ -215,8 +215,8 @@
   {
     "userId": 3029885,
     "userName": "JW3huajian",
-    "roundPoints": 57,
-    "overallPoints": 255,
+    "roundPoints": 48,
+    "overallPoints": 246,
     "lineup": {
       "GK": [
         317
@@ -251,14 +251,14 @@
         804
       ]
     },
-    "captain": 500,
+    "captain": 1526,
     "viceCaptain": 173
   },
   {
     "userId": 3043614,
     "userName": "Sirius666",
-    "roundPoints": 38,
-    "overallPoints": 242,
+    "roundPoints": 39,
+    "overallPoints": 243,
     "lineup": {
       "GK": [
         262
@@ -383,8 +383,8 @@
   {
     "userId": 3104260,
     "userName": "ReverFan",
-    "roundPoints": 64,
-    "overallPoints": 263,
+    "roundPoints": 65,
+    "overallPoints": 264,
     "lineup": {
       "GK": [
         757
@@ -474,7 +474,7 @@
         809
       ],
       "DEF": [
-        1035,
+        114,
         303,
         802
       ],
@@ -495,7 +495,7 @@
         153
       ],
       "DEF": [
-        114,
+        1035,
         29
       ],
       "MID": [],
@@ -509,8 +509,8 @@
   {
     "userId": 4426096,
     "userName": "lamar zheng",
-    "roundPoints": 76,
-    "overallPoints": 270,
+    "roundPoints": 77,
+    "overallPoints": 271,
     "lineup": {
       "GK": [
         317
@@ -551,8 +551,8 @@
   {
     "userId": 3030911,
     "userName": "Nagimenz",
-    "roundPoints": 55,
-    "overallPoints": 262,
+    "roundPoints": 56,
+    "overallPoints": 263,
     "lineup": {
       "GK": [
         809
@@ -635,8 +635,8 @@
   {
     "userId": 1178721,
     "userName": "JY Lee",
-    "roundPoints": 97,
-    "overallPoints": 314,
+    "roundPoints": 98,
+    "overallPoints": 315,
     "lineup": {
       "GK": [
         317
@@ -678,8 +678,8 @@
   {
     "userId": 234512,
     "userName": "dongma",
-    "roundPoints": 42,
-    "overallPoints": 232,
+    "roundPoints": 45,
+    "overallPoints": 235,
     "lineup": {
       "GK": [
         214
@@ -763,8 +763,8 @@
   {
     "userId": 2466367,
     "userName": "ZhallWin",
-    "roundPoints": 68,
-    "overallPoints": 271,
+    "roundPoints": 67,
+    "overallPoints": 270,
     "lineup": {
       "GK": [
         1001
@@ -799,14 +799,14 @@
         468
       ]
     },
-    "captain": 1696,
+    "captain": 1001,
     "viceCaptain": 802
   },
   {
     "userId": 3160016,
     "userName": "ShuoGuOwO",
-    "roundPoints": 65,
-    "overallPoints": 269,
+    "roundPoints": 66,
+    "overallPoints": 270,
     "lineup": {
       "GK": [
         338
@@ -847,8 +847,8 @@
   {
     "userId": 4602532,
     "userName": "takahashiAki",
-    "roundPoints": 81,
-    "overallPoints": 282,
+    "roundPoints": 82,
+    "overallPoints": 283,
     "lineup": {
       "GK": [
         317
@@ -1015,8 +1015,8 @@
   {
     "userId": 416422,
     "userName": "HuoluMountainForest",
-    "roundPoints": 52,
-    "overallPoints": 257,
+    "roundPoints": 54,
+    "overallPoints": 259,
     "lineup": {
       "GK": [
         477
@@ -1067,7 +1067,7 @@
       "DEF": [
         795,
         168,
-        1709
+        1320
       ],
       "MID": [
         322,
@@ -1087,7 +1087,7 @@
       ],
       "DEF": [
         2014,
-        1320
+        1709
       ],
       "MID": [
         2044
@@ -1100,8 +1100,8 @@
   {
     "userId": 5388217,
     "userName": "szewan Lau",
-    "roundPoints": 41,
-    "overallPoints": 216,
+    "roundPoints": 42,
+    "overallPoints": 217,
     "lineup": {
       "GK": [
         1271
@@ -1193,7 +1193,7 @@
       "DEF": [
         795,
         2012,
-        1035
+        1320
       ],
       "MID": [
         322,
@@ -1212,7 +1212,7 @@
         289
       ],
       "DEF": [
-        1320,
+        1035,
         2014
       ],
       "MID": [
@@ -1353,8 +1353,8 @@
   {
     "userId": 3834982,
     "userName": "Santiago984717229",
-    "roundPoints": 73,
-    "overallPoints": 283,
+    "roundPoints": 74,
+    "overallPoints": 284,
     "lineup": {
       "GK": [
         317
@@ -1362,10 +1362,10 @@
       "DEF": [
         796,
         2012,
-        795,
-        1035
+        795
       ],
       "MID": [
+        1526,
         1092,
         792,
         173,
@@ -1381,11 +1381,10 @@
         153
       ],
       "DEF": [
-        2014
+        2014,
+        1035
       ],
-      "MID": [
-        1526
-      ],
+      "MID": [],
       "FWD": [
         804
       ]
@@ -1438,8 +1437,8 @@
   {
     "userId": 780635,
     "userName": "fitzzzzzz",
-    "roundPoints": 85,
-    "overallPoints": 283,
+    "roundPoints": 86,
+    "overallPoints": 284,
     "lineup": {
       "GK": [
         317
@@ -1564,8 +1563,8 @@
   {
     "userId": 2560198,
     "userName": "JOHNNYOCEAN",
-    "roundPoints": 58,
-    "overallPoints": 273,
+    "roundPoints": 51,
+    "overallPoints": 266,
     "lineup": {
       "GK": [
         317
@@ -1600,14 +1599,14 @@
         468
       ]
     },
-    "captain": 500,
+    "captain": 1092,
     "viceCaptain": 317
   },
   {
     "userId": 2468309,
     "userName": "GoodBen",
-    "roundPoints": 86,
-    "overallPoints": 277,
+    "roundPoints": 87,
+    "overallPoints": 278,
     "lineup": {
       "GK": [
         317
@@ -1648,8 +1647,8 @@
   {
     "userId": 3245239,
     "userName": " Dinosaurio S",
-    "roundPoints": 36,
-    "overallPoints": 263,
+    "roundPoints": 33,
+    "overallPoints": 260,
     "lineup": {
       "GK": [
         910
@@ -1684,14 +1683,14 @@
         672
       ]
     },
-    "captain": 1696,
+    "captain": 1597,
     "viceCaptain": 468
   },
   {
     "userId": 3030443,
     "userName": "Blueball Bay",
-    "roundPoints": 62,
-    "overallPoints": 289,
+    "roundPoints": 63,
+    "overallPoints": 290,
     "lineup": {
       "GK": [
         338
@@ -1732,8 +1731,8 @@
   {
     "userId": 3069640,
     "userName": "RyanFish2026",
-    "roundPoints": 41,
-    "overallPoints": 253,
+    "roundPoints": 42,
+    "overallPoints": 254,
     "lineup": {
       "GK": [
         477
@@ -1769,7 +1768,7 @@
         804
       ]
     },
-    "captain": 517,
+    "captain": 1094,
     "viceCaptain": 173
   },
   {
@@ -1902,8 +1901,8 @@
   {
     "userId": 353380,
     "userName": "samuellinshan",
-    "roundPoints": 58,
-    "overallPoints": 251,
+    "roundPoints": 59,
+    "overallPoints": 252,
     "lineup": {
       "GK": [
         1053
@@ -1944,8 +1943,8 @@
   {
     "userId": 2576638,
     "userName": "Mademoiselle Meow",
-    "roundPoints": 86,
-    "overallPoints": 285,
+    "roundPoints": 87,
+    "overallPoints": 286,
     "lineup": {
       "GK": [
         317
@@ -2071,8 +2070,8 @@
   {
     "userId": 194750,
     "userName": "kusuri",
-    "roundPoints": 90,
-    "overallPoints": 282,
+    "roundPoints": 92,
+    "overallPoints": 284,
     "lineup": {
       "GK": [
         809
@@ -2113,19 +2112,19 @@
   {
     "userId": 3635883,
     "userName": "michaelbao ",
-    "roundPoints": 67,
-    "overallPoints": 260,
+    "roundPoints": 68,
+    "overallPoints": 261,
     "lineup": {
       "GK": [
         317
       ],
       "DEF": [
-        1035,
+        439,
         2012,
         795
       ],
       "MID": [
-        2044,
+        1092,
         2020,
         1597,
         173
@@ -2142,10 +2141,10 @@
       ],
       "DEF": [
         121,
-        439
+        1035
       ],
       "MID": [
-        1092
+        2044
       ],
       "FWD": []
     },
@@ -2155,8 +2154,8 @@
   {
     "userId": 4933111,
     "userName": "Ethan1025",
-    "roundPoints": 38,
-    "overallPoints": 232,
+    "roundPoints": 39,
+    "overallPoints": 233,
     "lineup": {
       "GK": [
         45
@@ -2197,8 +2196,8 @@
   {
     "userId": 3473373,
     "userName": "Fuermozhu",
-    "roundPoints": 15,
-    "overallPoints": 197,
+    "roundPoints": 16,
+    "overallPoints": 198,
     "lineup": {
       "GK": [
         2010
@@ -2240,8 +2239,8 @@
   {
     "userId": 1844522,
     "userName": "FIFAntasis",
-    "roundPoints": 61,
-    "overallPoints": 281,
+    "roundPoints": 62,
+    "overallPoints": 282,
     "lineup": {
       "GK": [
         757
@@ -2282,8 +2281,8 @@
   {
     "userId": 2461158,
     "userName": "Mongolia Doctor",
-    "roundPoints": 73,
-    "overallPoints": 268,
+    "roundPoints": 74,
+    "overallPoints": 269,
     "lineup": {
       "GK": [
         809
@@ -2324,20 +2323,20 @@
   {
     "userId": 2472296,
     "userName": "message username ",
-    "roundPoints": 74,
-    "overallPoints": 296,
+    "roundPoints": 61,
+    "overallPoints": 283,
     "lineup": {
       "GK": [
-        235
+        453
       ],
       "DEF": [
-        2031,
         2014,
         2013,
         795
       ],
       "MID": [
-        517,
+        138,
+        1597,
         173,
         792
       ],
@@ -2349,25 +2348,25 @@
     },
     "bench": {
       "GK": [
-        453
+        235
       ],
       "DEF": [
-        380
+        380,
+        2031
       ],
       "MID": [
-        138,
-        1597
+        517
       ],
       "FWD": []
     },
-    "captain": 500,
+    "captain": 1597,
     "viceCaptain": 2014
   },
   {
     "userId": 2540931,
     "userName": "LA LAD",
-    "roundPoints": 71,
-    "overallPoints": 278,
+    "roundPoints": 72,
+    "overallPoints": 279,
     "lineup": {
       "GK": [
         730
@@ -2408,8 +2407,8 @@
   {
     "userId": 2584583,
     "userName": "Round round green arrow",
-    "roundPoints": 67,
-    "overallPoints": 279,
+    "roundPoints": 69,
+    "overallPoints": 281,
     "lineup": {
       "GK": [
         1053
@@ -2417,8 +2416,7 @@
       "DEF": [
         2012,
         795,
-        1088,
-        1035
+        1088
       ],
       "MID": [
         792,
@@ -2427,6 +2425,7 @@
         173
       ],
       "FWD": [
+        468,
         1094,
         804
       ]
@@ -2436,14 +2435,13 @@
         153
       ],
       "DEF": [
-        305
+        305,
+        1035
       ],
       "MID": [
         2044
       ],
-      "FWD": [
-        468
-      ]
+      "FWD": []
     },
     "captain": 173,
     "viceCaptain": 792
@@ -2451,8 +2449,8 @@
   {
     "userId": 3641354,
     "userName": "Carl Chen",
-    "roundPoints": 25,
-    "overallPoints": 198,
+    "roundPoints": 27,
+    "overallPoints": 200,
     "lineup": {
       "GK": [
         477
@@ -2493,8 +2491,8 @@
   {
     "userId": 3742203,
     "userName": "Sicca",
-    "roundPoints": 30,
-    "overallPoints": 213,
+    "roundPoints": 33,
+    "overallPoints": 216,
     "lineup": {
       "GK": [
         1051
@@ -2536,8 +2534,8 @@
   {
     "userId": 42443,
     "userName": "21savage",
-    "roundPoints": 71,
-    "overallPoints": 268,
+    "roundPoints": 63,
+    "overallPoints": 260,
     "lineup": {
       "GK": [
         506
@@ -2552,11 +2550,11 @@
         517,
         792,
         1526,
-        2044,
         173
       ],
       "FWD": [
-        500
+        500,
+        468
       ]
     },
     "bench": {
@@ -2566,13 +2564,14 @@
       "DEF": [
         374
       ],
-      "MID": [],
+      "MID": [
+        2044
+      ],
       "FWD": [
-        468,
         1267
       ]
     },
-    "captain": 500,
+    "captain": 1088,
     "viceCaptain": 1526
   },
   {
@@ -2620,8 +2619,8 @@
   {
     "userId": 3543285,
     "userName": "AFEI",
-    "roundPoints": 42,
-    "overallPoints": 252,
+    "roundPoints": 39,
+    "overallPoints": 249,
     "lineup": {
       "GK": [
         317
@@ -2629,7 +2628,8 @@
       "DEF": [
         795,
         273,
-        1035
+        248,
+        29
       ],
       "MID": [
         1597,
@@ -2639,7 +2639,6 @@
       ],
       "FWD": [
         38,
-        855,
         1043
       ]
     },
@@ -2648,15 +2647,16 @@
         809
       ],
       "DEF": [
-        29,
-        248
+        1035
       ],
       "MID": [
         669
       ],
-      "FWD": []
+      "FWD": [
+        855
+      ]
     },
-    "captain": 1696,
+    "captain": 1597,
     "viceCaptain": 1043
   },
   {
@@ -2705,8 +2705,8 @@
   {
     "userId": 65109,
     "userName": "Heaven Burns Red",
-    "roundPoints": 70,
-    "overallPoints": 292,
+    "roundPoints": 72,
+    "overallPoints": 294,
     "lineup": {
       "GK": [
         317
@@ -2747,8 +2747,8 @@
   {
     "userId": 2462478,
     "userName": "xiaoxinJerry",
-    "roundPoints": 61,
-    "overallPoints": 281,
+    "roundPoints": 62,
+    "overallPoints": 282,
     "lineup": {
       "GK": [
         153
@@ -2789,8 +2789,8 @@
   {
     "userId": 2463734,
     "userName": "HindMics",
-    "roundPoints": 48,
-    "overallPoints": 257,
+    "roundPoints": 51,
+    "overallPoints": 260,
     "lineup": {
       "GK": [
         338
@@ -2874,8 +2874,8 @@
   {
     "userId": 3398330,
     "userName": "You don't call him Jeff",
-    "roundPoints": 62,
-    "overallPoints": 226,
+    "roundPoints": 63,
+    "overallPoints": 227,
     "lineup": {
       "GK": [
         317
@@ -2917,8 +2917,8 @@
   {
     "userId": 2502352,
     "userName": "Xi9Li",
-    "roundPoints": 82,
-    "overallPoints": 268,
+    "roundPoints": 84,
+    "overallPoints": 270,
     "lineup": {
       "GK": [
         317
@@ -2959,8 +2959,8 @@
   {
     "userId": 3633894,
     "userName": "siyuanl1u",
-    "roundPoints": 81,
-    "overallPoints": 233,
+    "roundPoints": 82,
+    "overallPoints": 234,
     "lineup": {
       "GK": [
         317
@@ -3001,8 +3001,8 @@
   {
     "userId": 3762171,
     "userName": "Corner Taken Quicklyyyyy",
-    "roundPoints": 18,
-    "overallPoints": 201,
+    "roundPoints": 20,
+    "overallPoints": 203,
     "lineup": {
       "GK": [
         1099
@@ -3043,8 +3043,8 @@
   {
     "userId": 4273355,
     "userName": "ikun",
-    "roundPoints": 44,
-    "overallPoints": 230,
+    "roundPoints": 45,
+    "overallPoints": 231,
     "lineup": {
       "GK": [
         757
@@ -3085,8 +3085,8 @@
   {
     "userId": 1904011,
     "userName": "fishenal",
-    "roundPoints": 49,
-    "overallPoints": 238,
+    "roundPoints": 51,
+    "overallPoints": 240,
     "lineup": {
       "GK": [
         317
@@ -3097,6 +3097,7 @@
         1088
       ],
       "MID": [
+        1092,
         190,
         682,
         2020,
@@ -3104,8 +3105,7 @@
       ],
       "FWD": [
         804,
-        500,
-        855
+        500
       ]
     },
     "bench": {
@@ -3116,10 +3116,10 @@
         463,
         305
       ],
-      "MID": [
-        1092
-      ],
-      "FWD": []
+      "MID": [],
+      "FWD": [
+        855
+      ]
     },
     "captain": 500,
     "viceCaptain": 2020
@@ -3169,8 +3169,8 @@
   {
     "userId": 1171431,
     "userName": "Sonic G",
-    "roundPoints": 41,
-    "overallPoints": 231,
+    "roundPoints": 45,
+    "overallPoints": 235,
     "lineup": {
       "GK": [
         1099
@@ -3212,8 +3212,8 @@
   {
     "userId": 2484443,
     "userName": "Champion Leeds",
-    "roundPoints": 45,
-    "overallPoints": 253,
+    "roundPoints": 53,
+    "overallPoints": 261,
     "lineup": {
       "GK": [
         809
@@ -3248,7 +3248,7 @@
       ],
       "FWD": []
     },
-    "captain": 505,
+    "captain": 1092,
     "viceCaptain": 521
   },
   {
@@ -3333,14 +3333,14 @@
         804
       ]
     },
-    "captain": 1696,
+    "captain": 1094,
     "viceCaptain": 164
   },
   {
     "userId": 67109,
     "userName": "TFjunkai",
-    "roundPoints": 33,
-    "overallPoints": 219,
+    "roundPoints": 32,
+    "overallPoints": 218,
     "lineup": {
       "GK": [
         809
@@ -3376,7 +3376,7 @@
         804
       ]
     },
-    "captain": 1696,
+    "captain": 1088,
     "viceCaptain": 2012
   },
   {
@@ -3424,8 +3424,8 @@
   {
     "userId": 42581,
     "userName": "RemInory",
-    "roundPoints": 46,
-    "overallPoints": 254,
+    "roundPoints": 45,
+    "overallPoints": 253,
     "lineup": {
       "GK": [
         317
@@ -3461,14 +3461,14 @@
         468
       ]
     },
-    "captain": 1696,
+    "captain": 1092,
     "viceCaptain": 792
   },
   {
     "userId": 2466498,
     "userName": "EriCherry",
-    "roundPoints": 27,
-    "overallPoints": 239,
+    "roundPoints": 24,
+    "overallPoints": 236,
     "lineup": {
       "GK": [
         317
@@ -3504,14 +3504,14 @@
         146
       ]
     },
-    "captain": 1696,
+    "captain": 114,
     "viceCaptain": 317
   },
   {
     "userId": 3030018,
     "userName": "KW1023",
-    "roundPoints": 65,
-    "overallPoints": 251,
+    "roundPoints": 66,
+    "overallPoints": 252,
     "lineup": {
       "GK": [
         214
@@ -3552,8 +3552,8 @@
   {
     "userId": 3067023,
     "userName": "Law Chen",
-    "roundPoints": 91,
-    "overallPoints": 287,
+    "roundPoints": 92,
+    "overallPoints": 288,
     "lineup": {
       "GK": [
         317
@@ -3636,8 +3636,8 @@
   {
     "userId": 68709,
     "userName": "amychenhaoyu",
-    "roundPoints": 59,
-    "overallPoints": 280,
+    "roundPoints": 60,
+    "overallPoints": 281,
     "lineup": {
       "GK": [
         453
@@ -3694,7 +3694,7 @@
       "MID": [
         792,
         173,
-        517
+        488
       ],
       "FWD": [
         307,
@@ -3710,7 +3710,7 @@
         2031
       ],
       "MID": [
-        488,
+        517,
         1601
       ],
       "FWD": []
@@ -3721,8 +3721,8 @@
   {
     "userId": 2484648,
     "userName": "Kane-do Attitude ",
-    "roundPoints": 58,
-    "overallPoints": 251,
+    "roundPoints": 59,
+    "overallPoints": 252,
     "lineup": {
       "GK": [
         1053
@@ -3763,8 +3763,8 @@
   {
     "userId": 2488334,
     "userName": "Leo Xie",
-    "roundPoints": 54,
-    "overallPoints": 237,
+    "roundPoints": 55,
+    "overallPoints": 238,
     "lineup": {
       "GK": [
         730
@@ -3805,8 +3805,8 @@
   {
     "userId": 2493322,
     "userName": "Hyber Sun",
-    "roundPoints": 63,
-    "overallPoints": 259,
+    "roundPoints": 64,
+    "overallPoints": 260,
     "lineup": {
       "GK": [
         565
@@ -3814,7 +3814,7 @@
       "DEF": [
         795,
         2012,
-        1035,
+        916,
         1088
       ],
       "MID": [
@@ -3833,7 +3833,7 @@
         2010
       ],
       "DEF": [
-        916
+        1035
       ],
       "MID": [
         2044,
@@ -3847,8 +3847,8 @@
   {
     "userId": 3031691,
     "userName": "Aemeath",
-    "roundPoints": 76,
-    "overallPoints": 255,
+    "roundPoints": 77,
+    "overallPoints": 256,
     "lineup": {
       "GK": [
         214
@@ -3931,8 +3931,8 @@
   {
     "userId": 232281,
     "userName": "Yemon1130",
-    "roundPoints": 38,
-    "overallPoints": 235,
+    "roundPoints": 32,
+    "overallPoints": 229,
     "lineup": {
       "GK": [
         809
@@ -3967,14 +3967,14 @@
       ],
       "FWD": []
     },
-    "captain": 500,
+    "captain": 1094,
     "viceCaptain": 517
   },
   {
     "userId": 2524264,
     "userName": "Fan Jiaorui",
-    "roundPoints": 45,
-    "overallPoints": 244,
+    "roundPoints": 46,
+    "overallPoints": 245,
     "lineup": {
       "GK": [
         809
@@ -4010,14 +4010,14 @@
         468
       ]
     },
-    "captain": 804,
+    "captain": 1094,
     "viceCaptain": 809
   },
   {
     "userId": 3037463,
     "userName": "World Cup all-lose team",
-    "roundPoints": 55,
-    "overallPoints": 256,
+    "roundPoints": 57,
+    "overallPoints": 258,
     "lineup": {
       "GK": [
         317
@@ -4059,8 +4059,8 @@
   {
     "userId": 3136052,
     "userName": "cybrger",
-    "roundPoints": 69,
-    "overallPoints": 278,
+    "roundPoints": 70,
+    "overallPoints": 279,
     "lineup": {
       "GK": [
         757
@@ -4101,8 +4101,8 @@
   {
     "userId": 2530176,
     "userName": "victorpan516",
-    "roundPoints": 88,
-    "overallPoints": 285,
+    "roundPoints": 89,
+    "overallPoints": 286,
     "lineup": {
       "GK": [
         317
@@ -4186,8 +4186,8 @@
   {
     "userId": 775227,
     "userName": "BadK",
-    "roundPoints": 77,
-    "overallPoints": 265,
+    "roundPoints": 78,
+    "overallPoints": 266,
     "lineup": {
       "GK": [
         317
@@ -4228,14 +4228,14 @@
   {
     "userId": 2482632,
     "userName": "mumuren",
-    "roundPoints": 56,
-    "overallPoints": 249,
+    "roundPoints": 55,
+    "overallPoints": 248,
     "lineup": {
       "GK": [
         317
       ],
       "DEF": [
-        2014,
+        248,
         139,
         1264,
         895
@@ -4244,7 +4244,7 @@
         1549,
         682,
         792,
-        2044
+        1092
       ],
       "FWD": [
         174,
@@ -4256,10 +4256,10 @@
         730
       ],
       "DEF": [
-        248
+        2014
       ],
       "MID": [
-        1092
+        2044
       ],
       "FWD": [
         1043
@@ -4356,8 +4356,8 @@
   {
     "userId": 3140499,
     "userName": "OrangeKevin",
-    "roundPoints": 60,
-    "overallPoints": 249,
+    "roundPoints": 62,
+    "overallPoints": 251,
     "lineup": {
       "GK": [
         757
@@ -4398,8 +4398,8 @@
   {
     "userId": 3423111,
     "userName": "Chelsea Mata",
-    "roundPoints": 56,
-    "overallPoints": 244,
+    "roundPoints": 58,
+    "overallPoints": 246,
     "lineup": {
       "GK": [
         76
@@ -4410,6 +4410,7 @@
         542
       ],
       "MID": [
+        939,
         2044,
         792,
         501,
@@ -4417,7 +4418,6 @@
       ],
       "FWD": [
         531,
-        855,
         804
       ]
     },
@@ -4429,19 +4429,19 @@
         917,
         248
       ],
-      "MID": [
-        939
-      ],
-      "FWD": []
+      "MID": [],
+      "FWD": [
+        855
+      ]
     },
-    "captain": 855,
+    "captain": 1088,
     "viceCaptain": 542
   },
   {
     "userId": 2468434,
     "userName": "Arsenal gunner",
-    "roundPoints": 73,
-    "overallPoints": 268,
+    "roundPoints": 75,
+    "overallPoints": 270,
     "lineup": {
       "GK": [
         809
@@ -4483,8 +4483,8 @@
   {
     "userId": 2589765,
     "userName": "Cloudzzy",
-    "roundPoints": 70,
-    "overallPoints": 251,
+    "roundPoints": 72,
+    "overallPoints": 253,
     "lineup": {
       "GK": [
         317
@@ -4526,8 +4526,8 @@
   {
     "userId": 3031014,
     "userName": "dowman",
-    "roundPoints": 62,
-    "overallPoints": 254,
+    "roundPoints": 65,
+    "overallPoints": 257,
     "lineup": {
       "GK": [
         1099
@@ -4568,8 +4568,8 @@
   {
     "userId": 3071074,
     "userName": "Stephen Teng",
-    "roundPoints": 66,
-    "overallPoints": 253,
+    "roundPoints": 67,
+    "overallPoints": 254,
     "lineup": {
       "GK": [
         809
@@ -4653,8 +4653,8 @@
   {
     "userId": 2459137,
     "userName": "Shindo Hikaru",
-    "roundPoints": 72,
-    "overallPoints": 264,
+    "roundPoints": 73,
+    "overallPoints": 265,
     "lineup": {
       "GK": [
         153
@@ -4695,8 +4695,8 @@
   {
     "userId": 65913,
     "userName": "DannytheDestroyer",
-    "roundPoints": 81,
-    "overallPoints": 268,
+    "roundPoints": 82,
+    "overallPoints": 269,
     "lineup": {
       "GK": [
         809
@@ -4738,8 +4738,8 @@
   {
     "userId": 2484254,
     "userName": "Pluto D",
-    "roundPoints": 57,
-    "overallPoints": 256,
+    "roundPoints": 56,
+    "overallPoints": 255,
     "lineup": {
       "GK": [
         317
@@ -4758,7 +4758,7 @@
       ],
       "FWD": [
         804,
-        310
+        468
       ]
     },
     "bench": {
@@ -4771,11 +4771,11 @@
       ],
       "MID": [],
       "FWD": [
-        468
+        310
       ]
     },
-    "captain": 1696,
-    "viceCaptain": 795
+    "captain": 1092,
+    "viceCaptain": 1088
   },
   {
     "userId": 2458696,
@@ -4822,8 +4822,8 @@
   {
     "userId": 3046698,
     "userName": "ShuoOwO",
-    "roundPoints": 81,
-    "overallPoints": 275,
+    "roundPoints": 82,
+    "overallPoints": 276,
     "lineup": {
       "GK": [
         809
@@ -4831,10 +4831,10 @@
       "DEF": [
         303,
         2012,
-        795,
-        1035
+        795
       ],
       "MID": [
+        1597,
         1092,
         173,
         2020,
@@ -4850,17 +4850,16 @@
         289
       ],
       "DEF": [
-        31
+        31,
+        1035
       ],
-      "MID": [
-        1597
-      ],
+      "MID": [],
       "FWD": [
         38
       ]
     },
     "captain": 1043,
-    "viceCaptain": 1035
+    "viceCaptain": 1092
   },
   {
     "userId": 2458905,
@@ -4872,12 +4871,12 @@
         317
       ],
       "DEF": [
-        1037,
         2013,
         2012,
-        305
+        121
       ],
       "MID": [
+        1597,
         792,
         173,
         2044,
@@ -4893,11 +4892,10 @@
         809
       ],
       "DEF": [
-        121
+        305,
+        1037
       ],
-      "MID": [
-        1597
-      ],
+      "MID": [],
       "FWD": [
         500
       ]
@@ -4908,8 +4906,8 @@
   {
     "userId": 3088347,
     "userName": "Echoteam",
-    "roundPoints": 42,
-    "overallPoints": 213,
+    "roundPoints": 44,
+    "overallPoints": 215,
     "lineup": {
       "GK": [
         1598
@@ -4950,8 +4948,8 @@
   {
     "userId": 69233,
     "userName": "Sam Gong",
-    "roundPoints": 41,
-    "overallPoints": 217,
+    "roundPoints": 43,
+    "overallPoints": 219,
     "lineup": {
       "GK": [
         1099
@@ -4993,8 +4991,8 @@
   {
     "userId": 3381228,
     "userName": "Xinhu",
-    "roundPoints": 33,
-    "overallPoints": 213,
+    "roundPoints": 34,
+    "overallPoints": 214,
     "lineup": {
       "GK": [
         477
@@ -5035,8 +5033,8 @@
   {
     "userId": 68835,
     "userName": "Chichung",
-    "roundPoints": 82,
-    "overallPoints": 281,
+    "roundPoints": 83,
+    "overallPoints": 282,
     "lineup": {
       "GK": [
         677
@@ -5078,8 +5076,8 @@
   {
     "userId": 2453891,
     "userName": "Fynn1987",
-    "roundPoints": 29,
-    "overallPoints": 192,
+    "roundPoints": 31,
+    "overallPoints": 194,
     "lineup": {
       "GK": [
         1098
@@ -5121,8 +5119,8 @@
   {
     "userId": 2465916,
     "userName": "SSU-FAIAA",
-    "roundPoints": 46,
-    "overallPoints": 237,
+    "roundPoints": 47,
+    "overallPoints": 238,
     "lineup": {
       "GK": [
         730
@@ -5247,8 +5245,8 @@
   {
     "userId": 4449643,
     "userName": "tinytofusoup",
-    "roundPoints": 30,
-    "overallPoints": 206,
+    "roundPoints": 32,
+    "overallPoints": 208,
     "lineup": {
       "GK": [
         677
@@ -5289,8 +5287,8 @@
   {
     "userId": 42271,
     "userName": "NotBadWu",
-    "roundPoints": 80,
-    "overallPoints": 258,
+    "roundPoints": 81,
+    "overallPoints": 259,
     "lineup": {
       "GK": [
         477
@@ -5331,8 +5329,8 @@
   {
     "userId": 161663,
     "userName": "AVERAGE",
-    "roundPoints": 73,
-    "overallPoints": 258,
+    "roundPoints": 74,
+    "overallPoints": 259,
     "lineup": {
       "GK": [
         730
@@ -5373,8 +5371,8 @@
   {
     "userId": 42320,
     "userName": "Dear Madridista",
-    "roundPoints": 76,
-    "overallPoints": 263,
+    "roundPoints": 77,
+    "overallPoints": 264,
     "lineup": {
       "GK": [
         453
@@ -5457,8 +5455,8 @@
   {
     "userId": 54442,
     "userName": "YERY DISCO",
-    "roundPoints": 61,
-    "overallPoints": 263,
+    "roundPoints": 63,
+    "overallPoints": 265,
     "lineup": {
       "GK": [
         423
@@ -5499,8 +5497,8 @@
   {
     "userId": 3053294,
     "userName": "Milan in UCL",
-    "roundPoints": 72,
-    "overallPoints": 258,
+    "roundPoints": 63,
+    "overallPoints": 249,
     "lineup": {
       "GK": [
         183
@@ -5535,7 +5533,7 @@
       ],
       "FWD": []
     },
-    "captain": 500,
+    "captain": 468,
     "viceCaptain": 173
   },
   {
@@ -5583,8 +5581,8 @@
   {
     "userId": 2528977,
     "userName": "MUGGJY68",
-    "roundPoints": 62,
-    "overallPoints": 252,
+    "roundPoints": 64,
+    "overallPoints": 254,
     "lineup": {
       "GK": [
         214
@@ -5668,8 +5666,8 @@
   {
     "userId": 2593334,
     "userName": "CLyu-FBPride",
-    "roundPoints": 36,
-    "overallPoints": 161,
+    "roundPoints": 35,
+    "overallPoints": 160,
     "lineup": {
       "GK": [
         317
@@ -5704,14 +5702,14 @@
         468
       ]
     },
-    "captain": 1696,
+    "captain": 206,
     "viceCaptain": 317
   },
   {
     "userId": 2561309,
     "userName": "xhuu Penguin",
-    "roundPoints": 76,
-    "overallPoints": 252,
+    "roundPoints": 77,
+    "overallPoints": 253,
     "lineup": {
       "GK": [
         910
@@ -5794,8 +5792,8 @@
   {
     "userId": 2405706,
     "userName": "Vamos Espana19",
-    "roundPoints": 72,
-    "overallPoints": 265,
+    "roundPoints": 73,
+    "overallPoints": 266,
     "lineup": {
       "GK": [
         423
@@ -6048,8 +6046,8 @@
   {
     "userId": 4050078,
     "userName": "rycbarm",
-    "roundPoints": 17,
-    "overallPoints": 146,
+    "roundPoints": 20,
+    "overallPoints": 149,
     "lineup": {
       "GK": [
         45
@@ -6091,19 +6089,19 @@
   {
     "userId": 3030132,
     "userName": "lorwyn",
-    "roundPoints": 70,
-    "overallPoints": 211,
+    "roundPoints": 65,
+    "overallPoints": 206,
     "lineup": {
       "GK": [
-        317
+        214
       ],
       "DEF": [
         303,
         684,
-        795,
-        1035
+        795
       ],
       "MID": [
+        939,
         1133,
         2022,
         792
@@ -6116,25 +6114,25 @@
     },
     "bench": {
       "GK": [
-        214
+        317
       ],
       "DEF": [
+        1035,
         2014
       ],
       "MID": [
-        736,
-        939
+        736
       ],
       "FWD": []
     },
-    "captain": 1035,
+    "captain": 214,
     "viceCaptain": 807
   },
   {
     "userId": 3031284,
     "userName": "watermelon2018",
-    "roundPoints": 39,
-    "overallPoints": 180,
+    "roundPoints": 40,
+    "overallPoints": 181,
     "lineup": {
       "GK": [
         477
@@ -6175,8 +6173,8 @@
   {
     "userId": 3835859,
     "userName": "Zack Zhang",
-    "roundPoints": 61,
-    "overallPoints": 224,
+    "roundPoints": 60,
+    "overallPoints": 223,
     "lineup": {
       "GK": [
         317
@@ -6187,7 +6185,7 @@
         58
       ],
       "MID": [
-        1114,
+        256,
         939,
         173,
         1223
@@ -6207,7 +6205,7 @@
         1142
       ],
       "MID": [
-        256
+        1114
       ],
       "FWD": []
     },
@@ -6217,8 +6215,8 @@
   {
     "userId": 3086439,
     "userName": "rizhang d",
-    "roundPoints": 20,
-    "overallPoints": 160,
+    "roundPoints": 24,
+    "overallPoints": 164,
     "lineup": {
       "GK": [
         45
@@ -6260,8 +6258,8 @@
   {
     "userId": 2487762,
     "userName": "liccool",
-    "roundPoints": 22,
-    "overallPoints": 156,
+    "roundPoints": 24,
+    "overallPoints": 158,
     "lineup": {
       "GK": [
         235
@@ -6346,8 +6344,8 @@
   {
     "userId": 3470439,
     "userName": "Amono1ogue",
-    "roundPoints": 55,
-    "overallPoints": 186,
+    "roundPoints": 56,
+    "overallPoints": 187,
     "lineup": {
       "GK": [
         677
@@ -6388,8 +6386,8 @@
   {
     "userId": 3948568,
     "userName": "Elliott2323",
-    "roundPoints": 61,
-    "overallPoints": 221,
+    "roundPoints": 62,
+    "overallPoints": 222,
     "lineup": {
       "GK": [
         1569
