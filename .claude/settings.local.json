@@ -17,7 +17,8 @@
       "mcp__Claude_Preview__preview_start",
       "Bash(taskkill -PID 13956 -F)",
       "Bash(node -e \"require\\('./rules/round3'\\)\")",
-      "Bash(taskkill -PID 37836 -F)"
+      "Bash(taskkill -PID 37836 -F)",
+      "Bash(node -e \"require\\('./rules/round4'\\)\")"
     ]
   }
 }

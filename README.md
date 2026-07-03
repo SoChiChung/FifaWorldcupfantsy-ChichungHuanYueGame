@@ -23,10 +23,12 @@
 │
 ├── scripts/
 │   ├── lib/
-│   │   └── data.js               # 统一数据读写 + getStat 查询函数
-│   ├── fetchPlayers.js           # 拉取所有玩家阵容
-│   ├── fetchFootballers.js       # 去重拉取唯一球员数据
+│   │   ├── data.js               # 统一数据读写 + getStat 查询函数
+│   │   └── pool.js               # Promise 并发池（固定并发 + 指数退避重试）
+│   ├── fetchPlayers.js           # 拉取所有玩家阵容（并发 10、自动重试）
+│   ├── fetchFootballers.js       # 去重拉取唯一球员数据（并发 10、自动重试）
 │   ├── runRules.js               # 执行当前轮规则
+│   ├── dev.js                    # 本地开发服务器（零依赖）
 │   └── update.js                 # 完整编排脚本（上述三步 + 复制到 docs）
 │
 ├── docs/
@@ -98,6 +100,44 @@ npm run dev
 
 > 前提：已运行过 `npm run update`（或 `node scripts/update.js`），确保 `docs/data/` 下有 JSON 文件。
 
+## 规则列表
+
+### Round 1: 最低总分淘汰
+
+- **文件**: `rules/round1.js`
+- **规则**: 淘汰 `roundPoints` 最低的 1 位玩家
+- **数据来源**: `p.roundPoints`（来自 `players.json`，无需 `getStat`）
+- **Tie-break**: 无（仅按 `points` 降序，userId 稳定排序）
+
+### Round 2: 最低射正淘汰
+
+- **文件**: `rules/round2.js`
+- **规则**: 淘汰首发 11 人 **射正（ST）总数** 最少的 5 位玩家
+- **数据来源**: `getStat(playerId, roundId, 'ST')` — 遍历 lineup GK/DEF/MID/FWD
+- **Tie-break**（四级排序）:
+
+| 优先级 | 指标 | 方向 | 说明 |
+|--------|------|------|------|
+| 1 | `totalST` | 降序 | 射正越多越靠前 |
+| 2 | `totalGS` | 降序 | 进球越多越靠前 |
+| 3 | `totalMP` | 升序 | 出场时间越少越靠前 |
+| 4 | `userId` | 升序 | 稳定排序，不参与规则判定 |
+
+- **ranking 字段**: `{ userId, userName, totalST, totalGS, totalMP }`
+- **并列检测**: 第 5 名与第 6 名三项指标完全相同 → `extra.tieDetected = true`
+
+### Round 3: 掐头去尾
+
+- **文件**: `rules/round3.js`
+- **规则**: 淘汰本轮得分 **前 10 名**（最高分）和 **后 10 名**（最低分），合计 20 人
+- **数据来源**: `p.roundPoints`（来自 `players.json`，无需 `getStat`）
+- **前置过滤**: 从 `previousResults` 中排除前两轮已淘汰的玩家，仅存活玩家参与排名
+- **Tie-break**: 仅按 `points` 降序，userId 稳定排序
+- **ranking 字段**: `{ userId, userName, points }`
+- **并列检测**: 第 10/11 名边界 或 倒数第 10/11 名边界 `points` 相同 → `extra.tieDetected = true`
+
+---
+
 ## 新增一轮规则
 
 1. 修改 `config.json` 中的 `roundId`。
@@ -109,9 +149,9 @@ module.exports = function roundN({ players, getStat, roundId, previousResults })
   return {
     title: 'Round N: ...',
     description: '规则说明（中文）',
-    ranking: [ { userId, userName, 自定义指标 } ],   // 完整排名
-    eliminated: [ { userId, userName, 自定义指标 } ], // 本轮淘汰者（取 ranking 尾部）
-    extra: {}                                         // 附加数据（可选）
+    ranking: [ { userId, userName, 自定义指标 } ],
+    eliminated: [ { userId, userName, 自定义指标 } ],
+    extra: { tieDetected: false }
   };
 };
 ```
@@ -123,13 +163,13 @@ module.exports = function roundN({ players, getStat, roundId, previousResults })
 | `players` | `players.json` 全体数组，保留 lineup（GK/DEF/MID/FWD）结构 |
 | `getStat(id, roundId, stat)` | 查询某球员在某轮的某项数据，不存在返回 0 |
 | `roundId` | 当前轮次号 |
-| `previousResults` | 之前所有轮次的 `result.json`，不含当前轮 |
+| `previousResults` | 之前所有轮次的 `result.json`，不含当前轮（用于排除已淘汰玩家） |
 
 3. 提交代码，GitHub Actions 会自动执行新规则。无需修改任何其他文件。
 
 ### getStat 可用的 stat 名称
 
-`ST`、`GS`、`AS`、`YC`、`RC`、`CS`、`SV`、`GC`、`PKG`、`OG`、`points`。
+`ST`、`GS`、`AS`、`YC`、`RC`、`CS`、`SV`、`GC`、`PKG`、`OG`、`MP`、`points`。
 
 ## 架构原则
 
@@ -138,6 +178,7 @@ module.exports = function roundN({ players, getStat, roundId, previousResults })
 3. **同一球员只请求一次** — `fetchFootballers.js` 用 Set 去重
 4. **数据结构优先扩展性** — 阵容保留 GK/DEF/MID/FWD 位置，`footballers.json` 用 `{id: {round: {stats}}}` 结构
 5. **新增规则不改底层** — 只需加一个 `rules/roundN.js`，不改 scripts
+6. **并发请求 + 自动重试** — `pool.js` 固定并发 10，每个请求最多重试 3 次（指数退避 1s / 2s / 4s），避免瞬时波动导致整轮数据丢失
 
 ## 配置说明
 

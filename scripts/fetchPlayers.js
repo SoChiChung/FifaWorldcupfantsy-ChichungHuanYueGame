@@ -38,6 +38,7 @@ async function fetchPlayers() {
         userName: p.userName,
         roundPoints: team.roundPoints,
         overallPoints: team.overallPoints,
+        captainChanges: (team.captainChanges || []).length,
         lineup: team.lineup,
         bench: team.bench,
         captain: team.captain,
