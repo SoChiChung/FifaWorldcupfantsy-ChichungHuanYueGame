@@ -1963,7 +1963,7 @@
       {
         "userId": 161274,
         "userName": "Zhongvid Silva",
-        "captainChanges": 8
+        "captainChanges": 10
       },
       {
         "userId": 2466335,
@@ -1974,6 +1974,11 @@
         "userId": 3398330,
         "userName": "You don't call him Jeff",
         "captainChanges": 7
+      },
+      {
+        "userId": 3030132,
+        "userName": "lorwyn",
+        "captainChanges": 6
       },
       {
         "userId": 3030443,
@@ -2001,11 +2006,6 @@
         "captainChanges": 5
       },
       {
-        "userId": 3030132,
-        "userName": "lorwyn",
-        "captainChanges": 5
-      },
-      {
         "userId": 3034120,
         "userName": "Gumption",
         "captainChanges": 5
@@ -2013,6 +2013,11 @@
       {
         "userId": 3034759,
         "userName": "Noodle FC",
+        "captainChanges": 5
+      },
+      {
+        "userId": 3088347,
+        "userName": "Echoteam",
         "captainChanges": 5
       },
       {
@@ -2068,11 +2073,6 @@
       {
         "userId": 3065908,
         "userName": "Zhangshuai831",
-        "captainChanges": 4
-      },
-      {
-        "userId": 3088347,
-        "userName": "Echoteam",
         "captainChanges": 4
       },
       {
@@ -2143,6 +2143,11 @@
       {
         "userId": 2459137,
         "userName": "Shindo Hikaru",
+        "captainChanges": 3
+      },
+      {
+        "userId": 2465916,
+        "userName": "SSU-FAIAA",
         "captainChanges": 3
       },
       {
@@ -2288,11 +2293,6 @@
       {
         "userId": 2463734,
         "userName": "HindMics",
-        "captainChanges": 2
-      },
-      {
-        "userId": 2465916,
-        "userName": "SSU-FAIAA",
         "captainChanges": 2
       },
       {
@@ -2600,7 +2600,7 @@
       {
         "userId": 161274,
         "userName": "Zhongvid Silva",
-        "captainChanges": 8
+        "captainChanges": 10
       },
       {
         "userId": 2466335,
@@ -2611,6 +2611,11 @@
         "userId": 3398330,
         "userName": "You don't call him Jeff",
         "captainChanges": 7
+      },
+      {
+        "userId": 3030132,
+        "userName": "lorwyn",
+        "captainChanges": 6
       },
       {
         "userId": 3030443,
@@ -2638,11 +2643,6 @@
         "captainChanges": 5
       },
       {
-        "userId": 3030132,
-        "userName": "lorwyn",
-        "captainChanges": 5
-      },
-      {
         "userId": 3034120,
         "userName": "Gumption",
         "captainChanges": 5
@@ -2653,15 +2653,20 @@
         "captainChanges": 5
       },
       {
+        "userId": 3088347,
+        "userName": "Echoteam",
+        "captainChanges": 5
+      },
+      {
         "userId": 3295638,
         "userName": "BatiGooal",
         "captainChanges": 5
       }
     ],
     "extra": {
-      "maxChanges": 8,
+      "maxChanges": 10,
       "minChanges": 5,
-      "eliminatedCount": 12
+      "eliminatedCount": 13
     }
   }
 }
