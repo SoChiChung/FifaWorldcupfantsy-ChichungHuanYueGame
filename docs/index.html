@@ -83,7 +83,7 @@
 
     ranking.forEach(function(r, i) {
       var isDead = eliminatedSet.has(r.userId);
-      var metricKey = Object.keys(r).find(function(k) { return k !== 'userId' && k !== 'userName'; }) || 'points';
+      var metricKey = Object.keys(r).find(function(k) { return k !== 'userId' && k !== 'userName' && k !== 'rank'; }) || 'points';
       html += '<tr class="' + (isDead ? 'eliminated' : '') + '">';
       html += '<td class="rank">' + (i + 1) + '</td>';
       html += '<td>' + (r.userName || nameMap[r.userId] || r.userId) + '</td>';

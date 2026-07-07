@@ -33,7 +33,7 @@ function runRules() {
   }
 
   const rule = require(rulePath);
-  const result = rule({ players, getStat, roundId, previousResults });
+  const result = rule({ players, getStat, roundId, previousResults, qualifier: config.qualifier });
 
   if (!result || !result.title || !result.ranking || !result.eliminated) {
     console.error('ERROR: Rule must return { title, description, ranking, eliminated, extra }');

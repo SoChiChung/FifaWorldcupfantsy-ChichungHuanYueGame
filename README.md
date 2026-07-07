@@ -8,7 +8,7 @@
 
 ```
 /
-├── config.json                   # 全局配置（roundId、Cookie）
+├── config.json                   # 全局配置（roundId、Cookie、qualifier）
 │
 ├── data/
 │   ├── huanyue.json              # 范特西玩家快照（固定名单，手动维护）
@@ -18,14 +18,17 @@
 │
 ├── rules/
 │   ├── round1.js                 # Round 1 规则：淘汰总分最低 1 人
-│   ├── round2.js                 # Round 2 规则：淘汰首发 ST 最少 5 人
+│   ├── round2.js                 # Round 2 规则：淘汰首发 ST 最少 5 人（含 Tie-break）
+│   ├── round3.js                 # Round 3 规则：掐头去尾淘汰 20 人
+│   ├── round4.js                 # Round 4 规则：档位吞并 — 更换队长次数
+│   ├── round5.js                 # Round 5 规则：奇数偶数大逃杀 — 按排名奇偶淘汰
 │   └── ...                       # 后续每轮新增一个文件即可
 │
 ├── scripts/
 │   ├── lib/
 │   │   ├── data.js               # 统一数据读写 + getStat 查询函数
 │   │   └── pool.js               # Promise 并发池（固定并发 + 指数退避重试）
-│   ├── fetchPlayers.js           # 拉取所有玩家阵容（并发 10、自动重试）
+│   ├── fetchPlayers.js           # 拉取所有玩家阵容（含 roundPoints、lineup、captainChanges）
 │   ├── fetchFootballers.js       # 去重拉取唯一球员数据（并发 10、自动重试）
 │   ├── runRules.js               # 执行当前轮规则
 │   ├── dev.js                    # 本地开发服务器（零依赖）
@@ -135,6 +138,35 @@ npm run dev
 - **Tie-break**: 仅按 `points` 降序，userId 稳定排序
 - **ranking 字段**: `{ userId, userName, points }`
 - **并列检测**: 第 10/11 名边界 或 倒数第 10/11 名边界 `points` 相同 → `extra.tieDetected = true`
+
+### Round 4: 不许多动症
+
+- **文件**: `rules/round4.js`
+- **规则**: 按更换队长次数（`captainChanges`）分档统计，从最高档位逐档累计。累计 ≥ 10 人后继续吞并后续小档位（档位人数 ≤ 累计则吞并），区间内全部淘汰
+- **数据来源**: `p.captainChanges`（来自 `players.json`，由 `fetchPlayers.js` 从 `success.captainChanges.length` 提取）
+- **淘汰算法**（档位吞并）:
+  1. 存活玩家按 `captainChanges` 分组，降序排列档位
+  2. 从最高档逐档累计，累计 ≥ 10 时触发
+  3. 触发后检查下一档：人数 ≤ 累计 → 吞并；人数 > 累计 → 停止
+  4. 最高档到停止档之间的所有玩家淘汰
+- **前置过滤**: 从 `previousResults` 中排除历轮已淘汰玩家
+- **Tie-break**: 档位机制自动处理并列，无需单独检测
+- **ranking 字段**: `{ userId, userName, captainChanges }`
+- **extra 字段**: `{ maxChanges, minChanges, eliminatedCount }`
+
+### Round 5: 奇数偶数大逃杀
+
+- **文件**: `rules/round5.js`
+- **规则**: 存活玩家按 `roundPoints` 降序排名，根据 `config.json` 中的 `qualifier` 决定淘汰奇/偶排名
+- **数据来源**: `p.roundPoints`（来自 `players.json`）+ `qualifier`（来自 `config.json`，由 `runRules.js` 注入）
+- **淘汰逻辑**:
+  - `qualifier = 1`（Spain 晋级）→ 淘汰偶数排名（2, 4, 6, ...）
+  - `qualifier = 2`（Portugal 晋级）→ 淘汰奇数排名（1, 3, 5, ...）
+  - 其他值 → 全员淘汰（配置错误保护）
+- **前置过滤**: 从 `previousResults` 中排除历轮已淘汰玩家
+- **Tie-break**: `roundPoints` 降序 → `userId` 升序
+- **ranking 字段**: `{ rank, userId, userName, points }`（`rank` 为 1-based 自然排名）
+- **extra 字段**: `{ qualifier, qualifierName, eliminationType }`
 
 ---
 

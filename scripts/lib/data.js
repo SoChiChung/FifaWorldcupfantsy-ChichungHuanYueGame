@@ -12,7 +12,8 @@ function loadConfig() {
   const cfg = readJSON(path.join(ROOT, 'config.json'));
   return {
     roundId: cfg.roundId,
-    cookie: cfg.COOKIE || cfg.cookie || ''
+    cookie: cfg.COOKIE || cfg.cookie || '',
+    qualifier: cfg.qualifier || 0
   };
 }
 
