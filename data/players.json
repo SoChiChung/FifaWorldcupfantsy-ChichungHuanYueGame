@@ -4241,17 +4241,18 @@
     "userName": "Zhongvid Silva",
     "roundPoints": 32,
     "overallPoints": 439,
-    "captainChanges": 0,
+    "captainChanges": 1,
     "lineup": {
       "GK": [
         2010
       ],
       "DEF": [
-        114,
+        1320,
         461,
-        2014
+        1141
       ],
       "MID": [
+        474,
         2020,
         501,
         469,
@@ -4259,8 +4260,7 @@
       ],
       "FWD": [
         500,
-        468,
-        2023
+        468
       ]
     },
     "bench": {
@@ -4268,15 +4268,15 @@
         477
       ],
       "DEF": [
-        1141,
-        1320
+        2014,
+        114
       ],
-      "MID": [
-        474
-      ],
-      "FWD": []
+      "MID": [],
+      "FWD": [
+        2023
+      ]
     },
-    "captain": 2020,
+    "captain": 474,
     "viceCaptain": 461
   },
   {
