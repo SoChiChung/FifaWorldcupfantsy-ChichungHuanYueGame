@@ -2668,5 +2668,1770 @@
       "minChanges": 5,
       "eliminatedCount": 13
     }
+  },
+  "5": {
+    "title": "Round 5: Odd Even Battle Royale",
+    "description": "Spain 晋级！淘汰排行榜上所有偶数排名的玩家。(单轮分数一致总分高者靠前，单轮分&总分一致userId少的靠前)",
+    "ranking": [
+      {
+        "rank": 1,
+        "userId": 2948378,
+        "userName": "Kano99",
+        "points": 107,
+        "totalPoints": 444
+      },
+      {
+        "rank": 2,
+        "userId": 2589765,
+        "userName": "Cloudzzy",
+        "points": 102,
+        "totalPoints": 483
+      },
+      {
+        "rank": 3,
+        "userId": 67094,
+        "userName": "wc1018",
+        "points": 98,
+        "totalPoints": 503
+      },
+      {
+        "rank": 4,
+        "userId": 3457560,
+        "userName": "Amber Tail",
+        "points": 95,
+        "totalPoints": 547
+      },
+      {
+        "rank": 5,
+        "userId": 2405706,
+        "userName": "Vamos Espana19",
+        "points": 95,
+        "totalPoints": 506
+      },
+      {
+        "rank": 6,
+        "userId": 993386,
+        "userName": "HoChuencheong",
+        "points": 94,
+        "totalPoints": 520
+      },
+      {
+        "rank": 7,
+        "userId": 3381228,
+        "userName": "Xinhu",
+        "points": 94,
+        "totalPoints": 448
+      },
+      {
+        "rank": 8,
+        "userId": 67109,
+        "userName": "TFjunkai",
+        "points": 93,
+        "totalPoints": 448
+      },
+      {
+        "rank": 9,
+        "userId": 1844522,
+        "userName": "FIFAntasis",
+        "points": 92,
+        "totalPoints": 526
+      },
+      {
+        "rank": 10,
+        "userId": 3835859,
+        "userName": "Zack Zhang",
+        "points": 92,
+        "totalPoints": 443
+      },
+      {
+        "rank": 11,
+        "userId": 3840482,
+        "userName": "ChangshouRoad Wonton noodles",
+        "points": 90,
+        "totalPoints": 465
+      },
+      {
+        "rank": 12,
+        "userId": 3423111,
+        "userName": "Chelsea Mata",
+        "points": 90,
+        "totalPoints": 459
+      },
+      {
+        "rank": 13,
+        "userId": 3543285,
+        "userName": "AFEI",
+        "points": 90,
+        "totalPoints": 459
+      },
+      {
+        "rank": 14,
+        "userId": 68892,
+        "userName": "clocat",
+        "points": 89,
+        "totalPoints": 510
+      },
+      {
+        "rank": 15,
+        "userId": 3069640,
+        "userName": "RyanFish2026",
+        "points": 87,
+        "totalPoints": 505
+      },
+      {
+        "rank": 16,
+        "userId": 2493322,
+        "userName": "Hyber Sun",
+        "points": 87,
+        "totalPoints": 500
+      },
+      {
+        "rank": 17,
+        "userId": 2463734,
+        "userName": "HindMics",
+        "points": 86,
+        "totalPoints": 496
+      },
+      {
+        "rank": 18,
+        "userId": 3288030,
+        "userName": "Wxx",
+        "points": 85,
+        "totalPoints": 516
+      },
+      {
+        "rank": 19,
+        "userId": 234512,
+        "userName": "dongma",
+        "points": 84,
+        "totalPoints": 495
+      },
+      {
+        "rank": 20,
+        "userId": 4602532,
+        "userName": "takahashiAki",
+        "points": 84,
+        "totalPoints": 488
+      },
+      {
+        "rank": 21,
+        "userId": 3030018,
+        "userName": "KW1023",
+        "points": 84,
+        "totalPoints": 482
+      },
+      {
+        "rank": 22,
+        "userId": 3071074,
+        "userName": "Stephen Teng",
+        "points": 84,
+        "totalPoints": 462
+      },
+      {
+        "rank": 23,
+        "userId": 2488334,
+        "userName": "Leo Xie",
+        "points": 84,
+        "totalPoints": 446
+      },
+      {
+        "rank": 24,
+        "userId": 2794666,
+        "userName": "superkod",
+        "points": 83,
+        "totalPoints": 507
+      },
+      {
+        "rank": 25,
+        "userId": 2465916,
+        "userName": "SSU-FAIAA",
+        "points": 83,
+        "totalPoints": 476
+      },
+      {
+        "rank": 26,
+        "userId": 232281,
+        "userName": "Yemon1130",
+        "points": 83,
+        "totalPoints": 459
+      },
+      {
+        "rank": 27,
+        "userId": 3338915,
+        "userName": "Baros15",
+        "points": 82,
+        "totalPoints": 500
+      },
+      {
+        "rank": 28,
+        "userId": 3031014,
+        "userName": "dowman",
+        "points": 82,
+        "totalPoints": 476
+      },
+      {
+        "rank": 29,
+        "userId": 2560198,
+        "userName": "JOHNNYOCEAN",
+        "points": 81,
+        "totalPoints": 505
+      },
+      {
+        "rank": 30,
+        "userId": 42320,
+        "userName": "Dear Madridista",
+        "points": 81,
+        "totalPoints": 493
+      },
+      {
+        "rank": 31,
+        "userId": 3037463,
+        "userName": "World Cup all-lose team",
+        "points": 81,
+        "totalPoints": 477
+      },
+      {
+        "rank": 32,
+        "userId": 2528977,
+        "userName": "MUGGJY68",
+        "points": 81,
+        "totalPoints": 473
+      },
+      {
+        "rank": 33,
+        "userId": 99256,
+        "userName": "baoyingsalah",
+        "points": 80,
+        "totalPoints": 523
+      },
+      {
+        "rank": 34,
+        "userId": 3467156,
+        "userName": "Golden Sheva",
+        "points": 80,
+        "totalPoints": 475
+      },
+      {
+        "rank": 35,
+        "userId": 775227,
+        "userName": "BadK",
+        "points": 80,
+        "totalPoints": 469
+      },
+      {
+        "rank": 36,
+        "userId": 42581,
+        "userName": "RemInory",
+        "points": 79,
+        "totalPoints": 492
+      },
+      {
+        "rank": 37,
+        "userId": 3030481,
+        "userName": "DelayNoMore67",
+        "points": 79,
+        "totalPoints": 489
+      },
+      {
+        "rank": 38,
+        "userId": 197821,
+        "userName": "conan coys",
+        "points": 79,
+        "totalPoints": 480
+      },
+      {
+        "rank": 39,
+        "userId": 193029,
+        "userName": "YZF",
+        "points": 79,
+        "totalPoints": 469
+      },
+      {
+        "rank": 40,
+        "userId": 69233,
+        "userName": "Sam Gong",
+        "points": 79,
+        "totalPoints": 426
+      },
+      {
+        "rank": 41,
+        "userId": 354155,
+        "userName": "Kimi X",
+        "points": 78,
+        "totalPoints": 491
+      },
+      {
+        "rank": 42,
+        "userId": 2484443,
+        "userName": "Champion Leeds",
+        "points": 78,
+        "totalPoints": 491
+      },
+      {
+        "rank": 43,
+        "userId": 2576638,
+        "userName": "Mademoiselle Meow",
+        "points": 78,
+        "totalPoints": 490
+      },
+      {
+        "rank": 44,
+        "userId": 3213180,
+        "userName": "Henry Tian",
+        "points": 77,
+        "totalPoints": 516
+      },
+      {
+        "rank": 45,
+        "userId": 3029885,
+        "userName": "JW3huajian",
+        "points": 77,
+        "totalPoints": 506
+      },
+      {
+        "rank": 46,
+        "userId": 2461158,
+        "userName": "Mongolia Doctor",
+        "points": 77,
+        "totalPoints": 476
+      },
+      {
+        "rank": 47,
+        "userId": 3053780,
+        "userName": "wthegoat",
+        "points": 76,
+        "totalPoints": 511
+      },
+      {
+        "rank": 48,
+        "userId": 147305,
+        "userName": "anderhipple",
+        "points": 76,
+        "totalPoints": 494
+      },
+      {
+        "rank": 49,
+        "userId": 65913,
+        "userName": "DannytheDestroyer",
+        "points": 76,
+        "totalPoints": 492
+      },
+      {
+        "rank": 50,
+        "userId": 4273355,
+        "userName": "ikun",
+        "points": 76,
+        "totalPoints": 419
+      },
+      {
+        "rank": 51,
+        "userId": 3067023,
+        "userName": "Law Chen",
+        "points": 75,
+        "totalPoints": 521
+      },
+      {
+        "rank": 52,
+        "userId": 194153,
+        "userName": "China Numba 1",
+        "points": 75,
+        "totalPoints": 439
+      },
+      {
+        "rank": 53,
+        "userId": 68835,
+        "userName": "Chichung",
+        "points": 74,
+        "totalPoints": 493
+      },
+      {
+        "rank": 54,
+        "userId": 3086214,
+        "userName": "xingx",
+        "points": 74,
+        "totalPoints": 481
+      },
+      {
+        "rank": 55,
+        "userId": 2489215,
+        "userName": "DNMCCB",
+        "points": 74,
+        "totalPoints": 445
+      },
+      {
+        "rank": 56,
+        "userId": 2468434,
+        "userName": "Arsenal gunner",
+        "points": 73,
+        "totalPoints": 493
+      },
+      {
+        "rank": 57,
+        "userId": 3224844,
+        "userName": "TSiu",
+        "points": 73,
+        "totalPoints": 490
+      },
+      {
+        "rank": 58,
+        "userId": 3046698,
+        "userName": "ShuoOwO",
+        "points": 73,
+        "totalPoints": 487
+      },
+      {
+        "rank": 59,
+        "userId": 2524264,
+        "userName": "Fan Jiaorui",
+        "points": 73,
+        "totalPoints": 484
+      },
+      {
+        "rank": 60,
+        "userId": 43055,
+        "userName": "Old Man Push Car",
+        "points": 73,
+        "totalPoints": 470
+      },
+      {
+        "rank": 61,
+        "userId": 1904011,
+        "userName": "fishenal",
+        "points": 73,
+        "totalPoints": 461
+      },
+      {
+        "rank": 62,
+        "userId": 3160016,
+        "userName": "ShuoGuOwO",
+        "points": 72,
+        "totalPoints": 495
+      },
+      {
+        "rank": 63,
+        "userId": 3224529,
+        "userName": "AnonTokyo",
+        "points": 72,
+        "totalPoints": 494
+      },
+      {
+        "rank": 64,
+        "userId": 2459137,
+        "userName": "Shindo Hikaru",
+        "points": 72,
+        "totalPoints": 490
+      },
+      {
+        "rank": 65,
+        "userId": 2794671,
+        "userName": "Verbruggen gogogo",
+        "points": 72,
+        "totalPoints": 422
+      },
+      {
+        "rank": 66,
+        "userId": 65850,
+        "userName": "mystery-13",
+        "points": 71,
+        "totalPoints": 520
+      },
+      {
+        "rank": 67,
+        "userId": 2540931,
+        "userName": "LA LAD",
+        "points": 71,
+        "totalPoints": 519
+      },
+      {
+        "rank": 68,
+        "userId": 2487793,
+        "userName": "360swj",
+        "points": 71,
+        "totalPoints": 499
+      },
+      {
+        "rank": 69,
+        "userId": 2471323,
+        "userName": "Worldwide Silence YHC111",
+        "points": 71,
+        "totalPoints": 425
+      },
+      {
+        "rank": 70,
+        "userId": 3473373,
+        "userName": "Fuermozhu",
+        "points": 71,
+        "totalPoints": 369
+      },
+      {
+        "rank": 71,
+        "userId": 2472296,
+        "userName": "message username ",
+        "points": 70,
+        "totalPoints": 497
+      },
+      {
+        "rank": 72,
+        "userId": 1998354,
+        "userName": "Rainbow Desert",
+        "points": 69,
+        "totalPoints": 489
+      },
+      {
+        "rank": 73,
+        "userId": 2502352,
+        "userName": "Xi9Li",
+        "points": 69,
+        "totalPoints": 473
+      },
+      {
+        "rank": 74,
+        "userId": 3742203,
+        "userName": "Sicca",
+        "points": 69,
+        "totalPoints": 431
+      },
+      {
+        "rank": 75,
+        "userId": 3043614,
+        "userName": "Sirius666",
+        "points": 68,
+        "totalPoints": 480
+      },
+      {
+        "rank": 76,
+        "userId": 161663,
+        "userName": "AVERAGE",
+        "points": 68,
+        "totalPoints": 473
+      },
+      {
+        "rank": 77,
+        "userId": 3063581,
+        "userName": "zhustar",
+        "points": 68,
+        "totalPoints": 470
+      },
+      {
+        "rank": 78,
+        "userId": 3635883,
+        "userName": "michaelbao ",
+        "points": 68,
+        "totalPoints": 457
+      },
+      {
+        "rank": 79,
+        "userId": 3030084,
+        "userName": "yyj",
+        "points": 68,
+        "totalPoints": 414
+      },
+      {
+        "rank": 80,
+        "userId": 2462478,
+        "userName": "xiaoxinJerry",
+        "points": 67,
+        "totalPoints": 511
+      },
+      {
+        "rank": 81,
+        "userId": 3031654,
+        "userName": "Xiaoyaoxiaoyao",
+        "points": 67,
+        "totalPoints": 507
+      },
+      {
+        "rank": 82,
+        "userId": 3136052,
+        "userName": "cybrger",
+        "points": 67,
+        "totalPoints": 483
+      },
+      {
+        "rank": 83,
+        "userId": 353380,
+        "userName": "samuellinshan",
+        "points": 67,
+        "totalPoints": 462
+      },
+      {
+        "rank": 84,
+        "userId": 3068488,
+        "userName": "QQAAQQ",
+        "points": 67,
+        "totalPoints": 458
+      },
+      {
+        "rank": 85,
+        "userId": 2561309,
+        "userName": "xhuu Penguin",
+        "points": 67,
+        "totalPoints": 426
+      },
+      {
+        "rank": 86,
+        "userId": 780635,
+        "userName": "fitzzzzzz",
+        "points": 66,
+        "totalPoints": 513
+      },
+      {
+        "rank": 87,
+        "userId": 67507,
+        "userName": "Loki777",
+        "points": 66,
+        "totalPoints": 498
+      },
+      {
+        "rank": 88,
+        "userId": 3030911,
+        "userName": "Nagimenz",
+        "points": 66,
+        "totalPoints": 479
+      },
+      {
+        "rank": 89,
+        "userId": 68709,
+        "userName": "amychenhaoyu",
+        "points": 66,
+        "totalPoints": 478
+      },
+      {
+        "rank": 90,
+        "userId": 42271,
+        "userName": "NotBadWu",
+        "points": 66,
+        "totalPoints": 467
+      },
+      {
+        "rank": 91,
+        "userId": 3104260,
+        "userName": "ReverFan",
+        "points": 66,
+        "totalPoints": 463
+      },
+      {
+        "rank": 92,
+        "userId": 74777,
+        "userName": "andy andy",
+        "points": 66,
+        "totalPoints": 452
+      },
+      {
+        "rank": 93,
+        "userId": 4449643,
+        "userName": "tinytofusoup",
+        "points": 66,
+        "totalPoints": 404
+      },
+      {
+        "rank": 94,
+        "userId": 3762171,
+        "userName": "Corner Taken Quicklyyyyy",
+        "points": 65,
+        "totalPoints": 396
+      },
+      {
+        "rank": 95,
+        "userId": 194750,
+        "userName": "kusuri",
+        "points": 64,
+        "totalPoints": 487
+      },
+      {
+        "rank": 96,
+        "userId": 2468309,
+        "userName": "GoodBen",
+        "points": 64,
+        "totalPoints": 470
+      },
+      {
+        "rank": 97,
+        "userId": 1171431,
+        "userName": "Sonic G",
+        "points": 64,
+        "totalPoints": 408
+      },
+      {
+        "rank": 98,
+        "userId": 3634300,
+        "userName": "TJ Gunners",
+        "points": 63,
+        "totalPoints": 492
+      },
+      {
+        "rank": 99,
+        "userId": 3028520,
+        "userName": "jingluo",
+        "points": 63,
+        "totalPoints": 469
+      },
+      {
+        "rank": 100,
+        "userId": 3035663,
+        "userName": "Batigoal",
+        "points": 63,
+        "totalPoints": 466
+      },
+      {
+        "rank": 101,
+        "userId": 2593334,
+        "userName": "CLyu-FBPride",
+        "points": 63,
+        "totalPoints": 354
+      },
+      {
+        "rank": 102,
+        "userId": 42443,
+        "userName": "21savage",
+        "points": 62,
+        "totalPoints": 477
+      },
+      {
+        "rank": 103,
+        "userId": 416422,
+        "userName": "HuoluMountainForest",
+        "points": 62,
+        "totalPoints": 467
+      },
+      {
+        "rank": 104,
+        "userId": 4426096,
+        "userName": "lamar zheng",
+        "points": 61,
+        "totalPoints": 463
+      },
+      {
+        "rank": 105,
+        "userId": 2458905,
+        "userName": "xxrrdbigb",
+        "points": 61,
+        "totalPoints": 451
+      },
+      {
+        "rank": 106,
+        "userId": 3156342,
+        "userName": "Dylan Yao",
+        "points": 60,
+        "totalPoints": 497
+      },
+      {
+        "rank": 107,
+        "userId": 2484648,
+        "userName": "Kane-do Attitude ",
+        "points": 60,
+        "totalPoints": 480
+      },
+      {
+        "rank": 108,
+        "userId": 3053294,
+        "userName": "Milan in UCL",
+        "points": 60,
+        "totalPoints": 461
+      },
+      {
+        "rank": 109,
+        "userId": 5388217,
+        "userName": "szewan Lau",
+        "points": 57,
+        "totalPoints": 408
+      },
+      {
+        "rank": 110,
+        "userId": 2584583,
+        "userName": "Round round green arrow",
+        "points": 56,
+        "totalPoints": 469
+      },
+      {
+        "rank": 111,
+        "userId": 3065908,
+        "userName": "Zhangshuai831",
+        "points": 55,
+        "totalPoints": 489
+      },
+      {
+        "rank": 112,
+        "userId": 4933111,
+        "userName": "Ethan1025",
+        "points": 49,
+        "totalPoints": 421
+      },
+      {
+        "rank": 113,
+        "userId": 204548,
+        "userName": "Arsenal HangZhou",
+        "points": 44,
+        "totalPoints": 417
+      },
+      {
+        "rank": 114,
+        "userId": 3140499,
+        "userName": "OrangeKevin",
+        "points": 39,
+        "totalPoints": 374
+      }
+    ],
+    "eliminated": [
+      {
+        "rank": 2,
+        "userId": 2589765,
+        "userName": "Cloudzzy",
+        "points": 102,
+        "totalPoints": 483
+      },
+      {
+        "rank": 4,
+        "userId": 3457560,
+        "userName": "Amber Tail",
+        "points": 95,
+        "totalPoints": 547
+      },
+      {
+        "rank": 6,
+        "userId": 993386,
+        "userName": "HoChuencheong",
+        "points": 94,
+        "totalPoints": 520
+      },
+      {
+        "rank": 8,
+        "userId": 67109,
+        "userName": "TFjunkai",
+        "points": 93,
+        "totalPoints": 448
+      },
+      {
+        "rank": 10,
+        "userId": 3835859,
+        "userName": "Zack Zhang",
+        "points": 92,
+        "totalPoints": 443
+      },
+      {
+        "rank": 12,
+        "userId": 3423111,
+        "userName": "Chelsea Mata",
+        "points": 90,
+        "totalPoints": 459
+      },
+      {
+        "rank": 14,
+        "userId": 68892,
+        "userName": "clocat",
+        "points": 89,
+        "totalPoints": 510
+      },
+      {
+        "rank": 16,
+        "userId": 2493322,
+        "userName": "Hyber Sun",
+        "points": 87,
+        "totalPoints": 500
+      },
+      {
+        "rank": 18,
+        "userId": 3288030,
+        "userName": "Wxx",
+        "points": 85,
+        "totalPoints": 516
+      },
+      {
+        "rank": 20,
+        "userId": 4602532,
+        "userName": "takahashiAki",
+        "points": 84,
+        "totalPoints": 488
+      },
+      {
+        "rank": 22,
+        "userId": 3071074,
+        "userName": "Stephen Teng",
+        "points": 84,
+        "totalPoints": 462
+      },
+      {
+        "rank": 24,
+        "userId": 2794666,
+        "userName": "superkod",
+        "points": 83,
+        "totalPoints": 507
+      },
+      {
+        "rank": 26,
+        "userId": 232281,
+        "userName": "Yemon1130",
+        "points": 83,
+        "totalPoints": 459
+      },
+      {
+        "rank": 28,
+        "userId": 3031014,
+        "userName": "dowman",
+        "points": 82,
+        "totalPoints": 476
+      },
+      {
+        "rank": 30,
+        "userId": 42320,
+        "userName": "Dear Madridista",
+        "points": 81,
+        "totalPoints": 493
+      },
+      {
+        "rank": 32,
+        "userId": 2528977,
+        "userName": "MUGGJY68",
+        "points": 81,
+        "totalPoints": 473
+      },
+      {
+        "rank": 34,
+        "userId": 3467156,
+        "userName": "Golden Sheva",
+        "points": 80,
+        "totalPoints": 475
+      },
+      {
+        "rank": 36,
+        "userId": 42581,
+        "userName": "RemInory",
+        "points": 79,
+        "totalPoints": 492
+      },
+      {
+        "rank": 38,
+        "userId": 197821,
+        "userName": "conan coys",
+        "points": 79,
+        "totalPoints": 480
+      },
+      {
+        "rank": 40,
+        "userId": 69233,
+        "userName": "Sam Gong",
+        "points": 79,
+        "totalPoints": 426
+      },
+      {
+        "rank": 42,
+        "userId": 2484443,
+        "userName": "Champion Leeds",
+        "points": 78,
+        "totalPoints": 491
+      },
+      {
+        "rank": 44,
+        "userId": 3213180,
+        "userName": "Henry Tian",
+        "points": 77,
+        "totalPoints": 516
+      },
+      {
+        "rank": 46,
+        "userId": 2461158,
+        "userName": "Mongolia Doctor",
+        "points": 77,
+        "totalPoints": 476
+      },
+      {
+        "rank": 48,
+        "userId": 147305,
+        "userName": "anderhipple",
+        "points": 76,
+        "totalPoints": 494
+      },
+      {
+        "rank": 50,
+        "userId": 4273355,
+        "userName": "ikun",
+        "points": 76,
+        "totalPoints": 419
+      },
+      {
+        "rank": 52,
+        "userId": 194153,
+        "userName": "China Numba 1",
+        "points": 75,
+        "totalPoints": 439
+      },
+      {
+        "rank": 54,
+        "userId": 3086214,
+        "userName": "xingx",
+        "points": 74,
+        "totalPoints": 481
+      },
+      {
+        "rank": 56,
+        "userId": 2468434,
+        "userName": "Arsenal gunner",
+        "points": 73,
+        "totalPoints": 493
+      },
+      {
+        "rank": 58,
+        "userId": 3046698,
+        "userName": "ShuoOwO",
+        "points": 73,
+        "totalPoints": 487
+      },
+      {
+        "rank": 60,
+        "userId": 43055,
+        "userName": "Old Man Push Car",
+        "points": 73,
+        "totalPoints": 470
+      },
+      {
+        "rank": 62,
+        "userId": 3160016,
+        "userName": "ShuoGuOwO",
+        "points": 72,
+        "totalPoints": 495
+      },
+      {
+        "rank": 64,
+        "userId": 2459137,
+        "userName": "Shindo Hikaru",
+        "points": 72,
+        "totalPoints": 490
+      },
+      {
+        "rank": 66,
+        "userId": 65850,
+        "userName": "mystery-13",
+        "points": 71,
+        "totalPoints": 520
+      },
+      {
+        "rank": 68,
+        "userId": 2487793,
+        "userName": "360swj",
+        "points": 71,
+        "totalPoints": 499
+      },
+      {
+        "rank": 70,
+        "userId": 3473373,
+        "userName": "Fuermozhu",
+        "points": 71,
+        "totalPoints": 369
+      },
+      {
+        "rank": 72,
+        "userId": 1998354,
+        "userName": "Rainbow Desert",
+        "points": 69,
+        "totalPoints": 489
+      },
+      {
+        "rank": 74,
+        "userId": 3742203,
+        "userName": "Sicca",
+        "points": 69,
+        "totalPoints": 431
+      },
+      {
+        "rank": 76,
+        "userId": 161663,
+        "userName": "AVERAGE",
+        "points": 68,
+        "totalPoints": 473
+      },
+      {
+        "rank": 78,
+        "userId": 3635883,
+        "userName": "michaelbao ",
+        "points": 68,
+        "totalPoints": 457
+      },
+      {
+        "rank": 80,
+        "userId": 2462478,
+        "userName": "xiaoxinJerry",
+        "points": 67,
+        "totalPoints": 511
+      },
+      {
+        "rank": 82,
+        "userId": 3136052,
+        "userName": "cybrger",
+        "points": 67,
+        "totalPoints": 483
+      },
+      {
+        "rank": 84,
+        "userId": 3068488,
+        "userName": "QQAAQQ",
+        "points": 67,
+        "totalPoints": 458
+      },
+      {
+        "rank": 86,
+        "userId": 780635,
+        "userName": "fitzzzzzz",
+        "points": 66,
+        "totalPoints": 513
+      },
+      {
+        "rank": 88,
+        "userId": 3030911,
+        "userName": "Nagimenz",
+        "points": 66,
+        "totalPoints": 479
+      },
+      {
+        "rank": 90,
+        "userId": 42271,
+        "userName": "NotBadWu",
+        "points": 66,
+        "totalPoints": 467
+      },
+      {
+        "rank": 92,
+        "userId": 74777,
+        "userName": "andy andy",
+        "points": 66,
+        "totalPoints": 452
+      },
+      {
+        "rank": 94,
+        "userId": 3762171,
+        "userName": "Corner Taken Quicklyyyyy",
+        "points": 65,
+        "totalPoints": 396
+      },
+      {
+        "rank": 96,
+        "userId": 2468309,
+        "userName": "GoodBen",
+        "points": 64,
+        "totalPoints": 470
+      },
+      {
+        "rank": 98,
+        "userId": 3634300,
+        "userName": "TJ Gunners",
+        "points": 63,
+        "totalPoints": 492
+      },
+      {
+        "rank": 100,
+        "userId": 3035663,
+        "userName": "Batigoal",
+        "points": 63,
+        "totalPoints": 466
+      },
+      {
+        "rank": 102,
+        "userId": 42443,
+        "userName": "21savage",
+        "points": 62,
+        "totalPoints": 477
+      },
+      {
+        "rank": 104,
+        "userId": 4426096,
+        "userName": "lamar zheng",
+        "points": 61,
+        "totalPoints": 463
+      },
+      {
+        "rank": 106,
+        "userId": 3156342,
+        "userName": "Dylan Yao",
+        "points": 60,
+        "totalPoints": 497
+      },
+      {
+        "rank": 108,
+        "userId": 3053294,
+        "userName": "Milan in UCL",
+        "points": 60,
+        "totalPoints": 461
+      },
+      {
+        "rank": 110,
+        "userId": 2584583,
+        "userName": "Round round green arrow",
+        "points": 56,
+        "totalPoints": 469
+      },
+      {
+        "rank": 112,
+        "userId": 4933111,
+        "userName": "Ethan1025",
+        "points": 49,
+        "totalPoints": 421
+      },
+      {
+        "rank": 114,
+        "userId": 3140499,
+        "userName": "OrangeKevin",
+        "points": 39,
+        "totalPoints": 374
+      }
+    ],
+    "extra": {
+      "qualifier": 1,
+      "qualifierName": "Spain",
+      "eliminationType": "Even Rank"
+    }
+  },
+  "6": {
+    "title": "Round 6: Match-Three Elimination",
+    "description": "消消乐：本轮得分相同的存活玩家中，若同一分数人数 ≥3，则该分数段全员淘汰。",
+    "ranking": [
+      {
+        "rank": 1,
+        "userId": 2502352,
+        "userName": "Xi9Li",
+        "points": 69
+      },
+      {
+        "rank": 2,
+        "userId": 353380,
+        "userName": "samuellinshan",
+        "points": 63
+      },
+      {
+        "rank": 3,
+        "userId": 2458905,
+        "userName": "xxrrdbigb",
+        "points": 63
+      },
+      {
+        "rank": 4,
+        "userId": 3069640,
+        "userName": "RyanFish2026",
+        "points": 63
+      },
+      {
+        "rank": 5,
+        "userId": 234512,
+        "userName": "dongma",
+        "points": 62
+      },
+      {
+        "rank": 6,
+        "userId": 3030481,
+        "userName": "DelayNoMore67",
+        "points": 61
+      },
+      {
+        "rank": 7,
+        "userId": 65913,
+        "userName": "DannytheDestroyer",
+        "points": 60
+      },
+      {
+        "rank": 8,
+        "userId": 2484648,
+        "userName": "Kane-do Attitude ",
+        "points": 60
+      },
+      {
+        "rank": 9,
+        "userId": 67507,
+        "userName": "Loki777",
+        "points": 58
+      },
+      {
+        "rank": 10,
+        "userId": 2463734,
+        "userName": "HindMics",
+        "points": 58
+      },
+      {
+        "rank": 11,
+        "userId": 3224844,
+        "userName": "TSiu",
+        "points": 58
+      },
+      {
+        "rank": 12,
+        "userId": 2524264,
+        "userName": "Fan Jiaorui",
+        "points": 57
+      },
+      {
+        "rank": 13,
+        "userId": 2576638,
+        "userName": "Mademoiselle Meow",
+        "points": 57
+      },
+      {
+        "rank": 14,
+        "userId": 3030084,
+        "userName": "yyj",
+        "points": 57
+      },
+      {
+        "rank": 15,
+        "userId": 3053780,
+        "userName": "wthegoat",
+        "points": 56
+      },
+      {
+        "rank": 16,
+        "userId": 775227,
+        "userName": "BadK",
+        "points": 55
+      },
+      {
+        "rank": 17,
+        "userId": 2560198,
+        "userName": "JOHNNYOCEAN",
+        "points": 55
+      },
+      {
+        "rank": 18,
+        "userId": 2561309,
+        "userName": "xhuu Penguin",
+        "points": 55
+      },
+      {
+        "rank": 19,
+        "userId": 3067023,
+        "userName": "Law Chen",
+        "points": 55
+      },
+      {
+        "rank": 20,
+        "userId": 3338915,
+        "userName": "Baros15",
+        "points": 55
+      },
+      {
+        "rank": 21,
+        "userId": 67094,
+        "userName": "wc1018",
+        "points": 54
+      },
+      {
+        "rank": 22,
+        "userId": 194750,
+        "userName": "kusuri",
+        "points": 54
+      },
+      {
+        "rank": 23,
+        "userId": 1171431,
+        "userName": "Sonic G",
+        "points": 54
+      },
+      {
+        "rank": 24,
+        "userId": 2948378,
+        "userName": "Kano99",
+        "points": 54
+      },
+      {
+        "rank": 25,
+        "userId": 3031654,
+        "userName": "Xiaoyaoxiaoyao",
+        "points": 54
+      },
+      {
+        "rank": 26,
+        "userId": 193029,
+        "userName": "YZF",
+        "points": 53
+      },
+      {
+        "rank": 27,
+        "userId": 1904011,
+        "userName": "fishenal",
+        "points": 53
+      },
+      {
+        "rank": 28,
+        "userId": 2472296,
+        "userName": "message username ",
+        "points": 51
+      },
+      {
+        "rank": 29,
+        "userId": 3030018,
+        "userName": "KW1023",
+        "points": 51
+      },
+      {
+        "rank": 30,
+        "userId": 3381228,
+        "userName": "Xinhu",
+        "points": 51
+      },
+      {
+        "rank": 31,
+        "userId": 3028520,
+        "userName": "jingluo",
+        "points": 50
+      },
+      {
+        "rank": 32,
+        "userId": 416422,
+        "userName": "HuoluMountainForest",
+        "points": 49
+      },
+      {
+        "rank": 33,
+        "userId": 2489215,
+        "userName": "DNMCCB",
+        "points": 49
+      },
+      {
+        "rank": 34,
+        "userId": 3063581,
+        "userName": "zhustar",
+        "points": 49
+      },
+      {
+        "rank": 35,
+        "userId": 2405706,
+        "userName": "Vamos Espana19",
+        "points": 48
+      },
+      {
+        "rank": 36,
+        "userId": 3543285,
+        "userName": "AFEI",
+        "points": 48
+      },
+      {
+        "rank": 37,
+        "userId": 68709,
+        "userName": "amychenhaoyu",
+        "points": 47
+      },
+      {
+        "rank": 38,
+        "userId": 3043614,
+        "userName": "Sirius666",
+        "points": 46
+      },
+      {
+        "rank": 39,
+        "userId": 3840482,
+        "userName": "ChangshouRoad Wonton noodles",
+        "points": 46
+      },
+      {
+        "rank": 40,
+        "userId": 354155,
+        "userName": "Kimi X",
+        "points": 45
+      },
+      {
+        "rank": 41,
+        "userId": 1844522,
+        "userName": "FIFAntasis",
+        "points": 45
+      },
+      {
+        "rank": 42,
+        "userId": 2471323,
+        "userName": "Worldwide Silence YHC111",
+        "points": 44
+      },
+      {
+        "rank": 43,
+        "userId": 2794671,
+        "userName": "Verbruggen gogogo",
+        "points": 44
+      },
+      {
+        "rank": 44,
+        "userId": 3065908,
+        "userName": "Zhangshuai831",
+        "points": 44
+      },
+      {
+        "rank": 45,
+        "userId": 3104260,
+        "userName": "ReverFan",
+        "points": 44
+      },
+      {
+        "rank": 46,
+        "userId": 68835,
+        "userName": "Chichung",
+        "points": 41
+      },
+      {
+        "rank": 47,
+        "userId": 99256,
+        "userName": "baoyingsalah",
+        "points": 39
+      },
+      {
+        "rank": 48,
+        "userId": 2465916,
+        "userName": "SSU-FAIAA",
+        "points": 38
+      },
+      {
+        "rank": 49,
+        "userId": 2593334,
+        "userName": "CLyu-FBPride",
+        "points": 38
+      },
+      {
+        "rank": 50,
+        "userId": 3037463,
+        "userName": "World Cup all-lose team",
+        "points": 38
+      },
+      {
+        "rank": 51,
+        "userId": 3224529,
+        "userName": "AnonTokyo",
+        "points": 38
+      },
+      {
+        "rank": 52,
+        "userId": 3029885,
+        "userName": "JW3huajian",
+        "points": 37
+      },
+      {
+        "rank": 53,
+        "userId": 2488334,
+        "userName": "Leo Xie",
+        "points": 36
+      },
+      {
+        "rank": 54,
+        "userId": 5388217,
+        "userName": "szewan Lau",
+        "points": 33
+      },
+      {
+        "rank": 55,
+        "userId": 204548,
+        "userName": "Arsenal HangZhou",
+        "points": 27
+      },
+      {
+        "rank": 56,
+        "userId": 2540931,
+        "userName": "LA LAD",
+        "points": 20
+      },
+      {
+        "rank": 57,
+        "userId": 4449643,
+        "userName": "tinytofusoup",
+        "points": 19
+      }
+    ],
+    "eliminated": [
+      {
+        "userId": 3031654,
+        "userName": "Xiaoyaoxiaoyao",
+        "points": 54
+      },
+      {
+        "userId": 67094,
+        "userName": "wc1018",
+        "points": 54
+      },
+      {
+        "userId": 194750,
+        "userName": "kusuri",
+        "points": 54
+      },
+      {
+        "userId": 1171431,
+        "userName": "Sonic G",
+        "points": 54
+      },
+      {
+        "userId": 2948378,
+        "userName": "Kano99",
+        "points": 54
+      },
+      {
+        "userId": 3104260,
+        "userName": "ReverFan",
+        "points": 44
+      },
+      {
+        "userId": 3065908,
+        "userName": "Zhangshuai831",
+        "points": 44
+      },
+      {
+        "userId": 2794671,
+        "userName": "Verbruggen gogogo",
+        "points": 44
+      },
+      {
+        "userId": 2471323,
+        "userName": "Worldwide Silence YHC111",
+        "points": 44
+      },
+      {
+        "userId": 2489215,
+        "userName": "DNMCCB",
+        "points": 49
+      },
+      {
+        "userId": 416422,
+        "userName": "HuoluMountainForest",
+        "points": 49
+      },
+      {
+        "userId": 3063581,
+        "userName": "zhustar",
+        "points": 49
+      },
+      {
+        "userId": 67507,
+        "userName": "Loki777",
+        "points": 58
+      },
+      {
+        "userId": 3224844,
+        "userName": "TSiu",
+        "points": 58
+      },
+      {
+        "userId": 2463734,
+        "userName": "HindMics",
+        "points": 58
+      },
+      {
+        "userId": 3224529,
+        "userName": "AnonTokyo",
+        "points": 38
+      },
+      {
+        "userId": 3037463,
+        "userName": "World Cup all-lose team",
+        "points": 38
+      },
+      {
+        "userId": 2465916,
+        "userName": "SSU-FAIAA",
+        "points": 38
+      },
+      {
+        "userId": 2593334,
+        "userName": "CLyu-FBPride",
+        "points": 38
+      },
+      {
+        "userId": 2560198,
+        "userName": "JOHNNYOCEAN",
+        "points": 55
+      },
+      {
+        "userId": 3067023,
+        "userName": "Law Chen",
+        "points": 55
+      },
+      {
+        "userId": 775227,
+        "userName": "BadK",
+        "points": 55
+      },
+      {
+        "userId": 3338915,
+        "userName": "Baros15",
+        "points": 55
+      },
+      {
+        "userId": 2561309,
+        "userName": "xhuu Penguin",
+        "points": 55
+      },
+      {
+        "userId": 3069640,
+        "userName": "RyanFish2026",
+        "points": 63
+      },
+      {
+        "userId": 353380,
+        "userName": "samuellinshan",
+        "points": 63
+      },
+      {
+        "userId": 2458905,
+        "userName": "xxrrdbigb",
+        "points": 63
+      },
+      {
+        "userId": 2576638,
+        "userName": "Mademoiselle Meow",
+        "points": 57
+      },
+      {
+        "userId": 3030084,
+        "userName": "yyj",
+        "points": 57
+      },
+      {
+        "userId": 2524264,
+        "userName": "Fan Jiaorui",
+        "points": 57
+      },
+      {
+        "userId": 2472296,
+        "userName": "message username ",
+        "points": 51
+      },
+      {
+        "userId": 3030018,
+        "userName": "KW1023",
+        "points": 51
+      },
+      {
+        "userId": 3381228,
+        "userName": "Xinhu",
+        "points": 51
+      }
+    ],
+    "extra": {
+      "eliminatedGroups": [
+        {
+          "points": 54,
+          "count": 5
+        },
+        {
+          "points": 44,
+          "count": 4
+        },
+        {
+          "points": 49,
+          "count": 3
+        },
+        {
+          "points": 58,
+          "count": 3
+        },
+        {
+          "points": 38,
+          "count": 4
+        },
+        {
+          "points": 55,
+          "count": 5
+        },
+        {
+          "points": 63,
+          "count": 3
+        },
+        {
+          "points": 57,
+          "count": 3
+        },
+        {
+          "points": 51,
+          "count": 3
+        }
+      ]
+    }
   }
 }
