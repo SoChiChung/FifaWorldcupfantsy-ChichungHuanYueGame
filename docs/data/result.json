@@ -3893,13 +3893,13 @@
         "rank": 2,
         "userId": 3069640,
         "userName": "RyanFish2026",
-        "points": 107
+        "points": 108
       },
       {
         "rank": 3,
         "userId": 2405706,
         "userName": "Vamos Espana19",
-        "points": 104
+        "points": 105
       },
       {
         "rank": 4,
@@ -4017,62 +4017,62 @@
       },
       {
         "rank": 23,
+        "userId": 3840482,
+        "userName": "ChangshouRoad Wonton noodles",
+        "points": 79
+      },
+      {
+        "rank": 24,
         "userId": 193029,
         "userName": "YZF",
         "points": 78
       },
       {
-        "rank": 24,
+        "rank": 25,
         "userId": 1171431,
         "userName": "Sonic G",
         "points": 78
       },
       {
-        "rank": 25,
+        "rank": 26,
         "userId": 1844522,
         "userName": "FIFAntasis",
         "points": 78
       },
       {
-        "rank": 26,
+        "rank": 27,
         "userId": 3031654,
         "userName": "Xiaoyaoxiaoyao",
         "points": 78
       },
       {
-        "rank": 27,
+        "rank": 28,
         "userId": 3043614,
         "userName": "Sirius666",
         "points": 78
       },
       {
-        "rank": 28,
+        "rank": 29,
         "userId": 3067023,
         "userName": "Law Chen",
         "points": 78
       },
       {
-        "rank": 29,
+        "rank": 30,
         "userId": 3224844,
         "userName": "TSiu",
         "points": 78
       },
       {
-        "rank": 30,
+        "rank": 31,
         "userId": 1904011,
         "userName": "fishenal",
         "points": 76
       },
       {
-        "rank": 31,
+        "rank": 32,
         "userId": 2472296,
         "userName": "message username ",
-        "points": 76
-      },
-      {
-        "rank": 32,
-        "userId": 3840482,
-        "userName": "ChangshouRoad Wonton noodles",
         "points": 76
       },
       {
@@ -4167,21 +4167,21 @@
       },
       {
         "rank": 48,
+        "userId": 3029885,
+        "userName": "JW3huajian",
+        "points": 61
+      },
+      {
+        "rank": 49,
         "userId": 3063581,
         "userName": "zhustar",
         "points": 59
       },
       {
-        "rank": 49,
+        "rank": 50,
         "userId": 2794671,
         "userName": "Verbruggen gogogo",
         "points": 55
-      },
-      {
-        "rank": 50,
-        "userId": 3029885,
-        "userName": "JW3huajian",
-        "points": 54
       },
       {
         "rank": 51,
@@ -4199,30 +4199,30 @@
         "rank": 53,
         "userId": 3037463,
         "userName": "World Cup all-lose team",
-        "points": 42
+        "points": 50
       },
       {
         "rank": 54,
+        "userId": 204548,
+        "userName": "Arsenal HangZhou",
+        "points": 37
+      },
+      {
+        "rank": 55,
         "userId": 2540931,
         "userName": "LA LAD",
         "points": 36
       },
       {
-        "rank": 55,
-        "userId": 204548,
-        "userName": "Arsenal HangZhou",
-        "points": 29
-      },
-      {
         "rank": 56,
-        "userId": 2463734,
-        "userName": "HindMics",
-        "points": 23
+        "userId": 4449643,
+        "userName": "tinytofusoup",
+        "points": 26
       },
       {
         "rank": 57,
-        "userId": 4449643,
-        "userName": "tinytofusoup",
+        "userId": 2463734,
+        "userName": "HindMics",
         "points": 23
       }
     ],
@@ -4308,24 +4308,14 @@
         "points": 79
       },
       {
-        "userId": 3338915,
-        "userName": "Baros15",
+        "userId": 3840482,
+        "userName": "ChangshouRoad Wonton noodles",
         "points": 79
       },
       {
-        "userId": 2472296,
-        "userName": "message username ",
-        "points": 76
-      },
-      {
-        "userId": 1904011,
-        "userName": "fishenal",
-        "points": 76
-      },
-      {
-        "userId": 3840482,
-        "userName": "ChangshouRoad Wonton noodles",
-        "points": 76
+        "userId": 3338915,
+        "userName": "Baros15",
+        "points": 79
       },
       {
         "userId": 3030481,
@@ -4359,11 +4349,7 @@
         },
         {
           "points": 79,
-          "count": 3
-        },
-        {
-          "points": 76,
-          "count": 3
+          "count": 4
         },
         {
           "points": 82,
