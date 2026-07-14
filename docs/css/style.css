@@ -528,3 +528,112 @@ footer .social-links a:hover img { opacity: 1; }
   position: relative;
   z-index: 1;
 }
+
+/* ═══════════ ROUND 7 GROUP STAGE ═══════════ */
+.preview-banner {
+  background: var(--bg-alt);
+  border: 3px solid var(--border);
+  padding: 12px 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--fg);
+  box-shadow: var(--shadow-sm);
+}
+
+.groups-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.group-card {
+  background: #fff;
+  border: var(--border-w) solid var(--border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.group-card .group-header {
+  background: var(--fg);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  padding: 8px 14px;
+  border-bottom: 3px solid var(--red);
+}
+
+.group-card table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  border: none;
+  box-shadow: none;
+}
+
+.group-card thead th {
+  background: var(--bg-card);
+  color: var(--fg-muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 6px 10px;
+  border-bottom: 1px solid rgba(26,26,26,0.08);
+}
+
+.group-card tbody tr:nth-child(odd) { background: var(--bg); }
+.group-card tbody tr:nth-child(even) { background: var(--bg-card); }
+.group-card tbody tr:hover { background: var(--bg-alt); }
+
+.group-card tbody td {
+  padding: 6px 10px;
+  border-bottom: 1px solid rgba(26,26,26,0.04);
+  font-weight: 500;
+}
+
+.group-card .seed {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--fg-muted);
+}
+
+.team-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--fg);
+}
+
+tr.qualified { background: rgba(246, 36, 64, 0.05) !important; }
+tr.qualified td { font-weight: 700; }
+
+.qualified-tag {
+  display: inline-block;
+  background: var(--red);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 800;
+  padding: 1px 8px;
+  letter-spacing: 0.08em;
+}
+
+.bonus {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--green, #2e7d32);
+}
+
+.qualified-score {
+  font-weight: 900 !important;
+  color: var(--red) !important;
+}
+
+@media (max-width: 600px) {
+  .groups-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}

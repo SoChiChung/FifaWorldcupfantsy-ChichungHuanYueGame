@@ -73,27 +73,68 @@
       '<br><span class="round-badge">Round ' + currentRoundId + '</span>' +
       '<div class="desc">' + (result.description || result.title || '') + '</div>';
 
-    const ranking = result.ranking || [];
-
-    var label = metricLabel(result);
     let html = '';
-    html += '<div class="section"><h2>积分榜</h2><table><thead><tr>';
-    html += '<th>#</th><th>玩家</th><th>' + label + '</th><th></th>';
-    html += '</tr></thead><tbody>';
 
-    ranking.forEach(function(r, i) {
-      var isDead = eliminatedSet.has(r.userId);
-      var metricKey = Object.keys(r).find(function(k) { return k !== 'userId' && k !== 'userName' && k !== 'rank'; }) || 'points';
-      html += '<tr class="' + (isDead ? 'eliminated' : '') + '">';
-      html += '<td class="rank">' + (i + 1) + '</td>';
-      html += '<td>' + (r.userName || nameMap[r.userId] || r.userId) + '</td>';
-      html += '<td class="metric">' + (r[metricKey] != null ? r[metricKey] : '-') + '</td>';
-      html += '<td>' + (isDead ? '<span class="eliminated-tag">淘汰</span>' : '') + '</td>';
-      html += '</tr>';
-    });
+    // ── Round 7: Group Stage ──
+    if (currentRoundId === '7' && result.groups) {
+      var bonuses = (result.extra && result.extra.teamBonuses) || {};
+      var isPreview = result.extra && result.extra.preview;
+      var groupNames = Object.keys(result.groups).sort();
 
-    html += '</tbody></table></div>';
+      if (isPreview) {
+        html += '<div class="preview-banner">比赛尚未开始，以下为本轮分组预览。分数将在比赛日更新。</div>';
+      }
 
+      html += '<div class="groups-grid">';
+      groupNames.forEach(function(g) {
+        var members = result.groups[g];
+        html += '<div class="group-card">';
+        html += '<div class="group-header">Group ' + g + '</div>';
+        html += '<table><thead><tr>';
+        html += '<th>Seed</th><th>玩家</th><th>球队</th>';
+        if (!isPreview) { html += '<th>基础</th><th>加成</th><th>总分</th>'; }
+        html += '<th></th>';
+        html += '</tr></thead><tbody>';
+
+        members.forEach(function(p) {
+          var isQualified = p.qualified;
+          html += '<tr class="' + (isQualified ? 'qualified' : '') + '">';
+          html += '<td class="seed">' + p.seed + '</td>';
+          html += '<td>' + (p.userName || nameMap[p.userId] || p.userId) + '</td>';
+          html += '<td><span class="team-tag">' + p.assignedTeam + '</span></td>';
+          if (!isPreview) {
+            html += '<td class="metric">' + (p.roundPoints || 0) + '</td>';
+            html += '<td class="bonus">+' + (p.bonus || 0) + '</td>';
+            html += '<td class="metric' + (isQualified ? ' qualified-score' : '') + '">' + (p.finalPoints || 0) + '</td>';
+          }
+          html += '<td>' + (isQualified ? '<span class="qualified-tag">晋级</span>' : '') + '</td>';
+          html += '</tr>';
+        });
+
+        html += '</tbody></table></div>';
+      });
+      html += '</div>';
+    } else {
+      // ── Other Rounds: Leaderboard table ──
+      var label = metricLabel(result);
+      html += '<div class="section"><h2>积分榜</h2><table><thead><tr>';
+      html += '<th>#</th><th>玩家</th><th>' + label + '</th><th></th>';
+      html += '</tr></thead><tbody>';
+
+      (result.ranking || []).forEach(function(r, i) {
+        var isDead = eliminatedSet.has(r.userId);
+        var metricKey = Object.keys(r).find(function(k) { return k !== 'userId' && k !== 'userName' && k !== 'rank'; }) || 'points';
+        html += '<tr class="' + (isDead ? 'eliminated' : '') + '">';
+        html += '<td class="rank">' + (i + 1) + '</td>';
+        html += '<td>' + (r.userName || nameMap[r.userId] || r.userId) + '</td>';
+        html += '<td class="metric">' + (r[metricKey] != null ? r[metricKey] : '-') + '</td>';
+        html += '<td>' + (isDead ? '<span class="eliminated-tag">淘汰</span>' : '') + '</td>';
+        html += '</tr>';
+      });
+      html += '</tbody></table></div>';
+    }
+
+    // ── Intro ──
     html += '<div class="intro">' +
       '<img class="deco-bat" src="img/bangbang.webp" alt="" loading="lazy">'+
       '<h2>什么是紫葱酱的大逃杀联赛？</h2>' +

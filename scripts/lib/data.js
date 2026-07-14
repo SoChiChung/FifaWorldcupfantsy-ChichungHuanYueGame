@@ -13,7 +13,8 @@ function loadConfig() {
   return {
     roundId: cfg.roundId,
     cookie: cfg.COOKIE || cfg.cookie || '',
-    qualifier: cfg.qualifier || 0
+    qualifier: cfg.qualifier || 0,
+    bonuses: cfg.bonuses || {}
   };
 }
 
