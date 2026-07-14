@@ -4359,75 +4359,13 @@
     }
   },
   "7": {
-    "title": "Round 7: Quarter-Final Group Stage (Preview)",
-    "description": "八强小组赛分组预览 — 分数将在比赛开始后更新。",
+    "title": "Round 7: Group Stage (Preview)",
+    "description": "小组赛分组预览 — 分数将在比赛开始后更新。",
     "groups": {
       "A": [
         {
           "userId": 2502352,
           "userName": "Xi9Li",
-          "seed": 1,
-          "assignedTeam": "Argentina",
-          "roundPoints": 0,
-          "overallPoints": 0,
-          "bonus": 0,
-          "finalPoints": 0,
-          "qualified": false,
-          "isPreview": true
-        },
-        {
-          "userId": 2484648,
-          "userName": "Kane-do Attitude ",
-          "seed": 2,
-          "assignedTeam": "England",
-          "roundPoints": 0,
-          "overallPoints": 0,
-          "bonus": 0,
-          "finalPoints": 0,
-          "qualified": false,
-          "isPreview": true
-        },
-        {
-          "userId": 1904011,
-          "userName": "fishenal",
-          "seed": 3,
-          "assignedTeam": "France",
-          "roundPoints": 0,
-          "overallPoints": 0,
-          "bonus": 0,
-          "finalPoints": 0,
-          "qualified": false,
-          "isPreview": true
-        },
-        {
-          "userId": 2488334,
-          "userName": "Leo Xie",
-          "seed": 4,
-          "assignedTeam": "Spain",
-          "roundPoints": 0,
-          "overallPoints": 0,
-          "bonus": 0,
-          "finalPoints": 0,
-          "qualified": false,
-          "isPreview": true
-        },
-        {
-          "userId": 204548,
-          "userName": "Arsenal HangZhou",
-          "seed": 5,
-          "assignedTeam": "England",
-          "roundPoints": 0,
-          "overallPoints": 0,
-          "bonus": 0,
-          "finalPoints": 0,
-          "qualified": false,
-          "isPreview": true
-        }
-      ],
-      "B": [
-        {
-          "userId": 3069640,
-          "userName": "RyanFish2026",
           "seed": 1,
           "assignedTeam": "Argentina",
           "roundPoints": 0,
@@ -4450,8 +4388,8 @@
           "isPreview": true
         },
         {
-          "userId": 2472296,
-          "userName": "message username ",
+          "userId": 2948378,
+          "userName": "Kano99",
           "seed": 3,
           "assignedTeam": "France",
           "roundPoints": 0,
@@ -4462,8 +4400,8 @@
           "isPreview": true
         },
         {
-          "userId": 194750,
-          "userName": "kusuri",
+          "userId": 3063581,
+          "userName": "zhustar",
           "seed": 4,
           "assignedTeam": "Spain",
           "roundPoints": 0,
@@ -4472,24 +4410,12 @@
           "finalPoints": 0,
           "qualified": false,
           "isPreview": true
-        },
-        {
-          "userId": 2540931,
-          "userName": "LA LAD",
-          "seed": 5,
-          "assignedTeam": "Argentina",
-          "roundPoints": 0,
-          "overallPoints": 0,
-          "bonus": 0,
-          "finalPoints": 0,
-          "qualified": false,
-          "isPreview": true
         }
       ],
-      "C": [
+      "B": [
         {
-          "userId": 2405706,
-          "userName": "Vamos Espana19",
+          "userId": 3069640,
+          "userName": "RyanFish2026",
           "seed": 1,
           "assignedTeam": "Argentina",
           "roundPoints": 0,
@@ -4512,8 +4438,8 @@
           "isPreview": true
         },
         {
-          "userId": 2948378,
-          "userName": "Kano99",
+          "userId": 2561309,
+          "userName": "xhuu Penguin",
           "seed": 3,
           "assignedTeam": "France",
           "roundPoints": 0,
@@ -4524,8 +4450,58 @@
           "isPreview": true
         },
         {
-          "userId": 3029885,
-          "userName": "JW3huajian",
+          "userId": 2794671,
+          "userName": "Verbruggen gogogo",
+          "seed": 4,
+          "assignedTeam": "Spain",
+          "roundPoints": 0,
+          "overallPoints": 0,
+          "bonus": 0,
+          "finalPoints": 0,
+          "qualified": false,
+          "isPreview": true
+        }
+      ],
+      "C": [
+        {
+          "userId": 2405706,
+          "userName": "Vamos Espana19",
+          "seed": 1,
+          "assignedTeam": "Argentina",
+          "roundPoints": 0,
+          "overallPoints": 0,
+          "bonus": 0,
+          "finalPoints": 0,
+          "qualified": false,
+          "isPreview": true
+        },
+        {
+          "userId": 2576638,
+          "userName": "Mademoiselle Meow",
+          "seed": 2,
+          "assignedTeam": "England",
+          "roundPoints": 0,
+          "overallPoints": 0,
+          "bonus": 0,
+          "finalPoints": 0,
+          "qualified": false,
+          "isPreview": true
+        },
+        {
+          "userId": 3030084,
+          "userName": "yyj",
+          "seed": 3,
+          "assignedTeam": "France",
+          "roundPoints": 0,
+          "overallPoints": 0,
+          "bonus": 0,
+          "finalPoints": 0,
+          "qualified": false,
+          "isPreview": true
+        },
+        {
+          "userId": 2593334,
+          "userName": "CLyu-FBPride",
           "seed": 4,
           "assignedTeam": "Spain",
           "roundPoints": 0,
@@ -4550,8 +4526,8 @@
           "isPreview": true
         },
         {
-          "userId": 2576638,
-          "userName": "Mademoiselle Meow",
+          "userId": 775227,
+          "userName": "BadK",
           "seed": 2,
           "assignedTeam": "England",
           "roundPoints": 0,
@@ -4562,8 +4538,8 @@
           "isPreview": true
         },
         {
-          "userId": 2561309,
-          "userName": "xhuu Penguin",
+          "userId": 354155,
+          "userName": "Kimi X",
           "seed": 3,
           "assignedTeam": "France",
           "roundPoints": 0,
@@ -4574,8 +4550,8 @@
           "isPreview": true
         },
         {
-          "userId": 3063581,
-          "userName": "zhustar",
+          "userId": 5388217,
+          "userName": "szewan Lau",
           "seed": 4,
           "assignedTeam": "Spain",
           "roundPoints": 0,
@@ -4600,8 +4576,8 @@
           "isPreview": true
         },
         {
-          "userId": 775227,
-          "userName": "BadK",
+          "userId": 3543285,
+          "userName": "AFEI",
           "seed": 2,
           "assignedTeam": "England",
           "roundPoints": 0,
@@ -4612,8 +4588,8 @@
           "isPreview": true
         },
         {
-          "userId": 3030084,
-          "userName": "yyj",
+          "userId": 2465916,
+          "userName": "SSU-FAIAA",
           "seed": 3,
           "assignedTeam": "France",
           "roundPoints": 0,
@@ -4624,8 +4600,8 @@
           "isPreview": true
         },
         {
-          "userId": 2794671,
-          "userName": "Verbruggen gogogo",
+          "userId": 3037463,
+          "userName": "World Cup all-lose team",
           "seed": 4,
           "assignedTeam": "Spain",
           "roundPoints": 0,
@@ -4650,8 +4626,8 @@
           "isPreview": true
         },
         {
-          "userId": 3543285,
-          "userName": "AFEI",
+          "userId": 67507,
+          "userName": "Loki777",
           "seed": 2,
           "assignedTeam": "England",
           "roundPoints": 0,
@@ -4662,8 +4638,8 @@
           "isPreview": true
         },
         {
-          "userId": 354155,
-          "userName": "Kimi X",
+          "userId": 3224529,
+          "userName": "AnonTokyo",
           "seed": 3,
           "assignedTeam": "France",
           "roundPoints": 0,
@@ -4674,8 +4650,8 @@
           "isPreview": true
         },
         {
-          "userId": 2593334,
-          "userName": "CLyu-FBPride",
+          "userId": 204548,
+          "userName": "Arsenal HangZhou",
           "seed": 4,
           "assignedTeam": "Spain",
           "roundPoints": 0,
@@ -4700,8 +4676,8 @@
           "isPreview": true
         },
         {
-          "userId": 67507,
-          "userName": "Loki777",
+          "userId": 67094,
+          "userName": "wc1018",
           "seed": 2,
           "assignedTeam": "England",
           "roundPoints": 0,
@@ -4712,8 +4688,8 @@
           "isPreview": true
         },
         {
-          "userId": 2465916,
-          "userName": "SSU-FAIAA",
+          "userId": 2488334,
+          "userName": "Leo Xie",
           "seed": 3,
           "assignedTeam": "France",
           "roundPoints": 0,
@@ -4724,8 +4700,8 @@
           "isPreview": true
         },
         {
-          "userId": 5388217,
-          "userName": "szewan Lau",
+          "userId": 2540931,
+          "userName": "LA LAD",
           "seed": 4,
           "assignedTeam": "Spain",
           "roundPoints": 0,
@@ -4750,8 +4726,8 @@
           "isPreview": true
         },
         {
-          "userId": 67094,
-          "userName": "wc1018",
+          "userId": 1904011,
+          "userName": "fishenal",
           "seed": 2,
           "assignedTeam": "England",
           "roundPoints": 0,
@@ -4762,8 +4738,8 @@
           "isPreview": true
         },
         {
-          "userId": 3224529,
-          "userName": "AnonTokyo",
+          "userId": 194750,
+          "userName": "kusuri",
           "seed": 3,
           "assignedTeam": "France",
           "roundPoints": 0,
@@ -4774,8 +4750,58 @@
           "isPreview": true
         },
         {
-          "userId": 3037463,
-          "userName": "World Cup all-lose team",
+          "userId": 4449643,
+          "userName": "tinytofusoup",
+          "seed": 4,
+          "assignedTeam": "Spain",
+          "roundPoints": 0,
+          "overallPoints": 0,
+          "bonus": 0,
+          "finalPoints": 0,
+          "qualified": false,
+          "isPreview": true
+        }
+      ],
+      "I": [
+        {
+          "userId": 2484648,
+          "userName": "Kane-do Attitude ",
+          "seed": 1,
+          "assignedTeam": "Argentina",
+          "roundPoints": 0,
+          "overallPoints": 0,
+          "bonus": 0,
+          "finalPoints": 0,
+          "qualified": false,
+          "isPreview": true
+        },
+        {
+          "userId": 2472296,
+          "userName": "message username ",
+          "seed": 2,
+          "assignedTeam": "England",
+          "roundPoints": 0,
+          "overallPoints": 0,
+          "bonus": 0,
+          "finalPoints": 0,
+          "qualified": false,
+          "isPreview": true
+        },
+        {
+          "userId": 3029885,
+          "userName": "JW3huajian",
+          "seed": 3,
+          "assignedTeam": "France",
+          "roundPoints": 0,
+          "overallPoints": 0,
+          "bonus": 0,
+          "finalPoints": 0,
+          "qualified": false,
+          "isPreview": true
+        },
+        {
+          "userId": 2463734,
+          "userName": "HindMics",
           "seed": 4,
           "assignedTeam": "Spain",
           "roundPoints": 0,
@@ -4797,8 +4823,7 @@
         "France": 0,
         "Spain": 0
       },
-      "a5Team": "England",
-      "b5Team": "Argentina",
+      "groupCount": 9,
       "aliveCount": 36,
       "preview": true
     }

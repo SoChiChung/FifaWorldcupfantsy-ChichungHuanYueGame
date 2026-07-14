@@ -1,11 +1,9 @@
 /**
- * Round 7: 八强小组赛
+ * Round 7: 小组赛
  *
- * 34 surviving players → 8 groups (A~H).
- * A/B: 5 players, C~H: 4 players.
+ * 36 surviving players → 9 groups (A~I), 4 per group.
  * Group assignment by Round 6 ranking (fixed serpentine).
  * Team assignment by seed (1=Argentina, 2=England, 3=France, 4=Spain).
- * A5/B5 get random team via deterministic pseudo-random seed.
  * finalPoints = roundPoints + team bonus.
  * Group winner advances; rest eliminated.
  *
@@ -35,38 +33,21 @@ module.exports = function round7({ players, getStat, roundId, previousResults, q
   });
 
   // ── 3. Assign groups ────────────────────────
-  const GROUP_NAMES = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
-  const TEAMS = ['Argentina', 'England', 'France', 'Spain'];
+  const GROUP_NAMES = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
+  const GROUP_COUNT = GROUP_NAMES.length;  // 9
   const TEAM_BY_SEED = { 1: 'Argentina', 2: 'England', 3: 'France', 4: 'Spain' };
 
   const groups = {};
   for (const g of GROUP_NAMES) groups[g] = [];
 
-  for (let i = 0; i < Math.min(32, sorted.length); i++) {
-    const groupIdx = i % 8;
-    const seed = Math.floor(i / 8) + 1;   // 1, 2, 3, 4
+  for (let i = 0; i < sorted.length; i++) {
+    const groupIdx = i % GROUP_COUNT;
+    const seed = Math.floor(i / GROUP_COUNT) + 1;   // 1, 2, 3, 4
     groups[GROUP_NAMES[groupIdx]].push({
       ...sorted[i],
       seed,
       assignedTeam: TEAM_BY_SEED[seed]
     });
-  }
-
-  // A5 and B5 (positions 32 and 33 in 0-based)
-  function seededPick(seed, options) {
-    const r = ((seed * 1103515245 + 12345) >>> 0) % options.length;
-    return options[r];
-  }
-
-  if (sorted.length > 32) {
-    const a5 = sorted[32];
-    const a5team = seededPick(7 * 10000 + a5.userId, TEAMS);
-    groups['A'].push({ ...a5, seed: 5, assignedTeam: a5team });
-  }
-  if (sorted.length > 33) {
-    const b5 = sorted[33];
-    const b5team = seededPick(7 * 10000 + b5.userId, TEAMS);
-    groups['B'].push({ ...b5, seed: 5, assignedTeam: b5team });
   }
 
   // ── 4. Calculate scores ─────────────────────
@@ -125,16 +106,15 @@ module.exports = function round7({ players, getStat, roundId, previousResults, q
   ranking.forEach((r, i) => { r.rank = i + 1; });
 
   return {
-    title: `Round ${roundId}: Quarter-Final Group Stage`,
-    description: `八强小组赛：34名玩家分入A~H八组，每组最高分晋级四分之一决赛。${qualified.length}人晋级下一轮。`,
+    title: `Round ${roundId}: Group Stage`,
+    description: `小组赛：${alive.length}名玩家分入A~I九组，每组最高分晋级。${qualified.length}人晋级下一轮。`,
     groups,
     ranking,
     qualified,
     eliminated,
     extra: {
       teamBonuses: bonuses,
-      a5Team: groups['A'].find(p => p.seed === 5)?.assignedTeam || null,
-      b5Team: groups['B'].find(p => p.seed === 5)?.assignedTeam || null,
+      groupCount: GROUP_COUNT,
       aliveCount: alive.length
     }
   };

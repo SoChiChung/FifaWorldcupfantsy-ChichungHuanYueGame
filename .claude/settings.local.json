@@ -30,7 +30,8 @@
       "Bash(curl -s http://localhost:3000/data/result.json)",
       "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\)\\); const r7=d['7']; console.log\\('Round 7 exists:', !!r7\\); console.log\\('Groups:', r7?.groups ? Object.keys\\(r7.groups\\).join\\(', '\\) : 'NONE'\\); console.log\\('Preview:', r7?.extra?.preview\\);\")",
       "Bash(node -e \"const d=require\\('/tmp/r7check.json'\\); const r7=d['7']; console.log\\('Round 7 exists:', !!r7\\); console.log\\('Groups:', r7?.groups ? Object.keys\\(r7.groups\\).join\\(', '\\) : 'NONE'\\); console.log\\('Preview:', r7?.extra?.preview\\);\")",
-      "Bash(node -e \"const{loadResult}=require\\('./scripts/lib/data'\\); const d=loadResult\\(\\); const r7=d['7']; console.log\\('R7:',!!r7\\); console.log\\('Groups:',r7?.groups?Object.keys\\(r7.groups\\).join\\(','\\):'NONE'\\); console.log\\('Preview:',r7?.extra?.preview\\); console.log\\('A members:',r7?.groups?.A?.map\\(p=>p.userName\\).join\\(','\\)||'none'\\)\")"
+      "Bash(node -e \"const{loadResult}=require\\('./scripts/lib/data'\\); const d=loadResult\\(\\); const r7=d['7']; console.log\\('R7:',!!r7\\); console.log\\('Groups:',r7?.groups?Object.keys\\(r7.groups\\).join\\(','\\):'NONE'\\); console.log\\('Preview:',r7?.extra?.preview\\); console.log\\('A members:',r7?.groups?.A?.map\\(p=>p.userName\\).join\\(','\\)||'none'\\)\")",
+      "Bash(node -e \"const{loadResult}=require\\('./scripts/lib/data'\\);const d=loadResult\\(\\);const r7=d['7'];console.log\\('R7 preview:',r7?.extra?.preview\\);console.log\\('Groups:',Object.keys\\(r7?.groups||{}\\).length\\);for\\(const g of Object.keys\\(r7?.groups||{}\\)\\){console.log\\(g+':',r7.groups[g].length,'players'\\)}\")"
     ]
   }
 }

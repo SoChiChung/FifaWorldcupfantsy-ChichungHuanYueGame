@@ -9,26 +9,15 @@ const path = require('path');
 const { loadConfig, loadHuanyue, loadResult } = require('./lib/data');
 
 const ROOT = path.join(__dirname, '..');
-const GROUP_NAMES = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
-const TEAMS = ['Argentina', 'England', 'France', 'Spain'];
+const GROUP_NAMES = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
+const GROUP_COUNT = GROUP_NAMES.length;
 const TEAM_BY_SEED = { 1: 'Argentina', 2: 'England', 3: 'France', 4: 'Spain' };
-
-function seededPick(seed, options) {
-  const r = ((seed * 1103515245 + 12345) >>> 0) % options.length;
-  return options[r];
-}
 
 function main() {
   const config = loadConfig();
   const huanyue = loadHuanyue();
   const allResults = loadResult();
   const bonuses = config.bonuses || {};
-
-  // Build name lookup
-  const nameMap = {};
-  for (const p of huanyue) {
-    nameMap[p.userId] = p.userName;
-  }
 
   // Build dead set from ALL previous rounds
   const deadSet = new Set();
@@ -55,30 +44,19 @@ function main() {
 
   console.log(`Alive players: ${alive.length}`);
 
-  // Assign groups
+  // Assign groups — serpentine, fixed seed→team mapping
   const groups = {};
   for (const g of GROUP_NAMES) groups[g] = [];
 
-  for (let i = 0; i < Math.min(32, alive.length); i++) {
-    const groupIdx = i % 8;
-    const seed = Math.floor(i / 8) + 1;
+  for (let i = 0; i < alive.length; i++) {
+    const groupIdx = i % GROUP_COUNT;
+    const seed = Math.floor(i / GROUP_COUNT) + 1;
     groups[GROUP_NAMES[groupIdx]].push({
       userId: alive[i].userId,
       userName: alive[i].userName,
       seed,
       assignedTeam: TEAM_BY_SEED[seed]
     });
-  }
-
-  if (alive.length > 32) {
-    const a5 = alive[32];
-    groups['A'].push({ userId: a5.userId, userName: a5.userName, seed: 5,
-      assignedTeam: seededPick(7 * 10000 + a5.userId, TEAMS) });
-  }
-  if (alive.length > 33) {
-    const b5 = alive[33];
-    groups['B'].push({ userId: b5.userId, userName: b5.userName, seed: 5,
-      assignedTeam: seededPick(7 * 10000 + b5.userId, TEAMS) });
   }
 
   // Build preview entries with placeholder scores
@@ -96,22 +74,20 @@ function main() {
 
   // Build result
   const result = {
-    title: 'Round 7: Quarter-Final Group Stage (Preview)',
-    description: '八强小组赛分组预览 — 分数将在比赛开始后更新。',
+    title: 'Round 7: Group Stage (Preview)',
+    description: '小组赛分组预览 — 分数将在比赛开始后更新。',
     groups,
     ranking: [],
     qualified: [],
     eliminated: [],
     extra: {
       teamBonuses: bonuses,
-      a5Team: groups['A'].find(p => p.seed === 5)?.assignedTeam || null,
-      b5Team: groups['B'].find(p => p.seed === 5)?.assignedTeam || null,
+      groupCount: GROUP_COUNT,
       aliveCount: alive.length,
       preview: true
     }
   };
 
-  // Write to both locations
   const existingResult = loadResult();
   existingResult['7'] = result;
 
@@ -123,7 +99,7 @@ function main() {
   const docsPath = path.join(docsDir, 'result.json');
   fs.writeFileSync(docsPath, JSON.stringify(existingResult, null, 2));
 
-  console.log(`Groups:`);
+  console.log(`Groups (4 players each):`);
   for (const g of GROUP_NAMES) {
     const names = groups[g].map(p => `${p.userName}(${p.assignedTeam})`).join(', ');
     console.log(`  ${g}: ${names}`);

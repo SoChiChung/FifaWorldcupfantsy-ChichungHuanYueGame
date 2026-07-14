@@ -85,10 +85,16 @@
         html += '<div class="preview-banner">比赛尚未开始，以下为本轮分组预览。分数将在比赛日更新。</div>';
       }
 
-      html += '<div class="groups-grid">';
+      html += '<div class="group-switcher" role="tablist" aria-label="Round 7 groups">';
+      groupNames.forEach(function(g, idx) {
+        html += '<button type="button" class="group-switch ' + (idx === 0 ? 'active' : '') + '" data-group="' + g + '" role="tab" aria-selected="' + (idx === 0 ? 'true' : 'false') + '">Group ' + g + '</button>';
+      });
+      html += '</div>';
+
+      html += '<div class="groups-grid groups-carousel">';
       groupNames.forEach(function(g) {
         var members = result.groups[g];
-        html += '<div class="group-card">';
+        html += '<div class="group-card ' + (isPreview ? 'preview-card' : 'live-card') + ' ' + (g === groupNames[0] ? 'active' : '') + '" data-group-panel="' + g + '" aria-hidden="' + (g === groupNames[0] ? 'false' : 'true') + '">';
         html += '<div class="group-header">Group ' + g + '</div>';
         html += '<table><thead><tr>';
         html += '<th>Seed</th><th>玩家</th><th>球队</th>';
@@ -149,6 +155,22 @@
       '</div>';
 
     document.getElementById('content').innerHTML = html;
+
+    document.querySelectorAll('.group-switch').forEach(function(button) {
+      button.addEventListener('click', function() {
+        var group = button.getAttribute('data-group');
+        document.querySelectorAll('.group-switch').forEach(function(b) {
+          var isActive = b === button;
+          b.classList.toggle('active', isActive);
+          b.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+        document.querySelectorAll('[data-group-panel]').forEach(function(panel) {
+          var isActive = panel.getAttribute('data-group-panel') === group;
+          panel.classList.toggle('active', isActive);
+          panel.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+        });
+      });
+    });
 
   } catch (err) {
     document.getElementById('content').innerHTML = '<p class="error">加载失败: ' + err.message + '</p>';
