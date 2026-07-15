@@ -1955,7 +1955,7 @@
     "userName": "samuellinshan",
     "roundPoints": 14,
     "overallPoints": 569,
-    "captainChanges": 1,
+    "captainChanges": 2,
     "lineup": {
       "GK": [
         506
@@ -1990,7 +1990,7 @@
         500
       ]
     },
-    "captain": 491,
+    "captain": 38,
     "viceCaptain": 506
   },
   {
@@ -3642,44 +3642,43 @@
     "userName": "Law Chen",
     "roundPoints": 18,
     "overallPoints": 617,
-    "captainChanges": 0,
+    "captainChanges": 2,
     "lineup": {
       "GK": [
-        506
+        477
       ],
       "DEF": [
-        498,
         1088,
-        494,
+        1318,
         463
       ],
       "MID": [
+        48,
         517,
         501,
         491,
         1082
       ],
       "FWD": [
-        468,
-        500
+        38,
+        468
       ]
     },
     "bench": {
       "GK": [
-        477
+        506
       ],
       "DEF": [
-        1318
+        494,
+        498
       ],
-      "MID": [
-        48
-      ],
+      "MID": [],
       "FWD": [
-        38
+        500
       ]
     },
-    "captain": 500,
-    "viceCaptain": 501
+    "captain": 491,
+    "viceCaptain": 468
   },
   {
     "userId": 3156342,
@@ -4421,7 +4420,7 @@
     "userName": "360swj",
     "roundPoints": 15,
     "overallPoints": 578,
-    "captainChanges": 1,
+    "captainChanges": 3,
     "lineup": {
       "GK": [
         45
@@ -4456,8 +4455,8 @@
         500
       ]
     },
-    "captain": 491,
-    "viceCaptain": 468
+    "captain": 468,
+    "viceCaptain": 491
   },
   {
     "userId": 3140499,
