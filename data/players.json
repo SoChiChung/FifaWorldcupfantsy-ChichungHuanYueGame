@@ -4,7 +4,7 @@
     "userName": "superkod",
     "roundPoints": 13,
     "overallPoints": 598,
-    "captainChanges": 1,
+    "captainChanges": 2,
     "lineup": {
       "GK": [
         477
@@ -39,7 +39,7 @@
         500
       ]
     },
-    "captain": 491,
+    "captain": 468,
     "viceCaptain": 474
   },
   {
@@ -707,7 +707,7 @@
       "DEF": [
         1088,
         30,
-        494
+        457
       ],
       "MID": [
         1082,
@@ -727,7 +727,7 @@
       ],
       "DEF": [
         498,
-        457
+        494
       ],
       "MID": [
         1431
@@ -1610,7 +1610,7 @@
     "userName": "JOHNNYOCEAN",
     "roundPoints": 15,
     "overallPoints": 599,
-    "captainChanges": 5,
+    "captainChanges": 7,
     "lineup": {
       "GK": [
         45
@@ -1645,8 +1645,8 @@
         500
       ]
     },
-    "captain": 491,
-    "viceCaptain": 468
+    "captain": 468,
+    "viceCaptain": 491
   },
   {
     "userId": 2468309,
@@ -2002,40 +2002,41 @@
     "captainChanges": 0,
     "lineup": {
       "GK": [
-        506
+        477
       ],
       "DEF": [
         461,
-        498,
-        1318
+        30,
+        1318,
+        457
       ],
       "MID": [
         48,
-        501,
         517,
         491,
         474
       ],
       "FWD": [
         468,
-        500
+        38
       ]
     },
     "bench": {
       "GK": [
-        477
+        506
       ],
       "DEF": [
-        30,
-        457
+        498
       ],
-      "MID": [],
+      "MID": [
+        501
+      ],
       "FWD": [
-        38
+        500
       ]
     },
-    "captain": 500,
-    "viceCaptain": 506
+    "captain": 38,
+    "viceCaptain": 477
   },
   {
     "userId": 193029,
@@ -2086,17 +2087,18 @@
     "userName": "Rainbow Desert",
     "roundPoints": 27,
     "overallPoints": 595,
-    "captainChanges": 0,
+    "captainChanges": 1,
     "lineup": {
       "GK": [
-        477
+        45
       ],
       "DEF": [
         1088,
-        498,
-        1430
+        1318,
+        457
       ],
       "MID": [
+        57,
         1092,
         1082,
         517,
@@ -2104,25 +2106,24 @@
       ],
       "FWD": [
         1094,
-        500,
         468
       ]
     },
     "bench": {
       "GK": [
-        45
+        477
       ],
       "DEF": [
-        1318,
-        457
+        498,
+        1430
       ],
-      "MID": [
-        57
-      ],
-      "FWD": []
+      "MID": [],
+      "FWD": [
+        500
+      ]
     },
-    "captain": 500,
-    "viceCaptain": 1430
+    "captain": 491,
+    "viceCaptain": 457
   },
   {
     "userId": 194750,
@@ -2430,26 +2431,26 @@
     "userName": "LA LAD",
     "roundPoints": 10,
     "overallPoints": 565,
-    "captainChanges": 0,
+    "captainChanges": 1,
     "lineup": {
       "GK": [
         45
       ],
       "DEF": [
-        494,
+        1318,
         1088,
-        498
+        457
       ],
       "MID": [
         56,
         491,
         474,
-        517,
-        1431
+        517
       ],
       "FWD": [
         500,
-        468
+        468,
+        38
       ]
     },
     "bench": {
@@ -2457,15 +2458,15 @@
         1271
       ],
       "DEF": [
-        457,
-        1318
+        498,
+        494
       ],
-      "MID": [],
-      "FWD": [
-        38
-      ]
+      "MID": [
+        1431
+      ],
+      "FWD": []
     },
-    "captain": 500,
+    "captain": 38,
     "viceCaptain": 468
   },
   {
@@ -3429,16 +3430,17 @@
     "userName": "TFjunkai",
     "roundPoints": 18,
     "overallPoints": 550,
-    "captainChanges": 0,
+    "captainChanges": 1,
     "lineup": {
       "GK": [
         45
       ],
       "DEF": [
         1088,
-        1318,
+        1320,
         494,
-        463
+        463,
+        1318
       ],
       "MID": [
         491,
@@ -3446,7 +3448,6 @@
         1092
       ],
       "FWD": [
-        500,
         468,
         38
       ]
@@ -3455,16 +3456,16 @@
       "GK": [
         506
       ],
-      "DEF": [
-        1320
-      ],
+      "DEF": [],
       "MID": [
         1526,
         1133
       ],
-      "FWD": []
+      "FWD": [
+        500
+      ]
     },
-    "captain": 500,
+    "captain": 468,
     "viceCaptain": 517
   },
   {
@@ -3601,10 +3602,10 @@
     "userName": "KW1023",
     "roundPoints": 14,
     "overallPoints": 593,
-    "captainChanges": 0,
+    "captainChanges": 2,
     "lineup": {
       "GK": [
-        506
+        477
       ],
       "DEF": [
         1318,
@@ -3612,6 +3613,7 @@
         1088
       ],
       "MID": [
+        474,
         517,
         56,
         501,
@@ -3619,25 +3621,24 @@
       ],
       "FWD": [
         468,
-        500,
         38
       ]
     },
     "bench": {
       "GK": [
-        477
+        506
       ],
       "DEF": [
         30,
         1320
       ],
-      "MID": [
-        474
-      ],
-      "FWD": []
+      "MID": [],
+      "FWD": [
+        500
+      ]
     },
-    "captain": 500,
-    "viceCaptain": 501
+    "captain": 468,
+    "viceCaptain": 491
   },
   {
     "userId": 3067023,
@@ -4034,87 +4035,88 @@
     "userName": "Yemon1130",
     "roundPoints": 18,
     "overallPoints": 556,
-    "captainChanges": 0,
+    "captainChanges": 1,
     "lineup": {
       "GK": [
-        506
+        477
       ],
       "DEF": [
         457,
-        494,
+        30,
         1709,
         1430
       ],
       "MID": [
         501,
         517,
-        1997,
+        474,
         491
       ],
       "FWD": [
         1094,
-        500
+        468
       ]
     },
     "bench": {
       "GK": [
-        477
+        506
       ],
       "DEF": [
-        30
+        494
       ],
       "MID": [
-        474
+        1997
       ],
       "FWD": [
-        468
+        500
       ]
     },
-    "captain": 1430,
-    "viceCaptain": 500
+    "captain": 457,
+    "viceCaptain": 468
   },
   {
     "userId": 2524264,
     "userName": "Fan Jiaorui",
     "roundPoints": 25,
     "overallPoints": 607,
-    "captainChanges": 0,
+    "captainChanges": 2,
     "lineup": {
       "GK": [
-        506
+        477
       ],
       "DEF": [
         1089,
         1088,
-        494
+        457,
+        1318
       ],
       "MID": [
         515,
-        501,
+        56,
         517,
         491
       ],
       "FWD": [
         39,
-        468,
-        500
+        468
       ]
     },
     "bench": {
       "GK": [
-        477
+        506
       ],
       "DEF": [
-        457,
-        1318
+        494
       ],
       "MID": [
-        56
+        501
       ],
-      "FWD": []
+      "FWD": [
+        500
+      ]
     },
-    "captain": 500,
-    "viceCaptain": 506
+    "captain": 39,
+    "viceCaptain": 457
   },
   {
     "userId": 3037463,
@@ -4299,20 +4301,20 @@
         506
       ],
       "DEF": [
-        498,
+        30,
         461,
-        494
+        457
       ],
       "MID": [
         57,
         501,
-        505,
         474,
         491
       ],
       "FWD": [
         468,
-        500
+        500,
+        38
       ]
     },
     "bench": {
@@ -4320,13 +4322,13 @@
         1271
       ],
       "DEF": [
-        30,
-        457
+        498,
+        494
       ],
-      "MID": [],
-      "FWD": [
-        38
-      ]
+      "MID": [
+        505
+      ],
+      "FWD": []
     },
     "captain": 500,
     "viceCaptain": 506
@@ -5811,7 +5813,7 @@
     "userName": "CLyu-FBPride",
     "roundPoints": 21,
     "overallPoints": 427,
-    "captainChanges": 0,
+    "captainChanges": 1,
     "lineup": {
       "GK": [
         45
@@ -5846,7 +5848,7 @@
       ],
       "FWD": []
     },
-    "captain": 517,
+    "captain": 38,
     "viceCaptain": 45
   },
   {
@@ -6549,26 +6551,26 @@
     "userName": "Elliott2323",
     "roundPoints": 30,
     "overallPoints": 439,
-    "captainChanges": 0,
+    "captainChanges": 1,
     "lineup": {
       "GK": [
         506
       ],
       "DEF": [
         1088,
-        494,
+        1318,
         1085,
         1086
       ],
       "MID": [
         517,
-        1431,
+        486,
         491,
         501
       ],
       "FWD": [
         476,
-        500
+        38
       ]
     },
     "bench": {
@@ -6576,16 +6578,16 @@
         1099
       ],
       "DEF": [
-        1318
+        494
       ],
       "MID": [
-        486
+        1431
       ],
       "FWD": [
-        38
+        500
       ]
     },
-    "captain": 517,
+    "captain": 38,
     "viceCaptain": 1086
   }
 ]
