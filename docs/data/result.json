@@ -4370,8 +4370,8 @@
           "assignedTeam": "Spain",
           "roundPoints": 51,
           "overallPoints": 580,
-          "bonus": 2,
-          "finalPoints": 61,
+          "bonus": 0,
+          "finalPoints": 51,
           "qualified": true
         },
         {
@@ -4429,6 +4429,17 @@
           "overallPoints": 646,
           "bonus": 0,
           "finalPoints": 33,
+          "qualified": true
+        },
+        {
+          "userId": 2794671,
+          "userName": "Verbruggen gogogo",
+          "seed": 4,
+          "assignedTeam": "Spain",
+          "roundPoints": 26,
+          "overallPoints": 503,
+          "bonus": 0,
+          "finalPoints": 26,
           "qualified": false
         },
         {
@@ -4484,8 +4495,8 @@
           "assignedTeam": "Spain",
           "roundPoints": 21,
           "overallPoints": 427,
-          "bonus": 2,
-          "finalPoints": 31,
+          "bonus": 0,
+          "finalPoints": 21,
           "qualified": false
         },
         {
@@ -4508,8 +4519,8 @@
           "assignedTeam": "Spain",
           "roundPoints": 30,
           "overallPoints": 489,
-          "bonus": 2,
-          "finalPoints": 40,
+          "bonus": 0,
+          "finalPoints": 30,
           "qualified": true
         },
         {
@@ -4554,8 +4565,8 @@
           "assignedTeam": "Spain",
           "roundPoints": 26,
           "overallPoints": 553,
-          "bonus": 2,
-          "finalPoints": 36,
+          "bonus": 0,
+          "finalPoints": 26,
           "qualified": true
         },
         {
@@ -4627,6 +4638,17 @@
           "qualified": false
         },
         {
+          "userId": 204548,
+          "userName": "Arsenal HangZhou",
+          "seed": 4,
+          "assignedTeam": "Spain",
+          "roundPoints": 13,
+          "overallPoints": 467,
+          "bonus": 0,
+          "finalPoints": 13,
+          "qualified": false
+        },
+        {
           "userId": 3224529,
           "userName": "AnonTokyo",
           "seed": 3,
@@ -4682,6 +4704,17 @@
           "bonus": 0,
           "finalPoints": 14,
           "qualified": false
+        },
+        {
+          "userId": 2540931,
+          "userName": "LA LAD",
+          "seed": 4,
+          "assignedTeam": "Spain",
+          "roundPoints": 10,
+          "overallPoints": 565,
+          "bonus": 0,
+          "finalPoints": 10,
+          "qualified": false
         }
       ],
       "H": [
@@ -4708,17 +4741,6 @@
           "qualified": false
         },
         {
-          "userId": 4449643,
-          "userName": "tinytofusoup",
-          "seed": 4,
-          "assignedTeam": "Spain",
-          "roundPoints": 14,
-          "overallPoints": 444,
-          "bonus": 2,
-          "finalPoints": 24,
-          "qualified": false
-        },
-        {
           "userId": 353380,
           "userName": "samuellinshan",
           "seed": 1,
@@ -4738,8 +4760,8 @@
           "assignedTeam": "Spain",
           "roundPoints": 45,
           "overallPoints": 564,
-          "bonus": 2,
-          "finalPoints": 55,
+          "bonus": 0,
+          "finalPoints": 45,
           "qualified": true
         },
         {
@@ -4785,8 +4807,8 @@
         "assignedTeam": "Spain",
         "roundPoints": 51,
         "overallPoints": 580,
-        "bonus": 2,
-        "finalPoints": 61,
+        "bonus": 0,
+        "finalPoints": 51,
         "qualified": true,
         "group": "A",
         "rank": 1
@@ -4798,8 +4820,8 @@
         "assignedTeam": "Spain",
         "roundPoints": 45,
         "overallPoints": 564,
-        "bonus": 2,
-        "finalPoints": 55,
+        "bonus": 0,
+        "finalPoints": 45,
         "qualified": true,
         "group": "I",
         "rank": 2
@@ -4939,13 +4961,13 @@
         "userName": "CLyu-FBPride",
         "seed": 4,
         "assignedTeam": "Spain",
-        "roundPoints": 21,
-        "overallPoints": 427,
-        "bonus": 2,
-        "finalPoints": 31,
-        "qualified": false,
-        "group": "C",
-        "rank": 13
+        "roundPoints": 30,
+        "overallPoints": 489,
+        "bonus": 0,
+        "finalPoints": 30,
+        "qualified": true,
+        "group": "D",
+        "rank": 10
       },
       {
         "userId": 2484648,
@@ -4971,7 +4993,33 @@
         "finalPoints": 29,
         "qualified": true,
         "group": "F",
-        "rank": 15
+        "rank": 12
+      },
+      {
+        "userId": 3037463,
+        "userName": "World Cup all-lose team",
+        "seed": 4,
+        "assignedTeam": "Spain",
+        "roundPoints": 26,
+        "overallPoints": 553,
+        "bonus": 0,
+        "finalPoints": 26,
+        "qualified": true,
+        "group": "E",
+        "rank": 13
+      },
+      {
+        "userId": 2794671,
+        "userName": "Verbruggen gogogo",
+        "seed": 4,
+        "assignedTeam": "Spain",
+        "roundPoints": 26,
+        "overallPoints": 503,
+        "bonus": 2,
+        "finalPoints": 28,
+        "qualified": false,
+        "group": "B",
+        "rank": 14
       },
       {
         "userId": 2488334,
@@ -4984,7 +5032,20 @@
         "finalPoints": 26,
         "qualified": true,
         "group": "G",
-        "rank": 16
+        "rank": 14
+      },
+      {
+        "userId": 2794671,
+        "userName": "Verbruggen gogogo",
+        "seed": 4,
+        "assignedTeam": "Spain",
+        "roundPoints": 26,
+        "overallPoints": 503,
+        "bonus": 0,
+        "finalPoints": 26,
+        "qualified": false,
+        "group": "B",
+        "rank": 15
       },
       {
         "userId": 2524264,
@@ -5052,6 +5113,19 @@
         "rank": 21
       },
       {
+        "userId": 2593334,
+        "userName": "CLyu-FBPride",
+        "seed": 4,
+        "assignedTeam": "Spain",
+        "roundPoints": 21,
+        "overallPoints": 427,
+        "bonus": 2,
+        "finalPoints": 23,
+        "qualified": false,
+        "group": "C",
+        "rank": 19
+      },
+      {
         "userId": 65913,
         "userName": "DannytheDestroyer",
         "seed": 2,
@@ -5062,7 +5136,7 @@
         "finalPoints": 23,
         "qualified": false,
         "group": "B",
-        "rank": 22
+        "rank": 19
       },
       {
         "userId": 354155,
@@ -5075,7 +5149,7 @@
         "finalPoints": 23,
         "qualified": false,
         "group": "D",
-        "rank": 23
+        "rank": 20
       },
       {
         "userId": 3543285,
@@ -5088,7 +5162,7 @@
         "finalPoints": 23,
         "qualified": false,
         "group": "E",
-        "rank": 24
+        "rank": 21
       },
       {
         "userId": 67094,
@@ -5101,7 +5175,7 @@
         "finalPoints": 22,
         "qualified": false,
         "group": "G",
-        "rank": 25
+        "rank": 22
       },
       {
         "userId": 2489215,
@@ -5114,20 +5188,20 @@
         "finalPoints": 22,
         "qualified": false,
         "group": "A",
-        "rank": 26
+        "rank": 23
       },
       {
-        "userId": 2540931,
-        "userName": "LA LAD",
+        "userId": 2593334,
+        "userName": "CLyu-FBPride",
         "seed": 4,
         "assignedTeam": "Spain",
-        "roundPoints": 10,
-        "overallPoints": 565,
-        "bonus": 2,
-        "finalPoints": 20,
+        "roundPoints": 21,
+        "overallPoints": 427,
+        "bonus": 0,
+        "finalPoints": 21,
         "qualified": false,
-        "group": "G",
-        "rank": 27
+        "group": "C",
+        "rank": 24
       },
       {
         "userId": 234512,
@@ -5182,6 +5256,32 @@
         "rank": 31
       },
       {
+        "userId": 4449643,
+        "userName": "tinytofusoup",
+        "seed": 4,
+        "assignedTeam": "Spain",
+        "roundPoints": 14,
+        "overallPoints": 444,
+        "bonus": 2,
+        "finalPoints": 16,
+        "qualified": false,
+        "group": "H",
+        "rank": 29
+      },
+      {
+        "userId": 204548,
+        "userName": "Arsenal HangZhou",
+        "seed": 4,
+        "assignedTeam": "Spain",
+        "roundPoints": 13,
+        "overallPoints": 467,
+        "bonus": 2,
+        "finalPoints": 15,
+        "qualified": false,
+        "group": "F",
+        "rank": 30
+      },
+      {
         "userId": 3030018,
         "userName": "KW1023",
         "seed": 1,
@@ -5192,7 +5292,7 @@
         "finalPoints": 14,
         "qualified": false,
         "group": "G",
-        "rank": 32
+        "rank": 29
       },
       {
         "userId": 353380,
@@ -5205,7 +5305,33 @@
         "finalPoints": 14,
         "qualified": false,
         "group": "H",
-        "rank": 33
+        "rank": 30
+      },
+      {
+        "userId": 4449643,
+        "userName": "tinytofusoup",
+        "seed": 4,
+        "assignedTeam": "Spain",
+        "roundPoints": 14,
+        "overallPoints": 444,
+        "bonus": 0,
+        "finalPoints": 14,
+        "qualified": false,
+        "group": "H",
+        "rank": 31
+      },
+      {
+        "userId": 204548,
+        "userName": "Arsenal HangZhou",
+        "seed": 4,
+        "assignedTeam": "Spain",
+        "roundPoints": 13,
+        "overallPoints": 467,
+        "bonus": 0,
+        "finalPoints": 13,
+        "qualified": false,
+        "group": "F",
+        "rank": 32
       },
       {
         "userId": 2576638,
@@ -5255,8 +5381,8 @@
         "assignedTeam": "Spain",
         "roundPoints": 51,
         "overallPoints": 580,
-        "bonus": 2,
-        "finalPoints": 61,
+        "bonus": 0,
+        "finalPoints": 51,
         "qualified": true,
         "group": "A",
         "rank": 1
@@ -5294,8 +5420,8 @@
         "assignedTeam": "Spain",
         "roundPoints": 30,
         "overallPoints": 489,
-        "bonus": 2,
-        "finalPoints": 40,
+        "bonus": 0,
+        "finalPoints": 30,
         "qualified": true,
         "group": "D",
         "rank": 5
@@ -5307,8 +5433,8 @@
         "assignedTeam": "Spain",
         "roundPoints": 26,
         "overallPoints": 553,
-        "bonus": 2,
-        "finalPoints": 36,
+        "bonus": 0,
+        "finalPoints": 26,
         "qualified": true,
         "group": "E",
         "rank": 8
@@ -5337,7 +5463,7 @@
         "finalPoints": 26,
         "qualified": true,
         "group": "G",
-        "rank": 16
+        "rank": 14
       },
       {
         "userId": 194750,
@@ -5359,8 +5485,8 @@
         "assignedTeam": "Spain",
         "roundPoints": 45,
         "overallPoints": 564,
-        "bonus": 2,
-        "finalPoints": 55,
+        "bonus": 0,
+        "finalPoints": 45,
         "qualified": true,
         "group": "I",
         "rank": 2
@@ -5404,20 +5530,20 @@
         "finalPoints": 22,
         "qualified": false,
         "group": "A",
-        "rank": 26
+        "rank": 23
       },
       {
-        "userId": 3069640,
-        "userName": "RyanFish2026",
-        "seed": 1,
-        "assignedTeam": "Argentina",
-        "roundPoints": 33,
-        "overallPoints": 646,
+        "userId": 2794671,
+        "userName": "Verbruggen gogogo",
+        "seed": 4,
+        "assignedTeam": "Spain",
+        "roundPoints": 26,
+        "overallPoints": 503,
         "bonus": 0,
-        "finalPoints": 33,
+        "finalPoints": 26,
         "qualified": false,
         "group": "B",
-        "rank": 12
+        "rank": 15
       },
       {
         "userId": 65913,
@@ -5430,7 +5556,7 @@
         "finalPoints": 23,
         "qualified": false,
         "group": "B",
-        "rank": 22
+        "rank": 19
       },
       {
         "userId": 2561309,
@@ -5465,11 +5591,11 @@
         "assignedTeam": "Spain",
         "roundPoints": 21,
         "overallPoints": 427,
-        "bonus": 2,
-        "finalPoints": 31,
+        "bonus": 0,
+        "finalPoints": 21,
         "qualified": false,
         "group": "C",
-        "rank": 13
+        "rank": 24
       },
       {
         "userId": 2576638,
@@ -5495,7 +5621,7 @@
         "finalPoints": 23,
         "qualified": false,
         "group": "D",
-        "rank": 23
+        "rank": 20
       },
       {
         "userId": 234512,
@@ -5560,19 +5686,6 @@
         "finalPoints": 23,
         "qualified": false,
         "group": "E",
-        "rank": 24
-      },
-      {
-        "userId": 204548,
-        "userName": "Arsenal HangZhou",
-        "seed": 4,
-        "assignedTeam": "Spain",
-        "roundPoints": 13,
-        "overallPoints": 467,
-        "bonus": 2,
-        "finalPoints": 23,
-        "qualified": false,
-        "group": "F",
         "rank": 21
       },
       {
@@ -5586,7 +5699,20 @@
         "finalPoints": 17,
         "qualified": false,
         "group": "F",
-        "rank": 31
+        "rank": 28
+      },
+      {
+        "userId": 204548,
+        "userName": "Arsenal HangZhou",
+        "seed": 4,
+        "assignedTeam": "Spain",
+        "roundPoints": 13,
+        "overallPoints": 467,
+        "bonus": 0,
+        "finalPoints": 13,
+        "qualified": false,
+        "group": "F",
+        "rank": 32
       },
       {
         "userId": 3224529,
@@ -5612,20 +5738,7 @@
         "finalPoints": 22,
         "qualified": false,
         "group": "G",
-        "rank": 25
-      },
-      {
-        "userId": 2540931,
-        "userName": "LA LAD",
-        "seed": 4,
-        "assignedTeam": "Spain",
-        "roundPoints": 10,
-        "overallPoints": 565,
-        "bonus": 2,
-        "finalPoints": 20,
-        "qualified": false,
-        "group": "G",
-        "rank": 27
+        "rank": 22
       },
       {
         "userId": 3030018,
@@ -5638,7 +5751,20 @@
         "finalPoints": 14,
         "qualified": false,
         "group": "G",
-        "rank": 32
+        "rank": 29
+      },
+      {
+        "userId": 2540931,
+        "userName": "LA LAD",
+        "seed": 4,
+        "assignedTeam": "Spain",
+        "roundPoints": 10,
+        "overallPoints": 565,
+        "bonus": 0,
+        "finalPoints": 10,
+        "qualified": false,
+        "group": "G",
+        "rank": 34
       },
       {
         "userId": 1904011,
@@ -5667,6 +5793,19 @@
         "rank": 19
       },
       {
+        "userId": 4449643,
+        "userName": "tinytofusoup",
+        "seed": 4,
+        "assignedTeam": "Spain",
+        "roundPoints": 14,
+        "overallPoints": 444,
+        "bonus": 2,
+        "finalPoints": 16,
+        "qualified": false,
+        "group": "H",
+        "rank": 29
+      },
+      {
         "userId": 353380,
         "userName": "samuellinshan",
         "seed": 1,
@@ -5677,7 +5816,20 @@
         "finalPoints": 14,
         "qualified": false,
         "group": "H",
-        "rank": 33
+        "rank": 30
+      },
+      {
+        "userId": 4449643,
+        "userName": "tinytofusoup",
+        "seed": 4,
+        "assignedTeam": "Spain",
+        "roundPoints": 14,
+        "overallPoints": 444,
+        "bonus": 0,
+        "finalPoints": 14,
+        "qualified": false,
+        "group": "H",
+        "rank": 31
       },
       {
         "userId": 2472296,
