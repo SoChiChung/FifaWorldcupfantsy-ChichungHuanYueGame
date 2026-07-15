@@ -98,18 +98,18 @@
       "DEF": [
         30,
         1088,
-        1430
+        1430,
+        34
       ],
       "MID": [
         1092,
         474,
         491,
-        501,
-        1997
+        501
       ],
       "FWD": [
         38,
-        500
+        468
       ]
     },
     "bench": {
@@ -117,15 +117,16 @@
         262
       ],
       "DEF": [
-        34,
         1320
       ],
-      "MID": [],
+      "MID": [
+        1997
+      ],
       "FWD": [
-        468
+        500
       ]
     },
-    "captain": 500,
+    "captain": 468,
     "viceCaptain": 38
   },
   {
@@ -1609,7 +1610,7 @@
     "userName": "JOHNNYOCEAN",
     "roundPoints": 15,
     "overallPoints": 599,
-    "captainChanges": 4,
+    "captainChanges": 5,
     "lineup": {
       "GK": [
         45
@@ -1645,7 +1646,7 @@
       ]
     },
     "captain": 491,
-    "viceCaptain": 474
+    "viceCaptain": 468
   },
   {
     "userId": 2468309,
@@ -2907,44 +2908,43 @@
     "userName": "Golden Sheva",
     "roundPoints": 17,
     "overallPoints": 576,
-    "captainChanges": 0,
+    "captainChanges": 1,
     "lineup": {
       "GK": [
-        506
+        45
       ],
       "DEF": [
         457,
-        494,
-        1089,
-        498
+        1318,
+        1089
       ],
       "MID": [
         491,
         501,
         1082,
-        1431
+        474
       ],
       "FWD": [
+        38,
         468,
         500
       ]
     },
     "bench": {
       "GK": [
-        45
+        506
       ],
       "DEF": [
-        1318
+        494,
+        498
       ],
       "MID": [
-        474
+        1431
       ],
-      "FWD": [
-        38
-      ]
+      "FWD": []
     },
-    "captain": 500,
-    "viceCaptain": 506
+    "captain": 468,
+    "viceCaptain": 45
   },
   {
     "userId": 3398330,
@@ -3860,17 +3860,18 @@
     "userName": "Leo Xie",
     "roundPoints": 26,
     "overallPoints": 535,
-    "captainChanges": 0,
+    "captainChanges": 1,
     "lineup": {
       "GK": [
-        506
+        45
       ],
       "DEF": [
-        1430,
+        30,
         1088,
-        494
+        457
       ],
       "MID": [
+        474,
         501,
         491,
         1082,
@@ -3878,24 +3879,23 @@
       ],
       "FWD": [
         1094,
-        500,
         468
       ]
     },
     "bench": {
       "GK": [
-        45
+        506
       ],
       "DEF": [
-        457,
-        30
+        494,
+        1430
       ],
-      "MID": [
-        474
-      ],
-      "FWD": []
+      "MID": [],
+      "FWD": [
+        500
+      ]
     },
-    "captain": 500,
+    "captain": 468,
     "viceCaptain": 501
   },
   {
@@ -4164,7 +4164,7 @@
     "userName": "cybrger",
     "roundPoints": 21,
     "overallPoints": 585,
-    "captainChanges": 1,
+    "captainChanges": 3,
     "lineup": {
       "GK": [
         477
@@ -4199,8 +4199,8 @@
       ],
       "FWD": []
     },
-    "captain": 468,
-    "viceCaptain": 474
+    "captain": 491,
+    "viceCaptain": 477
   },
   {
     "userId": 2530176,
