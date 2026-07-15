@@ -698,19 +698,19 @@
     "userName": "dongma",
     "roundPoints": 20,
     "overallPoints": 613,
-    "captainChanges": 0,
+    "captainChanges": 1,
     "lineup": {
       "GK": [
         1099
       ],
       "DEF": [
         1088,
-        498,
+        30,
         494
       ],
       "MID": [
         1082,
-        1431,
+        56,
         501,
         491
       ],
@@ -725,15 +725,15 @@
         477
       ],
       "DEF": [
-        30,
+        498,
         457
       ],
       "MID": [
-        56
+        1431
       ],
       "FWD": []
     },
-    "captain": 500,
+    "captain": 468,
     "viceCaptain": 501
   },
   {
@@ -1783,17 +1783,18 @@
     "userName": "RyanFish2026",
     "roundPoints": 33,
     "overallPoints": 646,
-    "captainChanges": 0,
+    "captainChanges": 2,
     "lineup": {
       "GK": [
-        506
+        477
       ],
       "DEF": [
-        1430,
         1088,
-        1089
+        1089,
+        34
       ],
       "MID": [
+        56,
         1105,
         1092,
         491,
@@ -1801,25 +1802,24 @@
       ],
       "FWD": [
         38,
-        468,
-        500
+        468
       ]
     },
     "bench": {
       "GK": [
-        477
+        506
       ],
       "DEF": [
         463,
-        34
+        1430
       ],
-      "MID": [
-        56
-      ],
-      "FWD": []
+      "MID": [],
+      "FWD": [
+        500
+      ]
     },
-    "captain": 1105,
-    "viceCaptain": 1092
+    "captain": 38,
+    "viceCaptain": 491
   },
   {
     "userId": 43055,
@@ -2385,7 +2385,7 @@
     "userName": "message username ",
     "roundPoints": 34,
     "overallPoints": 607,
-    "captainChanges": 0,
+    "captainChanges": 1,
     "lineup": {
       "GK": [
         506
@@ -2393,12 +2393,12 @@
       "DEF": [
         1088,
         30,
-        498,
+        1709,
         1089
       ],
       "MID": [
         1105,
-        501,
+        491,
         517
       ],
       "FWD": [
@@ -2412,15 +2412,15 @@
         235
       ],
       "DEF": [
-        1709
+        498
       ],
       "MID": [
         841,
-        491
+        501
       ],
       "FWD": []
     },
-    "captain": 500,
+    "captain": 38,
     "viceCaptain": 506
   },
   {
@@ -5426,7 +5426,7 @@
         477
       ],
       "DEF": [
-        457,
+        463,
         1088,
         1085
       ],
@@ -5448,7 +5448,7 @@
       ],
       "DEF": [
         498,
-        463
+        457
       ],
       "MID": [],
       "FWD": [
@@ -6121,7 +6121,8 @@
       "DEF": [
         463,
         30,
-        1088
+        1088,
+        1320
       ],
       "MID": [
         474,
@@ -6131,7 +6132,6 @@
       ],
       "FWD": [
         468,
-        500,
         38
       ]
     },
@@ -6140,13 +6140,14 @@
         477
       ],
       "DEF": [
-        1320,
         1430
       ],
       "MID": [
         1997
       ],
-      "FWD": []
+      "FWD": [
+        500
+      ]
     },
     "captain": 468,
     "viceCaptain": 463
