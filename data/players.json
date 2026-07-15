@@ -2041,25 +2041,25 @@
     "userName": "YZF",
     "roundPoints": 19,
     "overallPoints": 566,
-    "captainChanges": 0,
+    "captainChanges": 1,
     "lineup": {
       "GK": [
         45
       ],
       "DEF": [
-        1429,
+        30,
         34,
-        463
+        463,
+        457
       ],
       "MID": [
         517,
         57,
         491,
-        1092,
-        505
+        1092
       ],
       "FWD": [
-        500,
+        38,
         1094
       ]
     },
@@ -2068,15 +2068,16 @@
         506
       ],
       "DEF": [
-        30,
-        457
+        1429
       ],
-      "MID": [],
+      "MID": [
+        505
+      ],
       "FWD": [
-        38
+        500
       ]
     },
-    "captain": 500,
+    "captain": 491,
     "viceCaptain": 45
   },
   {
@@ -2865,40 +2866,41 @@
     "captainChanges": 0,
     "lineup": {
       "GK": [
-        506
+        45
       ],
       "DEF": [
-        1430,
+        457,
         1088,
-        1085
+        1085,
+        1318
       ],
       "MID": [
         1082,
-        501,
+        50,
         517,
         474
       ],
       "FWD": [
         468,
-        38,
-        500
+        38
       ]
     },
     "bench": {
       "GK": [
-        45
+        506
       ],
       "DEF": [
-        457,
-        1318
+        1430
       ],
       "MID": [
-        50
+        501
       ],
-      "FWD": []
+      "FWD": [
+        500
+      ]
     },
-    "captain": 500,
-    "viceCaptain": 506
+    "captain": 1318,
+    "viceCaptain": 45
   },
   {
     "userId": 3467156,
@@ -4594,7 +4596,7 @@
     "userName": "Cloudzzy",
     "roundPoints": 20,
     "overallPoints": 574,
-    "captainChanges": 0,
+    "captainChanges": 1,
     "lineup": {
       "GK": [
         506
@@ -4602,18 +4604,18 @@
       "DEF": [
         457,
         1088,
-        498
+        30
       ],
       "MID": [
         1082,
         1092,
-        1431,
         491,
         501
       ],
       "FWD": [
         500,
-        468
+        468,
+        38
       ]
     },
     "bench": {
@@ -4622,14 +4624,14 @@
       ],
       "DEF": [
         1320,
-        30
+        498
       ],
-      "MID": [],
-      "FWD": [
-        38
-      ]
+      "MID": [
+        1431
+      ],
+      "FWD": []
     },
-    "captain": 500,
+    "captain": 38,
     "viceCaptain": 1092
   },
   {
