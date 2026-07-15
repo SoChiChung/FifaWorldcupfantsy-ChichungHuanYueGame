@@ -54,7 +54,7 @@ module.exports = function round7({ players, getStat, roundId, previousResults, q
   for (const g of GROUP_NAMES) {
     groups[g] = groups[g].map(p => {
       const bonus = (bonuses && bonuses[p.assignedTeam]) || 0;
-      const finalPoints = (p.roundPoints || 0) + bonus;
+      const finalPoints = (p.roundPoints || 0) + bonus*5;
       return {
         userId: p.userId,
         userName: p.userName,
