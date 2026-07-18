@@ -542,6 +542,57 @@ footer .social-links a:hover img { opacity: 1; }
   box-shadow: var(--shadow-sm);
 }
 
+.warning-banner {
+  background: #fff0c2;
+  border: 3px solid var(--red);
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: var(--fg);
+}
+
+.final-preview-banner {
+  text-align: left;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.round8-stage table {
+  min-width: 680px;
+}
+
+.round8-stage .player-name {
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.round8-stage .final-score {
+  color: var(--red);
+  font-weight: 900;
+}
+
+.round8-stage .muted-score {
+  color: var(--fg-muted);
+}
+
+.round8-row.podium-1 td:first-child,
+.round8-row.podium-2 td:first-child,
+.round8-row.podium-3 td:first-child {
+  color: var(--red);
+  font-weight: 900;
+}
+
+.round8-rules {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-left: 4px solid var(--red);
+  background: var(--bg-card);
+  color: var(--fg-muted);
+  font-size: 12px;
+}
+
 .groups-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

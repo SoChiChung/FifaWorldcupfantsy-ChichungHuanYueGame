@@ -120,6 +120,34 @@
         html += '</tbody></table></div>';
       });
       html += '</div>';
+    } else if (currentRoundId === '8' && result.ranking) {
+      var round8Preview = result.extra && result.extra.preview;
+      var round8Warning = result.extra && result.extra.warning;
+      if (round8Preview) {
+        html += '<div class="preview-banner final-preview-banner">FIFA 尚未返回第八轮数据，当前分数暂按 0 处理。</div>';
+      }
+      if (round8Warning) {
+        html += '<div class="warning-banner">' + round8Warning + '</div>';
+      }
+      html += '<div class="section ranking-stage round8-stage"><h2>Round 8 最终排名</h2>';
+      html += '<div class="table-scroll"><table><thead><tr>';
+      html += '<th>#</th><th>玩家</th><th>本轮</th><th>Winning Goal</th><th>最终分</th><th>队长分</th><th>总分</th><th>冠军首发</th>';
+      html += '</tr></thead><tbody>';
+      result.ranking.forEach(function(r) {
+        var medal = r.rank <= 3 ? ' podium-' + r.rank : '';
+        html += '<tr class="round8-row' + medal + '">';
+        html += '<td class="rank">' + r.rank + '</td>';
+        html += '<td class="player-name">' + (r.userName || nameMap[r.userId] || r.userId) + '</td>';
+        html += '<td class="metric muted-score">' + r.basePoints + '</td>';
+        html += '<td class="bonus">' + (r.winningGoalBonus ? '+' + r.winningGoalBonus : '-') + '</td>';
+        html += '<td class="metric final-score">' + r.finalPoints + '</td>';
+        html += '<td class="metric">' + r.captainPoints + '</td>';
+        html += '<td class="metric">' + r.overallPoints + '</td>';
+        html += '<td class="metric">' + r.championStarterCount + '</td>';
+        html += '</tr>';
+      });
+      html += '</tbody></table></div></div>';
+      html += '<div class="round8-rules">9 名玩家按最终得分排名：本轮基础得分加 Winning Goal 加分；同分依次比较队长本轮得分、冠军队伍首发人数、总分。</div>';
     } else {
       // ── Other Rounds: Leaderboard table ──
       var label = metricLabel(result);

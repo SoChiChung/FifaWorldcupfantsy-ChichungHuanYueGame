@@ -5729,5 +5729,195 @@
       "groupCount": 9,
       "aliveCount": 36
     }
+  },
+  "8": {
+    "title": "Round 8: Final Round",
+    "description": "9 名玩家按最终得分排名：本轮基础得分+Bonus；Bonus规则：持有在两场比赛取得Winningoal的球员，每个+5分，如果是点球大战，则按点球大战胜利方最后一位破平队员计算",
+    "ranking": [
+      {
+        "userName": "Vamos Espana19",
+        "basePoints": 0,
+        "winningGoalBonus": 0,
+        "finalPoints": 0,
+        "captainId": null,
+        "captainPoints": 0,
+        "championStarterCount": 0,
+        "hasWinningGoalPlayer": false,
+        "winningGoalPlayerIds": [],
+        "overallPoints": 673,
+        "isPreview": true,
+        "rank": 1
+      },
+      {
+        "userName": "RyanFish2026",
+        "basePoints": 0,
+        "winningGoalBonus": 0,
+        "finalPoints": 0,
+        "captainId": null,
+        "captainPoints": 0,
+        "championStarterCount": 0,
+        "hasWinningGoalPlayer": false,
+        "winningGoalPlayerIds": [],
+        "overallPoints": 672,
+        "isPreview": true,
+        "rank": 2
+      },
+      {
+        "userName": "wc1018",
+        "basePoints": 0,
+        "winningGoalBonus": 0,
+        "finalPoints": 0,
+        "captainId": null,
+        "captainPoints": 0,
+        "championStarterCount": 0,
+        "hasWinningGoalPlayer": false,
+        "winningGoalPlayerIds": [],
+        "overallPoints": 637,
+        "isPreview": true,
+        "rank": 3
+      },
+      {
+        "userName": "samuellinshan",
+        "basePoints": 0,
+        "winningGoalBonus": 0,
+        "finalPoints": 0,
+        "captainId": null,
+        "captainPoints": 0,
+        "championStarterCount": 0,
+        "hasWinningGoalPlayer": false,
+        "winningGoalPlayerIds": [],
+        "overallPoints": 600,
+        "isPreview": true,
+        "rank": 4
+      },
+      {
+        "userName": "xxrrdbigb",
+        "basePoints": 0,
+        "winningGoalBonus": 0,
+        "finalPoints": 0,
+        "captainId": null,
+        "captainPoints": 0,
+        "championStarterCount": 0,
+        "hasWinningGoalPlayer": false,
+        "winningGoalPlayerIds": [],
+        "overallPoints": 599,
+        "isPreview": true,
+        "rank": 5
+      },
+      {
+        "userName": "zhustar",
+        "basePoints": 0,
+        "winningGoalBonus": 0,
+        "finalPoints": 0,
+        "captainId": null,
+        "captainPoints": 0,
+        "championStarterCount": 0,
+        "hasWinningGoalPlayer": false,
+        "winningGoalPlayerIds": [],
+        "overallPoints": 593,
+        "isPreview": true,
+        "rank": 6
+      },
+      {
+        "userName": "HindMics",
+        "basePoints": 0,
+        "winningGoalBonus": 0,
+        "finalPoints": 0,
+        "captainId": null,
+        "captainPoints": 0,
+        "championStarterCount": 0,
+        "hasWinningGoalPlayer": false,
+        "winningGoalPlayerIds": [],
+        "overallPoints": 581,
+        "isPreview": true,
+        "rank": 7
+      },
+      {
+        "userName": "World Cup all-lose team",
+        "basePoints": 0,
+        "winningGoalBonus": 0,
+        "finalPoints": 0,
+        "captainId": null,
+        "captainPoints": 0,
+        "championStarterCount": 0,
+        "hasWinningGoalPlayer": false,
+        "winningGoalPlayerIds": [],
+        "overallPoints": 574,
+        "isPreview": true,
+        "rank": 8
+      },
+      {
+        "userName": "szewan Lau",
+        "basePoints": 0,
+        "winningGoalBonus": 0,
+        "finalPoints": 0,
+        "captainId": null,
+        "captainPoints": 0,
+        "championStarterCount": 0,
+        "hasWinningGoalPlayer": false,
+        "winningGoalPlayerIds": [],
+        "overallPoints": 512,
+        "isPreview": true,
+        "rank": 9
+      }
+    ],
+    "qualified": [],
+    "eliminated": [],
+    "extra": {
+      "preview": true,
+      "dataStatus": "pending",
+      "finalistCount": 9,
+      "finalists": [
+        {
+          "userId": 3063581,
+          "userName": "zhustar",
+          "group": "A"
+        },
+        {
+          "userId": 3069640,
+          "userName": "RyanFish2026",
+          "group": "B"
+        },
+        {
+          "userId": 2405706,
+          "userName": "Vamos Espana19",
+          "group": "C"
+        },
+        {
+          "userId": 5388217,
+          "userName": "szewan Lau",
+          "group": "D"
+        },
+        {
+          "userId": 3037463,
+          "userName": "World Cup all-lose team",
+          "group": "E"
+        },
+        {
+          "userId": 2458905,
+          "userName": "xxrrdbigb",
+          "group": "F"
+        },
+        {
+          "userId": 67094,
+          "userName": "wc1018",
+          "group": "G"
+        },
+        {
+          "userId": 353380,
+          "userName": "samuellinshan",
+          "group": "H"
+        },
+        {
+          "userId": 2463734,
+          "userName": "HindMics",
+          "group": "I"
+        }
+      ],
+      "winningGoalPlayerIds": [],
+      "championTeamId": null,
+      "bonusPoints": 5,
+      "warning": null
+    }
   }
 }

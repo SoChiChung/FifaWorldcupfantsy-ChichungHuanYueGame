@@ -14,7 +14,9 @@ function loadConfig() {
     roundId: cfg.roundId,
     cookie: cfg.COOKIE || cfg.cookie || '',
     qualifier: cfg.qualifier || 0,
-    bonuses: cfg.bonuses || {}
+    bonuses: cfg.bonuses || {},
+    winningGoalPlayerIds: cfg.winningGoalPlayerIds || [],
+    championTeamId: cfg.championTeamId ?? null
   };
 }
 
@@ -28,6 +30,12 @@ function loadPlayers() {
 
 function loadFootballers() {
   return readJSON(path.join(DATA, 'footballers.json'));
+}
+
+function loadFullFootballers() {
+  const p = path.join(DATA, 'fullfootballers.json');
+  if (!fs.existsSync(p)) return [];
+  return readJSON(p);
 }
 
 function loadResult() {
@@ -53,6 +61,7 @@ module.exports = {
   loadHuanyue,
   loadPlayers,
   loadFootballers,
+  loadFullFootballers,
   loadResult,
   createGetStat
 };

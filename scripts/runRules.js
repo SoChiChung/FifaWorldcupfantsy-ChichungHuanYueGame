@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { loadConfig, loadPlayers, loadFootballers, loadResult, createGetStat } = require('./lib/data');
+const { loadConfig, loadPlayers, loadFootballers, loadFullFootballers, loadResult, createGetStat } = require('./lib/data');
 
 function runRules() {
   const config = loadConfig();
@@ -10,6 +10,7 @@ function runRules() {
 
   const players = loadPlayers();
   const footballers = loadFootballers();
+  const fullFootballers = loadFullFootballers();
   const getStat = createGetStat(footballers);
 
   console.log(`Players: ${players.length}`);
@@ -33,7 +34,19 @@ function runRules() {
   }
 
   const rule = require(rulePath);
-  const result = rule({ players, getStat, roundId, previousResults, qualifier: config.qualifier, bonuses: config.bonuses });
+  const result = rule({
+    players,
+    footballers,
+    fullFootballers,
+    getStat,
+    roundId,
+    previousResults,
+    winningGoalPlayerIds: config.winningGoalPlayerIds,
+    championTeamId: config.championTeamId,
+    preview: false,
+    qualifier: config.qualifier,
+    bonuses: config.bonuses
+  });
 
   if (!result || !result.title || !result.ranking || !result.eliminated) {
     console.error('ERROR: Rule must return { title, description, ranking, eliminated, extra }');
