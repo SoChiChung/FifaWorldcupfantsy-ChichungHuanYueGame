@@ -5842,15 +5842,15 @@
       {
         "userId": 3037463,
         "userName": "World Cup all-lose team",
-        "basePoints": 71,
+        "basePoints": 72,
         "winningGoalBonus": 0,
-        "finalPoints": 71,
+        "finalPoints": 72,
         "captainId": 500,
         "captainPoints": 17,
         "championStarterCount": 0,
         "hasWinningGoalPlayer": false,
         "winningGoalPlayerIds": [],
-        "overallPoints": 645,
+        "overallPoints": 646,
         "isPreview": false,
         "rank": 8
       },
