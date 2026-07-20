@@ -1,7 +1,7 @@
 {
     "roundId": 8,
-    "winningGoalPlayerIds": [],
-    "championTeamId": null,
+    "winningGoalPlayerIds": [488,1093],
+    "championTeamId": 41,
     "qualifier": 1,
       "bonuses": {
     "Argentina": 2,
